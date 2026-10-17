@@ -5,7 +5,7 @@ from __future__ import annotations
 MANIFEST: dict = {
     "name": "DDRop — Physical Memory Interposer (Intel TDX + AMD SEV)",
     "mitre": ["T1200"],
-    "description": "Physical attack using DRAM interposer to break Intel TDX, Intel Scalable SGX, and AMD SEV-SNP confidential computing.",
+    "description": "Physical attack using DRAM interposer to break Intel TDX, Scalable SGX, and AMD SEV-SNP confidential computing.",
     "references": ["https://thehackernews.com/2026/09/new-ddrop-attack-breaks-intel-tdx-and.html"],
 }
 

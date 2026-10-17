@@ -6,8 +6,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "cloudxpl-forge"
-version = "2.0.0"
-description = "CloudXPL-Forge (CXF) — Cloud security assessment framework. 212 modules across AWS, Azure, GCP, Kubernetes, serverless, storage, multi-cloud, credential and network attack surfaces."
+version = "3.0.0"
+description = "CloudXPL-Forge (CXF) — Cloud security assessment framework. 296 modules across 17 categories: AWS, Azure, GCP, OCI, Alibaba, Tencent, IBM, DigitalOcean, OVHcloud, Hetzner, Kubernetes, serverless, storage, multi-cloud, hypervisors (VMware/Hyper-V/KVM/QEMU/Citrix/Nutanix), credential and network attack surfaces."
 readme = { file = "README.md", content-type = "text/markdown" }
 license = { text = "MIT" }
 authors = [
@@ -15,11 +15,15 @@ authors = [
 ]
 keywords = [
     "security", "pentesting", "cloud-security", "aws", "azure", "gcp",
-    "kubernetes", "k8s", "serverless", "lambda", "iam", "s3", "ssrf", "imds",
-    "container-escape", "privilege-escalation", "credential-theft",
-    "bucket-exploit", "blob-exploit", "entra-id", "aks", "eks", "gke",
-    "cloud-exploit", "red-team", "purple-team", "cve", "kev",
-    "data-exfiltration", "storage-attack", "multi-cloud", "xpl-forge",
+    "oci", "oracle-cloud", "alibaba-cloud", "tencent-cloud", "ibm-cloud",
+    "digitalocean", "ovhcloud", "hetzner", "vmware", "esxi", "vcenter",
+    "hyper-v", "kvm", "qemu", "citrix", "nutanix", "hypervisor",
+    "vm-escape", "kubernetes", "k8s", "serverless", "lambda", "iam",
+    "s3", "ssrf", "imds", "container-escape", "privilege-escalation",
+    "credential-theft", "bucket-exploit", "blob-exploit", "entra-id",
+    "aks", "eks", "gke", "cloud-exploit", "red-team", "purple-team",
+    "cve", "kev", "rsa-securid", "data-exfiltration", "storage-attack",
+    "multi-cloud", "xpl-forge",
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -61,6 +65,14 @@ gcp = [
     "google-cloud-secret-manager>=2.16",
 ]
 k8s = ["kubernetes>=29.0"]
+oci = ["oci>=2.120"]
+alibaba = ["alibabacloud-credentials>=0.3", "alibabacloud-ecs20140526>=4.0", "alibabacloud-oss20190517>=1.0"]
+tencent = ["tencentcloud-sdk-python>=3.0"]
+ibm = ["ibm-cloud-sdk-core>=3.16", "ibm-cos-sdk>=2.13"]
+digitalocean = ["pydo>=0.8"]
+ovh = ["ovh>=1.1"]
+hetzner = ["hcloud>=2.0"]
+virt = ["pyvmomi>=8.0", "libvirt-python>=10.0"]
 dev = ["pytest>=7.0", "ruff>=0.4", "build>=1.0"]
 full = [
     "boto3>=1.34",
@@ -77,6 +89,18 @@ full = [
     "google-cloud-iam>=2.12",
     "google-cloud-secret-manager>=2.16",
     "kubernetes>=29.0",
+    "oci>=2.120",
+    "alibabacloud-credentials>=0.3",
+    "alibabacloud-ecs20140526>=4.0",
+    "alibabacloud-oss20190517>=1.0",
+    "tencentcloud-sdk-python>=3.0",
+    "ibm-cloud-sdk-core>=3.16",
+    "ibm-cos-sdk>=2.13",
+    "pydo>=0.8",
+    "ovh>=1.1",
+    "hcloud>=2.0",
+    "pyvmomi>=8.0",
+    "libvirt-python>=10.0",
 ]
 
 [project.urls]

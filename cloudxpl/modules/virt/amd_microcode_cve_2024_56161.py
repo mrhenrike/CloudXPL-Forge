@@ -6,7 +6,7 @@ MANIFEST: dict = {
     "name": "AMD Microcode Signature Bypass (CVE-2024-56161)",
     "cve": "CVE-2024-56161",
     "mitre": ["T1542"],
-    "description": "Exploits insecure hash function in AMD microcode signature validation to load malicious microcode compromising SEV-SNP.",
+    "description": "Exploits insecure hash in AMD microcode signature validation to load malicious microcode compromising SEV-SNP.",
     "references": ["https://nvd.nist.gov/vuln/detail/CVE-2024-56161"],
 }
 

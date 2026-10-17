@@ -6,7 +6,7 @@ MANIFEST: dict = {
     "name": "Downfall — Intel Gather Data Sampling (CVE-2022-40982)",
     "cve": "CVE-2022-40982",
     "mitre": ["T1003"],
-    "description": "Exploits Intel GDS (Gather Data Sampling) transient execution vulnerability for cross-VM data exfiltration.",
+    "description": "Exploits Intel GDS transient execution vulnerability for cross-VM data exfiltration on 6th-11th gen CPUs.",
     "references": ["https://nvd.nist.gov/vuln/detail/CVE-2022-40982"],
 }
 

@@ -149,6 +149,27 @@ def _build_parser() -> argparse.ArgumentParser:
     hetz_p.add_argument("--region", default="nbg1", help="Hetzner datacenter/region")
     _add_common(hetz_p)
 
+    # --- VDI (Virtual Desktop Infrastructure) ---
+    vdi_p = sub.add_parser("vdi", help="VDI escape modules (Horizon, Citrix VDA, AVD, WorkSpaces, kiosk, ...)")
+    vdi_p.add_argument("module", choices=sorted(MODULE_MAP["vdi"]))
+    vdi_p.add_argument("--vdi-host", help="VDI broker/connection server host")
+    vdi_p.add_argument("--session-id", help="Target VDI session ID")
+    _add_common(vdi_p)
+
+    # --- PaaS (Platform-as-a-Service) ---
+    paas_p = sub.add_parser("paas", help="PaaS escape modules (App Service, ACI, Cloud Run, Fargate, Lambda, ...)")
+    paas_p.add_argument("module", choices=sorted(MODULE_MAP["paas"]))
+    paas_p.add_argument("--provider", choices=["aws", "azure", "gcp", "heroku", "railway"], default="aws")
+    paas_p.add_argument("--function-name", help="Target function/service name")
+    _add_common(paas_p)
+
+    # --- CI/CD ---
+    cicd_p = sub.add_parser("cicd", help="CI/CD runner escape modules (GitHub Actions, GitLab CI, Jenkins, Terraform, ...)")
+    cicd_p.add_argument("module", choices=sorted(MODULE_MAP["cicd"]))
+    cicd_p.add_argument("--runner-url", help="CI/CD runner or server URL")
+    cicd_p.add_argument("--token", help="CI/CD API token or runner token")
+    _add_common(cicd_p)
+
     return p
 
 

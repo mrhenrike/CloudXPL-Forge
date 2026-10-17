@@ -42,7 +42,7 @@ def _build_parser() -> argparse.ArgumentParser:
     _add_common(azure_p)
 
     # --- GCP ---
-    gcp_p = sub.add_parser("gcp", help="GCP modules (IAM, Buckets, GKE, Cloud SQL, ...)")
+    gcp_p = sub.add_parser("gcp", help="GCP modules (IAM, Buckets, GKE, Cloud SQL, Cloud Armor, WIF, ...)")
     gcp_p.add_argument("module", choices=sorted(MODULE_MAP["gcp"]))
     gcp_p.add_argument("--project", help="GCP project ID")
     gcp_p.add_argument("--sa-key", help="Service account key file")
@@ -74,11 +74,12 @@ def _build_parser() -> argparse.ArgumentParser:
     # --- Multi-cloud ---
     multi_p = sub.add_parser("multi", help="Multi-cloud and cross-provider modules")
     multi_p.add_argument("module", choices=sorted(MODULE_MAP["multi"]))
-    multi_p.add_argument("--providers", nargs="+", choices=["aws", "azure", "gcp"], default=["aws", "azure", "gcp"])
+    multi_p.add_argument("--providers", nargs="+", choices=["aws", "azure", "gcp", "oci", "alibaba", "tencent", "ibm"],
+                         default=["aws", "azure", "gcp"])
     _add_common(multi_p)
 
     # --- Credential ---
-    cred_p = sub.add_parser("cred", help="Credential discovery and abuse modules")
+    cred_p = sub.add_parser("cred", help="Credential discovery and abuse modules (RSA SecurID, MFA relay, ...)")
     cred_p.add_argument("module", choices=sorted(MODULE_MAP["cred"]))
     cred_p.add_argument("--scan-path", help="Path to scan for credentials")
     _add_common(cred_p)
@@ -89,6 +90,64 @@ def _build_parser() -> argparse.ArgumentParser:
     net_p.add_argument("--provider", choices=["aws", "azure", "gcp"], default="aws")
     net_p.add_argument("--cidr", help="Target CIDR range")
     _add_common(net_p)
+
+    # --- OCI (Oracle Cloud) ---
+    oci_p = sub.add_parser("oci", help="Oracle Cloud modules (OCI IAM, buckets, compute, CVEs, ...)")
+    oci_p.add_argument("module", choices=sorted(MODULE_MAP["oci"]))
+    oci_p.add_argument("--tenancy-ocid", help="OCI tenancy OCID")
+    oci_p.add_argument("--region", default="us-ashburn-1", help="OCI region")
+    oci_p.add_argument("--config-file", default="~/.oci/config", help="OCI config file path")
+    _add_common(oci_p)
+
+    # --- Virtualization / Hypervisors ---
+    virt_p = sub.add_parser("virt", help="Hypervisor modules (VMware, Hyper-V, KVM, QEMU, Citrix, Nutanix, ...)")
+    virt_p.add_argument("module", choices=sorted(MODULE_MAP["virt"]))
+    virt_p.add_argument("--vcenter-host", help="vCenter/ESXi host")
+    virt_p.add_argument("--hyperv-host", help="Hyper-V host")
+    virt_p.add_argument("--libvirt-uri", default="qemu:///system", help="Libvirt connection URI")
+    _add_common(virt_p)
+
+    # --- Alibaba Cloud ---
+    ali_p = sub.add_parser("alibaba", help="Alibaba Cloud modules (ECS, OSS, RAM, RDS, ...)")
+    ali_p.add_argument("module", choices=sorted(MODULE_MAP["alibaba"]))
+    ali_p.add_argument("--access-key-id", help="Alibaba Cloud AccessKey ID")
+    ali_p.add_argument("--region", default="cn-hangzhou", help="Alibaba Cloud region")
+    _add_common(ali_p)
+
+    # --- Tencent Cloud ---
+    tc_p = sub.add_parser("tencent", help="Tencent Cloud modules (COS, CVM, CAM, ...)")
+    tc_p.add_argument("module", choices=sorted(MODULE_MAP["tencent"]))
+    tc_p.add_argument("--secret-id", help="Tencent Cloud SecretId")
+    tc_p.add_argument("--region", default="ap-guangzhou", help="Tencent Cloud region")
+    _add_common(tc_p)
+
+    # --- IBM Cloud ---
+    ibm_p = sub.add_parser("ibm", help="IBM Cloud modules (COS, IAM, VPC, QRadar, CloudPak, ...)")
+    ibm_p.add_argument("module", choices=sorted(MODULE_MAP["ibm"]))
+    ibm_p.add_argument("--api-key", help="IBM Cloud API key")
+    ibm_p.add_argument("--region", default="us-south", help="IBM Cloud region")
+    _add_common(ibm_p)
+
+    # --- DigitalOcean ---
+    do_p = sub.add_parser("digitalocean", help="DigitalOcean modules (Droplets, Spaces, DOKS, ...)")
+    do_p.add_argument("module", choices=sorted(MODULE_MAP["digitalocean"]))
+    do_p.add_argument("--api-token", help="DigitalOcean API token")
+    do_p.add_argument("--region", default="nyc1", help="DigitalOcean region")
+    _add_common(do_p)
+
+    # --- OVHcloud ---
+    ovh_p = sub.add_parser("ovh", help="OVHcloud modules (OpenStack, vRack, Swift, IPMI, ...)")
+    ovh_p.add_argument("module", choices=sorted(MODULE_MAP["ovh"]))
+    ovh_p.add_argument("--app-key", help="OVH application key")
+    ovh_p.add_argument("--region", default="GRA", help="OVHcloud region")
+    _add_common(ovh_p)
+
+    # --- Hetzner ---
+    hetz_p = sub.add_parser("hetzner", help="Hetzner Cloud modules (servers, firewalls, floating IPs, ...)")
+    hetz_p.add_argument("module", choices=sorted(MODULE_MAP["hetzner"]))
+    hetz_p.add_argument("--api-token", help="Hetzner API token")
+    hetz_p.add_argument("--region", default="nbg1", help="Hetzner datacenter/region")
+    _add_common(hetz_p)
 
     return p
 

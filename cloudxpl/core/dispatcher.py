@@ -371,6 +371,7 @@ MODULE_MAP = {
         "avd-privesc": "cloudxpl.modules.vdi.avd_privesc",
         "citrix-session-recording-rce": "cloudxpl.modules.vdi.citrix_session_recording_rce",
         "citrix-vda-lpe": "cloudxpl.modules.vdi.citrix_vda_lpe",
+        "citrix-vdi-cve-2025-6759": "cloudxpl.modules.vdi.citrix_vdi_cve_2025_6759",
         "horizon-escape": "cloudxpl.modules.vdi.horizon_escape",
         "vdi-breakout-clipboard": "cloudxpl.modules.vdi.vdi_breakout_clipboard",
         "vdi-breakout-dialog": "cloudxpl.modules.vdi.vdi_breakout_dialog",
@@ -431,8 +432,13 @@ MODULE_MAP = {
         "Xen Populate-on-Demand Memory Corruption (XSA-507 / CVE-2026-62434)": "cloudxpl.modules.virt.xen_xsa_507",
         "Xen tapdisk Stack Overflow (XSA-521 / CVE-2026-102701)": "cloudxpl.modules.virt.xen_xsa_521",
         "Zenbleed — AMD Zen 2 vzeroupper (CVE-2023-20593)": "cloudxpl.modules.virt.sidechannel_zenbleed",
+        "amd-microcode-cve-2024-56161": "cloudxpl.modules.virt.amd_microcode_cve_2024_56161",
+        "awesome-hyperv-bridge": "cloudxpl.modules.virt.awesome_hyperv_bridge",
+        "awesome-vm-exploit-bridge": "cloudxpl.modules.virt.awesome_vm_exploit_bridge",
         "citrix-escape": "cloudxpl.modules.virt.citrix_escape",
+        "citrix-vapd-exploit": "cloudxpl.modules.virt.citrix_vapd_exploit",
         "citrix-xsa-486": "cloudxpl.modules.virt.citrix_xsa_486",
+        "container-escape-collection-bridge": "cloudxpl.modules.virt.container_escape_collection_bridge",
         "cve-2019-5544": "cloudxpl.modules.virt.cve_2019_5544",
         "cve-2020-3952": "cloudxpl.modules.virt.cve_2020_3952",
         "cve-2020-3992": "cloudxpl.modules.virt.cve_2020_3992",
@@ -447,6 +453,7 @@ MODULE_MAP = {
         "cve-2024-37085": "cloudxpl.modules.virt.cve_2024_37085",
         "cve-2025-22225": "cloudxpl.modules.virt.cve_2025_22225",
         "cve-2025-22226": "cloudxpl.modules.virt.cve_2025_22226",
+        "esxi-brute-bridge": "cloudxpl.modules.virt.esxi_brute_bridge",
         "esxi-cve-2024-22252": "cloudxpl.modules.virt.esxi_cve_2024_22252",
         "esxi-cve-2024-22253": "cloudxpl.modules.virt.esxi_cve_2024_22253",
         "esxi-cve-2024-22254": "cloudxpl.modules.virt.esxi_cve_2024_22254",
@@ -457,11 +464,16 @@ MODULE_MAP = {
         "esxi-ransomware": "cloudxpl.modules.virt.esxi_ransomware",
         "esxi-ssh-exploit": "cloudxpl.modules.virt.esxi_ssh_exploit",
         "esxi-vm-escape": "cloudxpl.modules.virt.esxi_vm_escape",
+        "firecracker-cve-2026-1386": "cloudxpl.modules.virt.firecracker_cve_2026_1386",
         "firecracker-escape": "cloudxpl.modules.virt.firecracker_escape",
+        "hyperv-cve-2019-0887": "cloudxpl.modules.virt.hyperv_cve_2019_0887",
         "hyperv-cve-2021-28476": "cloudxpl.modules.virt.hyperv_cve_2021_28476",
+        "hyperv-cve-2021-34450": "cloudxpl.modules.virt.hyperv_cve_2021_34450",
+        "hyperv-cve-2022-21995": "cloudxpl.modules.virt.hyperv_cve_2022_21995",
         "hyperv-cve-2024-20700": "cloudxpl.modules.virt.hyperv_cve_2024_20700",
         "hyperv-cve-2024-21407": "cloudxpl.modules.virt.hyperv_cve_2024_21407",
         "hyperv-cve-2024-38080": "cloudxpl.modules.virt.hyperv_cve_2024_38080",
+        "hyperv-cve-2024-49117": "cloudxpl.modules.virt.hyperv_cve_2024_49117",
         "hyperv-cve-2025-21333": "cloudxpl.modules.virt.hyperv_cve_2025_21333",
         "hyperv-cve-2025-21334": "cloudxpl.modules.virt.hyperv_cve_2025_21334",
         "hyperv-cve-2025-21335": "cloudxpl.modules.virt.hyperv_cve_2025_21335",
@@ -484,8 +496,11 @@ MODULE_MAP = {
         "kvm-cve-2026-99999": "cloudxpl.modules.virt.kvm_cve_2026_99999",
         "kvm-januscape": "cloudxpl.modules.virt.kvm_januscape",
         "libvirt-enum": "cloudxpl.modules.virt.libvirt_enum",
+        "lolesxi-bridge": "cloudxpl.modules.virt.lolesxi_bridge",
         "msf-vmware-bridge": "cloudxpl.modules.virt.msf_vmware_bridge",
+        "nutanix-cve-2018-7750": "cloudxpl.modules.virt.nutanix_cve_2018_7750",
         "nutanix-enum": "cloudxpl.modules.virt.nutanix_enum",
+        "qemu-cve-2019-14378": "cloudxpl.modules.virt.qemu_cve_2019_14378",
         "qemu-cve-2023-6693": "cloudxpl.modules.virt.qemu_cve_2023_6693",
         "qemu-cve-2024-3446": "cloudxpl.modules.virt.qemu_cve_2024_3446",
         "qemu-cve-2024-4467": "cloudxpl.modules.virt.qemu_cve_2024_4467",
@@ -495,6 +510,12 @@ MODULE_MAP = {
         "qemu-rtl8139-chain": "cloudxpl.modules.virt.qemu_rtl8139_chain",
         "qemu-slirp-escape": "cloudxpl.modules.virt.qemu_slirp_escape",
         "qemu-virtio-exploit": "cloudxpl.modules.virt.qemu_virtio_exploit",
+        "sidechannel-cachewarp": "cloudxpl.modules.virt.sidechannel_cachewarp",
+        "sidechannel-ddrop": "cloudxpl.modules.virt.sidechannel_ddrop",
+        "sidechannel-downfall": "cloudxpl.modules.virt.sidechannel_downfall",
+        "sidechannel-inception": "cloudxpl.modules.virt.sidechannel_inception",
+        "sidechannel-wesee": "cloudxpl.modules.virt.sidechannel_wesee",
+        "sidechannel-zenbleed": "cloudxpl.modules.virt.sidechannel_zenbleed",
         "vCenter Analytics File Upload RCE (CVE-2021-22005)": "cloudxpl.modules.virt.vcenter_cve_2021_22005",
         "vCenter Authenticated RCE (CVE-2024-22274)": "cloudxpl.modules.virt.vcenter_cve_2024_22274",
         "vCenter Local Privilege Escalation (CVE-2024-37081)": "cloudxpl.modules.virt.vcenter_cve_2024_37081",
@@ -504,8 +525,10 @@ MODULE_MAP = {
         "vCenter Unauthenticated RCE (CVE-2021-21972)": "cloudxpl.modules.virt.vcenter_cve_2021_21972",
         "vCenter vmdir Auth Bypass (CVE-2020-3952)": "cloudxpl.modules.virt.vcenter_cve_2020_3952",
         "vCenter vmdir Auth Bypass (Metasploit Bridge)": "cloudxpl.modules.virt.vcenter_vmdir_bridge",
+        "vcenter-cve-2024-22274": "cloudxpl.modules.virt.vcenter_cve_2024_22274",
         "vcenter-cve-2024-37079": "cloudxpl.modules.virt.vcenter_cve_2024_37079",
         "vcenter-cve-2024-37080": "cloudxpl.modules.virt.vcenter_cve_2024_37080",
+        "vcenter-cve-2024-37081": "cloudxpl.modules.virt.vcenter_cve_2024_37081",
         "vcenter-cve-2024-38812": "cloudxpl.modules.virt.vcenter_cve_2024_38812",
         "vcenter-cve-2024-38813": "cloudxpl.modules.virt.vcenter_cve_2024_38813",
         "vcenter-cve-2025-41225": "cloudxpl.modules.virt.vcenter_cve_2025_41225",
@@ -520,6 +543,7 @@ MODULE_MAP = {
         "virt-side-channel": "cloudxpl.modules.virt.virt_side_channel",
         "virt-snapshot-theft": "cloudxpl.modules.virt.virt_snapshot_theft",
         "virt-vtpm-extract": "cloudxpl.modules.virt.virt_vtpm_extract",
+        "vmware-exploitation-bridge": "cloudxpl.modules.virt.vmware_exploitation_bridge",
         "vmware-tools-lpe": "cloudxpl.modules.virt.vmware_tools_lpe",
         "xen-cve-2023-46842": "cloudxpl.modules.virt.xen_cve_2023_46842",
         "xen-grant-escape": "cloudxpl.modules.virt.xen_grant_escape",
@@ -528,6 +552,7 @@ MODULE_MAP = {
         "xen-xsa486": "cloudxpl.modules.virt.xen_xsa486",
         "xen-xsa500": "cloudxpl.modules.virt.xen_xsa500",
         "xen-xsa505": "cloudxpl.modules.virt.xen_xsa505",
+        "xen-xsa507": "cloudxpl.modules.virt.xen_xsa507",
         "xen-xsa517": "cloudxpl.modules.virt.xen_xsa517",
         "xen-xsa521": "cloudxpl.modules.virt.xen_xsa521",
     },
@@ -539,10 +564,12 @@ def dispatch(args: Any) -> int:
     if not module_path:
         print(f"[!] Unknown: {args.command}/{args.module}", file=sys.stderr)
         return 1
+
     try:
         mod = importlib.import_module(module_path)
     except ImportError as exc:
         print(f"[!] Failed to load {module_path}: {exc}", file=sys.stderr)
         print(f"[*] Install provider deps: pip install cloudxpl-forge[{args.command}]", file=sys.stderr)
         return 1
+
     return mod.run(args)

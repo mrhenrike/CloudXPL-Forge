@@ -35,6 +35,7 @@ dependencies = [
     "requests>=2.31.0,<3.0",
     "rich>=13.0",
     "dnspython>=2.4",
+    "xpl-core>=0.1.0",
 ]
 
 [project.optional-dependencies]

@@ -1,0 +1,1549 @@
+{
+  "metadata": {
+    "total_modules": 212,
+    "total_techniques": 35,
+    "categories": {
+      "aws": 45,
+      "azure": 42,
+      "cred": 10,
+      "gcp": 38,
+      "k8s": 28,
+      "multi": 12,
+      "net": 8,
+      "serverless": 14,
+      "storage": 15
+    },
+    "techniques_list": [
+      "T1021",
+      "T1046",
+      "T1059",
+      "T1068",
+      "T1069",
+      "T1078",
+      "T1078.004",
+      "T1087.004",
+      "T1090",
+      "T1098",
+      "T1098.003",
+      "T1133",
+      "T1190",
+      "T1195.002",
+      "T1219",
+      "T1486",
+      "T1499",
+      "T1525",
+      "T1526",
+      "T1528",
+      "T1530",
+      "T1537",
+      "T1552",
+      "T1552.001",
+      "T1552.005",
+      "T1557",
+      "T1562",
+      "T1562.001",
+      "T1562.008",
+      "T1580",
+      "T1584.001",
+      "T1599",
+      "T1610",
+      "T1611",
+      "T1648"
+    ]
+  },
+  "modules": {
+    "aws/cloudformation_exploit": {
+      "capability_id": "cloudxpl.aws.cloudformation_exploit.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1552"
+      ]
+    },
+    "aws/cloudtrail_disable": {
+      "capability_id": "cloudxpl.aws.cloudtrail_disable.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1562.008"
+      ]
+    },
+    "aws/cloudtrail_tamper": {
+      "capability_id": "cloudxpl.aws.cloudtrail_tamper.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1562.008"
+      ]
+    },
+    "aws/codebuild_exploit": {
+      "capability_id": "cloudxpl.aws.codebuild_exploit.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1552"
+      ]
+    },
+    "aws/codepipeline_exploit": {
+      "capability_id": "cloudxpl.aws.codepipeline_exploit.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1195.002"
+      ]
+    },
+    "aws/cognito_exploit": {
+      "capability_id": "cloudxpl.aws.cognito_exploit.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1078"
+      ]
+    },
+    "aws/cve_2024_28056": {
+      "capability_id": "cloudxpl.aws.cve_2024_28056.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1190"
+      ]
+    },
+    "aws/cve_2026_5707": {
+      "capability_id": "cloudxpl.aws.cve_2026_5707.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1190"
+      ]
+    },
+    "aws/cve_2026_5708": {
+      "capability_id": "cloudxpl.aws.cve_2026_5708.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1190"
+      ]
+    },
+    "aws/cve_2026_5709": {
+      "capability_id": "cloudxpl.aws.cve_2026_5709.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1190"
+      ]
+    },
+    "aws/dynamodb_enum": {
+      "capability_id": "cloudxpl.aws.dynamodb_enum.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1530"
+      ]
+    },
+    "aws/ebs_snapshot": {
+      "capability_id": "cloudxpl.aws.ebs_snapshot.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1530"
+      ]
+    },
+    "aws/ec2_enum": {
+      "capability_id": "cloudxpl.aws.ec2_enum.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1580"
+      ]
+    },
+    "aws/ec2_imds_pivot": {
+      "capability_id": "cloudxpl.aws.ec2_imds_pivot.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1552.005",
+        "T1078"
+      ]
+    },
+    "aws/ec2_ssm": {
+      "capability_id": "cloudxpl.aws.ec2_ssm.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1059",
+        "T1021"
+      ]
+    },
+    "aws/ec2_userdata": {
+      "capability_id": "cloudxpl.aws.ec2_userdata.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1552.005"
+      ]
+    },
+    "aws/ecr_enum": {
+      "capability_id": "cloudxpl.aws.ecr_enum.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1525"
+      ]
+    },
+    "aws/ecs_exploit": {
+      "capability_id": "cloudxpl.aws.ecs_exploit.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1610"
+      ]
+    },
+    "aws/eks_enum": {
+      "capability_id": "cloudxpl.aws.eks_enum.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1526"
+      ]
+    },
+    "aws/eks_exploit": {
+      "capability_id": "cloudxpl.aws.eks_exploit.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1078",
+        "T1610"
+      ]
+    },
+    "aws/eventbridge_exploit": {
+      "capability_id": "cloudxpl.aws.eventbridge_exploit.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1648"
+      ]
+    },
+    "aws/glue_exploit": {
+      "capability_id": "cloudxpl.aws.glue_exploit.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1530"
+      ]
+    },
+    "aws/guardduty_bypass": {
+      "capability_id": "cloudxpl.aws.guardduty_bypass.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1562.001"
+      ]
+    },
+    "aws/iam_enum": {
+      "capability_id": "cloudxpl.aws.iam_enum.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1087.004"
+      ]
+    },
+    "aws/iam_privesc": {
+      "capability_id": "cloudxpl.aws.iam_privesc.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1078",
+        "T1068"
+      ]
+    },
+    "aws/lambda_enum": {
+      "capability_id": "cloudxpl.aws.lambda_enum.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1526"
+      ]
+    },
+    "aws/lambda_inject": {
+      "capability_id": "cloudxpl.aws.lambda_inject.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1648"
+      ]
+    },
+    "aws/lambda_persist": {
+      "capability_id": "cloudxpl.aws.lambda_persist.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1525",
+        "T1098"
+      ]
+    },
+    "aws/org_enum": {
+      "capability_id": "cloudxpl.aws.org_enum.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1526"
+      ]
+    },
+    "aws/pacu_bridge": {
+      "capability_id": "cloudxpl.aws.pacu_bridge.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1078",
+        "T1068"
+      ]
+    },
+    "aws/rds_enum": {
+      "capability_id": "cloudxpl.aws.rds_enum.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1526"
+      ]
+    },
+    "aws/rds_exploit": {
+      "capability_id": "cloudxpl.aws.rds_exploit.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1530"
+      ]
+    },
+    "aws/route53_takeover": {
+      "capability_id": "cloudxpl.aws.route53_takeover.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1584.001"
+      ]
+    },
+    "aws/s3_enum": {
+      "capability_id": "cloudxpl.aws.s3_enum.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1530"
+      ]
+    },
+    "aws/s3_exfil": {
+      "capability_id": "cloudxpl.aws.s3_exfil.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1537",
+        "T1530"
+      ]
+    },
+    "aws/s3_exploit": {
+      "capability_id": "cloudxpl.aws.s3_exploit.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1530"
+      ]
+    },
+    "aws/secrets_manager": {
+      "capability_id": "cloudxpl.aws.secrets_manager.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1552"
+      ]
+    },
+    "aws/sns_exploit": {
+      "capability_id": "cloudxpl.aws.sns_exploit.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1530"
+      ]
+    },
+    "aws/sqs_exploit": {
+      "capability_id": "cloudxpl.aws.sqs_exploit.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1530"
+      ]
+    },
+    "aws/ssm_param_store": {
+      "capability_id": "cloudxpl.aws.ssm_param_store.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1552"
+      ]
+    },
+    "aws/sso_enum": {
+      "capability_id": "cloudxpl.aws.sso_enum.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1078"
+      ]
+    },
+    "aws/ssrf_imds": {
+      "capability_id": "cloudxpl.aws.ssrf_imds.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1552.005"
+      ]
+    },
+    "aws/stepfunctions_exploit": {
+      "capability_id": "cloudxpl.aws.stepfunctions_exploit.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1648"
+      ]
+    },
+    "aws/sts_enum": {
+      "capability_id": "cloudxpl.aws.sts_enum.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1078",
+        "T1528"
+      ]
+    },
+    "aws/vpc_enum": {
+      "capability_id": "cloudxpl.aws.vpc_enum.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1580"
+      ]
+    },
+    "azure/aks_enum": {
+      "capability_id": "cloudxpl.azure.aks_enum.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1526"
+      ]
+    },
+    "azure/aks_exploit": {
+      "capability_id": "cloudxpl.azure.aks_exploit.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1610"
+      ]
+    },
+    "azure/app_service_exploit": {
+      "capability_id": "cloudxpl.azure.app_service_exploit.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1552"
+      ]
+    },
+    "azure/arm_injection": {
+      "capability_id": "cloudxpl.azure.arm_injection.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1195.002"
+      ]
+    },
+    "azure/automation_exploit": {
+      "capability_id": "cloudxpl.azure.automation_exploit.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1078"
+      ]
+    },
+    "azure/azurehound_bridge": {
+      "capability_id": "cloudxpl.azure.azurehound_bridge.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1087.004"
+      ]
+    },
+    "azure/blob_exfil": {
+      "capability_id": "cloudxpl.azure.blob_exfil.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1537"
+      ]
+    },
+    "azure/blob_exploit": {
+      "capability_id": "cloudxpl.azure.blob_exploit.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1530"
+      ]
+    },
+    "azure/conditional_access": {
+      "capability_id": "cloudxpl.azure.conditional_access.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1562"
+      ]
+    },
+    "azure/cosmosdb_exploit": {
+      "capability_id": "cloudxpl.azure.cosmosdb_exploit.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1530"
+      ]
+    },
+    "azure/cve_2024_50603": {
+      "capability_id": "cloudxpl.azure.cve_2024_50603.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1190"
+      ]
+    },
+    "azure/cve_2025_29813": {
+      "capability_id": "cloudxpl.azure.cve_2025_29813.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1190"
+      ]
+    },
+    "azure/cve_2025_29827": {
+      "capability_id": "cloudxpl.azure.cve_2025_29827.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1190"
+      ]
+    },
+    "azure/cve_2025_29972": {
+      "capability_id": "cloudxpl.azure.cve_2025_29972.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1190"
+      ]
+    },
+    "azure/cve_2025_53767": {
+      "capability_id": "cloudxpl.azure.cve_2025_53767.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1190"
+      ]
+    },
+    "azure/defender_bypass": {
+      "capability_id": "cloudxpl.azure.defender_bypass.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1562.001"
+      ]
+    },
+    "azure/devops_exploit": {
+      "capability_id": "cloudxpl.azure.devops_exploit.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1195.002"
+      ]
+    },
+    "azure/entra_consent": {
+      "capability_id": "cloudxpl.azure.entra_consent.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1098.003"
+      ]
+    },
+    "azure/entra_enum": {
+      "capability_id": "cloudxpl.azure.entra_enum.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1087.004"
+      ]
+    },
+    "azure/entra_privesc": {
+      "capability_id": "cloudxpl.azure.entra_privesc.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1078.004"
+      ]
+    },
+    "azure/entra_tokens": {
+      "capability_id": "cloudxpl.azure.entra_tokens.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1528"
+      ]
+    },
+    "azure/function_exploit": {
+      "capability_id": "cloudxpl.azure.function_exploit.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1648"
+      ]
+    },
+    "azure/function_persist": {
+      "capability_id": "cloudxpl.azure.function_persist.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1525"
+      ]
+    },
+    "azure/graph_api_abuse": {
+      "capability_id": "cloudxpl.azure.graph_api_abuse.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1528"
+      ]
+    },
+    "azure/keyvault_exploit": {
+      "capability_id": "cloudxpl.azure.keyvault_exploit.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1552"
+      ]
+    },
+    "azure/logic_apps_exploit": {
+      "capability_id": "cloudxpl.azure.logic_apps_exploit.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1648"
+      ]
+    },
+    "azure/managed_identity": {
+      "capability_id": "cloudxpl.azure.managed_identity.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1552.005"
+      ]
+    },
+    "azure/nsg_enum": {
+      "capability_id": "cloudxpl.azure.nsg_enum.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1580"
+      ]
+    },
+    "azure/pim_abuse": {
+      "capability_id": "cloudxpl.azure.pim_abuse.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1078"
+      ]
+    },
+    "azure/rbac_enum": {
+      "capability_id": "cloudxpl.azure.rbac_enum.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1069"
+      ]
+    },
+    "azure/rbac_exploit": {
+      "capability_id": "cloudxpl.azure.rbac_exploit.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1078"
+      ]
+    },
+    "azure/resource_group_enum": {
+      "capability_id": "cloudxpl.azure.resource_group_enum.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1580"
+      ]
+    },
+    "azure/sentinel_bypass": {
+      "capability_id": "cloudxpl.azure.sentinel_bypass.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1562.008"
+      ]
+    },
+    "azure/service_principal": {
+      "capability_id": "cloudxpl.azure.service_principal.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1078.004"
+      ]
+    },
+    "azure/sql_enum": {
+      "capability_id": "cloudxpl.azure.sql_enum.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1526"
+      ]
+    },
+    "azure/sql_exploit": {
+      "capability_id": "cloudxpl.azure.sql_exploit.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1530"
+      ]
+    },
+    "azure/storage_enum": {
+      "capability_id": "cloudxpl.azure.storage_enum.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1530"
+      ]
+    },
+    "azure/stormspotter_bridge": {
+      "capability_id": "cloudxpl.azure.stormspotter_bridge.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1087.004"
+      ]
+    },
+    "azure/subscription_enum": {
+      "capability_id": "cloudxpl.azure.subscription_enum.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1526"
+      ]
+    },
+    "azure/vm_enum": {
+      "capability_id": "cloudxpl.azure.vm_enum.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1580"
+      ]
+    },
+    "azure/vm_exploit": {
+      "capability_id": "cloudxpl.azure.vm_exploit.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1059"
+      ]
+    },
+    "azure/vm_imds": {
+      "capability_id": "cloudxpl.azure.vm_imds.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1552.005"
+      ]
+    },
+    "cred/config_file_scan": {
+      "capability_id": "cloudxpl.cred.config_file_scan.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1552.001"
+      ]
+    },
+    "cred/credential_report": {
+      "capability_id": "cloudxpl.cred.credential_report.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1552"
+      ]
+    },
+    "cred/env_var_scan": {
+      "capability_id": "cloudxpl.cred.env_var_scan.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1552"
+      ]
+    },
+    "cred/federation_abuse": {
+      "capability_id": "cloudxpl.cred.federation_abuse.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1078"
+      ]
+    },
+    "cred/key_rotation_check": {
+      "capability_id": "cloudxpl.cred.key_rotation_check.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1552"
+      ]
+    },
+    "cred/leaked_key_exploit": {
+      "capability_id": "cloudxpl.cred.leaked_key_exploit.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1552"
+      ]
+    },
+    "cred/metadata_harvest": {
+      "capability_id": "cloudxpl.cred.metadata_harvest.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1552.005"
+      ]
+    },
+    "cred/oauth_token_theft": {
+      "capability_id": "cloudxpl.cred.oauth_token_theft.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1528"
+      ]
+    },
+    "cred/temp_cred_extend": {
+      "capability_id": "cloudxpl.cred.temp_cred_extend.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1528"
+      ]
+    },
+    "cred/token_lifetime_abuse": {
+      "capability_id": "cloudxpl.cred.token_lifetime_abuse.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1528"
+      ]
+    },
+    "gcp/artifact_registry": {
+      "capability_id": "cloudxpl.gcp.artifact_registry.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1525"
+      ]
+    },
+    "gcp/bigquery_exploit": {
+      "capability_id": "cloudxpl.gcp.bigquery_exploit.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1530"
+      ]
+    },
+    "gcp/bucket_enum": {
+      "capability_id": "cloudxpl.gcp.bucket_enum.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1530"
+      ]
+    },
+    "gcp/bucket_exfil": {
+      "capability_id": "cloudxpl.gcp.bucket_exfil.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1537"
+      ]
+    },
+    "gcp/bucket_exploit": {
+      "capability_id": "cloudxpl.gcp.bucket_exploit.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1530"
+      ]
+    },
+    "gcp/cloudbuild_exploit": {
+      "capability_id": "cloudxpl.gcp.cloudbuild_exploit.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1195.002"
+      ]
+    },
+    "gcp/cloudfunctions_exploit": {
+      "capability_id": "cloudxpl.gcp.cloudfunctions_exploit.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1648"
+      ]
+    },
+    "gcp/cloudfunctions_persist": {
+      "capability_id": "cloudxpl.gcp.cloudfunctions_persist.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1525"
+      ]
+    },
+    "gcp/cloudrun_exploit": {
+      "capability_id": "cloudxpl.gcp.cloudrun_exploit.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1648"
+      ]
+    },
+    "gcp/cloudsql_enum": {
+      "capability_id": "cloudxpl.gcp.cloudsql_enum.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1526"
+      ]
+    },
+    "gcp/cloudsql_exploit": {
+      "capability_id": "cloudxpl.gcp.cloudsql_exploit.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1530"
+      ]
+    },
+    "gcp/composer_exploit": {
+      "capability_id": "cloudxpl.gcp.composer_exploit.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1648"
+      ]
+    },
+    "gcp/compute_enum": {
+      "capability_id": "cloudxpl.gcp.compute_enum.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1580"
+      ]
+    },
+    "gcp/compute_exploit": {
+      "capability_id": "cloudxpl.gcp.compute_exploit.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1059"
+      ]
+    },
+    "gcp/compute_imds": {
+      "capability_id": "cloudxpl.gcp.compute_imds.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1552.005"
+      ]
+    },
+    "gcp/cve_2025_51591": {
+      "capability_id": "cloudxpl.gcp.cve_2025_51591.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1190"
+      ]
+    },
+    "gcp/cve_2026_2031": {
+      "capability_id": "cloudxpl.gcp.cve_2026_2031.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1190"
+      ]
+    },
+    "gcp/cve_2026_2264": {
+      "capability_id": "cloudxpl.gcp.cve_2026_2264.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1190"
+      ]
+    },
+    "gcp/cve_2026_81867": {
+      "capability_id": "cloudxpl.gcp.cve_2026_81867.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1190"
+      ]
+    },
+    "gcp/dataflow_exploit": {
+      "capability_id": "cloudxpl.gcp.dataflow_exploit.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1648"
+      ]
+    },
+    "gcp/dns_takeover": {
+      "capability_id": "cloudxpl.gcp.dns_takeover.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1584.001"
+      ]
+    },
+    "gcp/gcpbucketbrute_bridge": {
+      "capability_id": "cloudxpl.gcp.gcpbucketbrute_bridge.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1530"
+      ]
+    },
+    "gcp/gke_enum": {
+      "capability_id": "cloudxpl.gcp.gke_enum.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1526"
+      ]
+    },
+    "gcp/gke_exploit": {
+      "capability_id": "cloudxpl.gcp.gke_exploit.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1610"
+      ]
+    },
+    "gcp/iam_privesc": {
+      "capability_id": "cloudxpl.gcp.iam_privesc.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1078",
+        "T1068"
+      ]
+    },
+    "gcp/kms_exploit": {
+      "capability_id": "cloudxpl.gcp.kms_exploit.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1552"
+      ]
+    },
+    "gcp/logging_bypass": {
+      "capability_id": "cloudxpl.gcp.logging_bypass.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1562.008"
+      ]
+    },
+    "gcp/metadata_ssrf": {
+      "capability_id": "cloudxpl.gcp.metadata_ssrf.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1552.005"
+      ]
+    },
+    "gcp/org_policy_enum": {
+      "capability_id": "cloudxpl.gcp.org_policy_enum.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1580"
+      ]
+    },
+    "gcp/project_enum": {
+      "capability_id": "cloudxpl.gcp.project_enum.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1526"
+      ]
+    },
+    "gcp/pubsub_exploit": {
+      "capability_id": "cloudxpl.gcp.pubsub_exploit.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1530"
+      ]
+    },
+    "gcp/sa_impersonate": {
+      "capability_id": "cloudxpl.gcp.sa_impersonate.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1078"
+      ]
+    },
+    "gcp/sa_key_theft": {
+      "capability_id": "cloudxpl.gcp.sa_key_theft.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1552"
+      ]
+    },
+    "gcp/secretmanager_exploit": {
+      "capability_id": "cloudxpl.gcp.secretmanager_exploit.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1552"
+      ]
+    },
+    "gcp/service_account_enum": {
+      "capability_id": "cloudxpl.gcp.service_account_enum.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1087.004"
+      ]
+    },
+    "gcp/terraform_state": {
+      "capability_id": "cloudxpl.gcp.terraform_state.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1552"
+      ]
+    },
+    "gcp/vpc_firewall_enum": {
+      "capability_id": "cloudxpl.gcp.vpc_firewall_enum.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1580"
+      ]
+    },
+    "gcp/workload_identity": {
+      "capability_id": "cloudxpl.gcp.workload_identity.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1078"
+      ]
+    },
+    "k8s/admission_bypass": {
+      "capability_id": "cloudxpl.k8s.admission_bypass.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1562"
+      ]
+    },
+    "k8s/api_server_anon": {
+      "capability_id": "cloudxpl.k8s.api_server_anon.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1078"
+      ]
+    },
+    "k8s/cluster_enum": {
+      "capability_id": "cloudxpl.k8s.cluster_enum.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1526"
+      ]
+    },
+    "k8s/configmap_dump": {
+      "capability_id": "cloudxpl.k8s.configmap_dump.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1552"
+      ]
+    },
+    "k8s/container_escape": {
+      "capability_id": "cloudxpl.k8s.container_escape.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "k8s/crd_abuse": {
+      "capability_id": "cloudxpl.k8s.crd_abuse.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1078"
+      ]
+    },
+    "k8s/cve_2024_21626": {
+      "capability_id": "cloudxpl.k8s.cve_2024_21626.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "k8s/cve_2025_31133": {
+      "capability_id": "cloudxpl.k8s.cve_2025_31133.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "k8s/cve_2025_52565": {
+      "capability_id": "cloudxpl.k8s.cve_2025_52565.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "k8s/cve_2025_52881": {
+      "capability_id": "cloudxpl.k8s.cve_2025_52881.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "k8s/etcd_exploit": {
+      "capability_id": "cloudxpl.k8s.etcd_exploit.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1552"
+      ]
+    },
+    "k8s/helm_exploit": {
+      "capability_id": "cloudxpl.k8s.helm_exploit.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1552"
+      ]
+    },
+    "k8s/hostpath_mount": {
+      "capability_id": "cloudxpl.k8s.hostpath_mount.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "k8s/kube_hunter_bridge": {
+      "capability_id": "cloudxpl.k8s.kube_hunter_bridge.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1526"
+      ]
+    },
+    "k8s/kubelet_exploit": {
+      "capability_id": "cloudxpl.k8s.kubelet_exploit.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1610"
+      ]
+    },
+    "k8s/network_policy_bypass": {
+      "capability_id": "cloudxpl.k8s.network_policy_bypass.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1562"
+      ]
+    },
+    "k8s/node_proxy": {
+      "capability_id": "cloudxpl.k8s.node_proxy.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1090"
+      ]
+    },
+    "k8s/peirates_bridge": {
+      "capability_id": "cloudxpl.k8s.peirates_bridge.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1610"
+      ]
+    },
+    "k8s/pod_enum": {
+      "capability_id": "cloudxpl.k8s.pod_enum.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1526"
+      ]
+    },
+    "k8s/pod_escape_cve": {
+      "capability_id": "cloudxpl.k8s.pod_escape_cve.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "k8s/privileged_pod": {
+      "capability_id": "cloudxpl.k8s.privileged_pod.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "k8s/rbac_enum": {
+      "capability_id": "cloudxpl.k8s.rbac_enum.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1069"
+      ]
+    },
+    "k8s/rbac_escalation": {
+      "capability_id": "cloudxpl.k8s.rbac_escalation.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1078"
+      ]
+    },
+    "k8s/registry_exploit": {
+      "capability_id": "cloudxpl.k8s.registry_exploit.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1525"
+      ]
+    },
+    "k8s/sa_token_theft": {
+      "capability_id": "cloudxpl.k8s.sa_token_theft.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1528"
+      ]
+    },
+    "k8s/secret_dump": {
+      "capability_id": "cloudxpl.k8s.secret_dump.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1552"
+      ]
+    },
+    "k8s/service_mesh_exploit": {
+      "capability_id": "cloudxpl.k8s.service_mesh_exploit.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1557"
+      ]
+    },
+    "k8s/sidecar_inject": {
+      "capability_id": "cloudxpl.k8s.sidecar_inject.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1610"
+      ]
+    },
+    "multi/ci_cd_exploit": {
+      "capability_id": "cloudxpl.multi.ci_cd_exploit.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1195.002"
+      ]
+    },
+    "multi/cloudfox_bridge": {
+      "capability_id": "cloudxpl.multi.cloudfox_bridge.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1580"
+      ]
+    },
+    "multi/cross_cloud_pivot": {
+      "capability_id": "cloudxpl.multi.cross_cloud_pivot.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1078"
+      ]
+    },
+    "multi/docker_escape": {
+      "capability_id": "cloudxpl.multi.docker_escape.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "multi/docker_socket": {
+      "capability_id": "cloudxpl.multi.docker_socket.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "multi/git_secret_scan": {
+      "capability_id": "cloudxpl.multi.git_secret_scan.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1552"
+      ]
+    },
+    "multi/iac_secret_scan": {
+      "capability_id": "cloudxpl.multi.iac_secret_scan.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1552"
+      ]
+    },
+    "multi/prowler_bridge": {
+      "capability_id": "cloudxpl.multi.prowler_bridge.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1526"
+      ]
+    },
+    "multi/scoutsuite_bridge": {
+      "capability_id": "cloudxpl.multi.scoutsuite_bridge.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1526"
+      ]
+    },
+    "multi/steampipe_bridge": {
+      "capability_id": "cloudxpl.multi.steampipe_bridge.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1526"
+      ]
+    },
+    "multi/terraform_plan_inject": {
+      "capability_id": "cloudxpl.multi.terraform_plan_inject.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1195.002"
+      ]
+    },
+    "multi/terraform_state_exploit": {
+      "capability_id": "cloudxpl.multi.terraform_state_exploit.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1552"
+      ]
+    },
+    "net/dns_takeover": {
+      "capability_id": "cloudxpl.net.dns_takeover.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1584.001"
+      ]
+    },
+    "net/exposed_services": {
+      "capability_id": "cloudxpl.net.exposed_services.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1046"
+      ]
+    },
+    "net/load_balancer_enum": {
+      "capability_id": "cloudxpl.net.load_balancer_enum.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1580"
+      ]
+    },
+    "net/peering_abuse": {
+      "capability_id": "cloudxpl.net.peering_abuse.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1599"
+      ]
+    },
+    "net/privatelink_abuse": {
+      "capability_id": "cloudxpl.net.privatelink_abuse.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1599"
+      ]
+    },
+    "net/sg_analysis": {
+      "capability_id": "cloudxpl.net.sg_analysis.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1580"
+      ]
+    },
+    "net/vpc_enum": {
+      "capability_id": "cloudxpl.net.vpc_enum.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1580"
+      ]
+    },
+    "net/vpn_exploit": {
+      "capability_id": "cloudxpl.net.vpn_exploit.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1133"
+      ]
+    },
+    "serverless/api_gateway_bypass": {
+      "capability_id": "cloudxpl.serverless.api_gateway_bypass.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1190"
+      ]
+    },
+    "serverless/cold_start_abuse": {
+      "capability_id": "cloudxpl.serverless.cold_start_abuse.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1499"
+      ]
+    },
+    "serverless/concurrency_abuse": {
+      "capability_id": "cloudxpl.serverless.concurrency_abuse.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1499"
+      ]
+    },
+    "serverless/env_extraction": {
+      "capability_id": "cloudxpl.serverless.env_extraction.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1552"
+      ]
+    },
+    "serverless/event_injection": {
+      "capability_id": "cloudxpl.serverless.event_injection.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1648"
+      ]
+    },
+    "serverless/iam_role_chain": {
+      "capability_id": "cloudxpl.serverless.iam_role_chain.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1078"
+      ]
+    },
+    "serverless/layer_poisoning": {
+      "capability_id": "cloudxpl.serverless.layer_poisoning.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1525"
+      ]
+    },
+    "serverless/log_injection": {
+      "capability_id": "cloudxpl.serverless.log_injection.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1562.008"
+      ]
+    },
+    "serverless/reverse_shell": {
+      "capability_id": "cloudxpl.serverless.reverse_shell.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1219"
+      ]
+    },
+    "serverless/runtime_rce": {
+      "capability_id": "cloudxpl.serverless.runtime_rce.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1059"
+      ]
+    },
+    "serverless/step_function_abuse": {
+      "capability_id": "cloudxpl.serverless.step_function_abuse.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1648"
+      ]
+    },
+    "serverless/tmp_persistence": {
+      "capability_id": "cloudxpl.serverless.tmp_persistence.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1525"
+      ]
+    },
+    "serverless/trigger_hijack": {
+      "capability_id": "cloudxpl.serverless.trigger_hijack.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1648"
+      ]
+    },
+    "serverless/vpc_pivot": {
+      "capability_id": "cloudxpl.serverless.vpc_pivot.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1021"
+      ]
+    },
+    "storage/acl_check": {
+      "capability_id": "cloudxpl.storage.acl_check.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1530"
+      ]
+    },
+    "storage/bucket_bruteforce": {
+      "capability_id": "cloudxpl.storage.bucket_bruteforce.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1530"
+      ]
+    },
+    "storage/bucket_finder": {
+      "capability_id": "cloudxpl.storage.bucket_finder.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1530"
+      ]
+    },
+    "storage/bucketloot_bridge": {
+      "capability_id": "cloudxpl.storage.bucketloot_bridge.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1530"
+      ]
+    },
+    "storage/cors_exploit": {
+      "capability_id": "cloudxpl.storage.cors_exploit.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1530"
+      ]
+    },
+    "storage/download_mass": {
+      "capability_id": "cloudxpl.storage.download_mass.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1530"
+      ]
+    },
+    "storage/grayhat_search": {
+      "capability_id": "cloudxpl.storage.grayhat_search.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1530"
+      ]
+    },
+    "storage/policy_abuse": {
+      "capability_id": "cloudxpl.storage.policy_abuse.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1530"
+      ]
+    },
+    "storage/presigned_abuse": {
+      "capability_id": "cloudxpl.storage.presigned_abuse.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1530"
+      ]
+    },
+    "storage/public_objects": {
+      "capability_id": "cloudxpl.storage.public_objects.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1530"
+      ]
+    },
+    "storage/ransomware_sim": {
+      "capability_id": "cloudxpl.storage.ransomware_sim.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1486"
+      ]
+    },
+    "storage/s3scanner_bridge": {
+      "capability_id": "cloudxpl.storage.s3scanner_bridge.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1530"
+      ]
+    },
+    "storage/static_site_takeover": {
+      "capability_id": "cloudxpl.storage.static_site_takeover.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1584.001"
+      ]
+    },
+    "storage/upload_exploit": {
+      "capability_id": "cloudxpl.storage.upload_exploit.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1530"
+      ]
+    },
+    "storage/versioning_exploit": {
+      "capability_id": "cloudxpl.storage.versioning_exploit.v1",
+      "safety_class": "ACTIVE",
+      "mitre": [
+        "T1530"
+      ]
+    }
+  }
+}

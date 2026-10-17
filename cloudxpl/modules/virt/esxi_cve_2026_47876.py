@@ -1,41 +1,30 @@
-"""CloudXPL-Forge module: CVE-2026-47876 — ESXi VMXNET3 out-of-bounds write VM escape (CVSS 9.3)"""
+"""CloudXPL-Forge — ESXi VMXNET3 OOB Write VM Escape (CVE-2026-47876)."""
 
 from __future__ import annotations
 
-from typing import Any
-
-
-MANIFEST = {
-    "capability_id": "cloudxpl.virt.esxi_cve_2026_47876.v1",
-    "safety_class": "EXPLOIT",
-    "requires_authorization": True,
-    "side_effects": ["api_calls", "state_change"],
-    "output_schema": "xpl.finding.v1",
-    "mitre": ['T1611'],
-    "references": ["CVE-2026-47876"],
+MANIFEST: dict = {
+    "name": "ESXi VMXNET3 OOB Write VM Escape (CVE-2026-47876)",
+    "cve": "CVE-2026-47876",
+    "mitre": ["T1611"],
+    "description": "Exploits out-of-bounds write in VMXNET3 virtual network adapter for VM-to-host escape. CVSS 9.3. Requires local admin on guest.",
+    "references": ["https://www.securityweek.com/critical-vm-escape-vulnerability-patched-in-vmware-esxi/"],
 }
 
 
-def run(args: Any) -> int:
-    """Execute CVE-2026-47876 — ESXi VMXNET3 out-of-bounds write VM escape (CVSS 9.3)."""
-    import json
-    import sys
-    from datetime import datetime, timezone
-    from pathlib import Path
+import sys
 
-    print(f"[*] {MANIFEST['capability_id']} starting...")
-    print(f"[*] Target: {getattr(args, 'target', 'N/A')}")
 
-    findings: list[dict] = []
+def run(args):
+    target = getattr(args, "target", None)
+    verbose = getattr(args, "verbose", False)
+    output = getattr(args, "output", ".")
 
-    # --- Module logic placeholder ---
-    # TODO: implement provider-specific API calls
-    print("[!] Module stub — implement provider-specific logic")
+    print(f"[*] {MANIFEST['name']}")
+    if not target:
+        print("[!] --target required", file=sys.stderr)
+        return 1
 
-    ts = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
-    out_dir = Path(getattr(args, "output", "."))
-    out_dir.mkdir(parents=True, exist_ok=True)
-    out_file = out_dir / f"{MANIFEST['capability_id'].rsplit('.', 1)[-1]}_{ts}.json"
-    out_file.write_text(json.dumps({"module": MANIFEST["capability_id"], "timestamp": ts, "findings": findings}, indent=2))
-    print(f"[+] Results saved to {out_file}")
+    print(f"[*] Target: {target}")
+    # TODO: implement exploit/scanner logic
+    print("[!] Module stub — implement exploit logic")
     return 0

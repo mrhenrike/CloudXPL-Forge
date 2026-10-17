@@ -1,0 +1,1394 @@
+{
+  "mapped_modules": 421,
+  "modules": {
+    "alibaba/cloudtoolkit_bridge": [
+      "T1526"
+    ],
+    "alibaba/cve_2026_19339": [
+      "T1190"
+    ],
+    "alibaba/ecs_enum": [
+      "T1580"
+    ],
+    "alibaba/ecs_metadata": [
+      "T1552.005"
+    ],
+    "alibaba/oss_enum": [
+      "T1526"
+    ],
+    "alibaba/oss_exploit": [
+      "T1530"
+    ],
+    "alibaba/ram_enum": [
+      "T1087.004"
+    ],
+    "alibaba/rds_enum": [
+      "T1580"
+    ],
+    "aws/cloudformation_exploit": [
+      "T1552"
+    ],
+    "aws/cloudtrail_disable": [
+      "T1562.008"
+    ],
+    "aws/cloudtrail_tamper": [
+      "T1562.008"
+    ],
+    "aws/codebuild_exploit": [
+      "T1552"
+    ],
+    "aws/codepipeline_exploit": [
+      "T1195.002"
+    ],
+    "aws/cognito_exploit": [
+      "T1078"
+    ],
+    "aws/cve_2024_28056": [
+      "T1190"
+    ],
+    "aws/cve_2026_5707": [
+      "T1190"
+    ],
+    "aws/cve_2026_5708": [
+      "T1190"
+    ],
+    "aws/cve_2026_5709": [
+      "T1190"
+    ],
+    "aws/dynamodb_enum": [
+      "T1530"
+    ],
+    "aws/ebs_snapshot": [
+      "T1530"
+    ],
+    "aws/ec2_enum": [
+      "T1580"
+    ],
+    "aws/ec2_imds_pivot": [
+      "T1552.005",
+      "T1078"
+    ],
+    "aws/ec2_ssm": [
+      "T1059",
+      "T1021"
+    ],
+    "aws/ec2_userdata": [
+      "T1552.005"
+    ],
+    "aws/ecr_enum": [
+      "T1525"
+    ],
+    "aws/ecs_exploit": [
+      "T1610"
+    ],
+    "aws/eks_enum": [
+      "T1526"
+    ],
+    "aws/eks_exploit": [
+      "T1078",
+      "T1610"
+    ],
+    "aws/eventbridge_exploit": [
+      "T1648"
+    ],
+    "aws/glue_exploit": [
+      "T1530"
+    ],
+    "aws/guardduty_bypass": [
+      "T1562.001"
+    ],
+    "aws/iam_enum": [
+      "T1087.004"
+    ],
+    "aws/iam_privesc": [
+      "T1078",
+      "T1068"
+    ],
+    "aws/lambda_enum": [
+      "T1526"
+    ],
+    "aws/lambda_inject": [
+      "T1648"
+    ],
+    "aws/lambda_persist": [
+      "T1525",
+      "T1098"
+    ],
+    "aws/org_enum": [
+      "T1526"
+    ],
+    "aws/pacu_bridge": [
+      "T1078",
+      "T1068"
+    ],
+    "aws/rds_enum": [
+      "T1526"
+    ],
+    "aws/rds_exploit": [
+      "T1530"
+    ],
+    "aws/route53_takeover": [
+      "T1584.001"
+    ],
+    "aws/s3_enum": [
+      "T1530"
+    ],
+    "aws/s3_exfil": [
+      "T1537",
+      "T1530"
+    ],
+    "aws/s3_exploit": [
+      "T1530"
+    ],
+    "aws/secrets_manager": [
+      "T1552"
+    ],
+    "aws/sns_exploit": [
+      "T1530"
+    ],
+    "aws/sqs_exploit": [
+      "T1530"
+    ],
+    "aws/ssm_param_store": [
+      "T1552"
+    ],
+    "aws/sso_enum": [
+      "T1078"
+    ],
+    "aws/ssrf_imds": [
+      "T1552.005"
+    ],
+    "aws/stepfunctions_exploit": [
+      "T1648"
+    ],
+    "aws/sts_enum": [
+      "T1078",
+      "T1528"
+    ],
+    "aws/vpc_enum": [
+      "T1580"
+    ],
+    "azure/aks_enum": [
+      "T1526"
+    ],
+    "azure/aks_exploit": [
+      "T1610"
+    ],
+    "azure/app_service_exploit": [
+      "T1552"
+    ],
+    "azure/arm_injection": [
+      "T1195.002"
+    ],
+    "azure/automation_exploit": [
+      "T1078"
+    ],
+    "azure/azurehound_bridge": [
+      "T1087.004"
+    ],
+    "azure/azurescape": [
+      "T1611",
+      "T1552"
+    ],
+    "azure/blob_exfil": [
+      "T1537"
+    ],
+    "azure/blob_exploit": [
+      "T1530"
+    ],
+    "azure/conditional_access": [
+      "T1562"
+    ],
+    "azure/cosmosdb_exploit": [
+      "T1530"
+    ],
+    "azure/cve_2024_50603": [
+      "T1190"
+    ],
+    "azure/cve_2025_29813": [
+      "T1190"
+    ],
+    "azure/cve_2025_29827": [
+      "T1190"
+    ],
+    "azure/cve_2025_29972": [
+      "T1190"
+    ],
+    "azure/cve_2025_53767": [
+      "T1190"
+    ],
+    "azure/cve_2026_20965": [
+      "T1190",
+      "T1210"
+    ],
+    "azure/defender_bypass": [
+      "T1562.001"
+    ],
+    "azure/devops_exploit": [
+      "T1195.002"
+    ],
+    "azure/entra_consent": [
+      "T1098.003"
+    ],
+    "azure/entra_enum": [
+      "T1087.004"
+    ],
+    "azure/entra_privesc": [
+      "T1078.004"
+    ],
+    "azure/entra_tokens": [
+      "T1528"
+    ],
+    "azure/fabricscape": [
+      "T1611",
+      "T1068"
+    ],
+    "azure/function_exploit": [
+      "T1648"
+    ],
+    "azure/function_persist": [
+      "T1525"
+    ],
+    "azure/functions_escape": [
+      "T1611"
+    ],
+    "azure/graph_api_abuse": [
+      "T1528"
+    ],
+    "azure/keyvault_exploit": [
+      "T1552"
+    ],
+    "azure/logic_apps_exploit": [
+      "T1648"
+    ],
+    "azure/managed_identity": [
+      "T1552.005"
+    ],
+    "azure/nsg_enum": [
+      "T1580"
+    ],
+    "azure/pim_abuse": [
+      "T1078"
+    ],
+    "azure/rbac_enum": [
+      "T1069"
+    ],
+    "azure/rbac_exploit": [
+      "T1078"
+    ],
+    "azure/resource_group_enum": [
+      "T1580"
+    ],
+    "azure/sentinel_bypass": [
+      "T1562.008"
+    ],
+    "azure/service_principal": [
+      "T1078.004"
+    ],
+    "azure/sql_enum": [
+      "T1526"
+    ],
+    "azure/sql_exploit": [
+      "T1530"
+    ],
+    "azure/storage_enum": [
+      "T1530"
+    ],
+    "azure/stormspotter_bridge": [
+      "T1087.004"
+    ],
+    "azure/subscription_enum": [
+      "T1526"
+    ],
+    "azure/vm_enum": [
+      "T1580"
+    ],
+    "azure/vm_exploit": [
+      "T1059"
+    ],
+    "azure/vm_imds": [
+      "T1552.005"
+    ],
+    "cicd/cicd_secret_dump": [
+      "T1552.001"
+    ],
+    "cicd/circleci_runner_escape": [
+      "T1611",
+      "T1059"
+    ],
+    "cicd/gha_runner_escape": [
+      "T1611",
+      "T1195.002"
+    ],
+    "cicd/gha_supply_chain": [
+      "T1195.002"
+    ],
+    "cicd/gitlab_ci_rce": [
+      "T1059",
+      "T1068"
+    ],
+    "cicd/gitlab_runner_hijack": [
+      "T1078",
+      "T1068"
+    ],
+    "cicd/jenkins_agent_abuse": [
+      "T1552",
+      "T1068"
+    ],
+    "cicd/jenkins_plugin_privesc": [
+      "T1068",
+      "T1552"
+    ],
+    "cicd/terraform_agent_abuse": [
+      "T1195.002"
+    ],
+    "cicd/terraform_token_leak": [
+      "T1552"
+    ],
+    "cred/config_file_scan": [
+      "T1552.001"
+    ],
+    "cred/credential_report": [
+      "T1552"
+    ],
+    "cred/env_var_scan": [
+      "T1552"
+    ],
+    "cred/federation_abuse": [
+      "T1078"
+    ],
+    "cred/key_rotation_check": [
+      "T1552"
+    ],
+    "cred/leaked_key_exploit": [
+      "T1552"
+    ],
+    "cred/metadata_harvest": [
+      "T1552.005"
+    ],
+    "cred/mfa_relay": [
+      "T1557",
+      "T1111"
+    ],
+    "cred/oauth_token_theft": [
+      "T1528"
+    ],
+    "cred/rsa_netwitness_exploit": [
+      "T1190"
+    ],
+    "cred/rsa_securid_enum": [
+      "T1078"
+    ],
+    "cred/seed_theft_check": [
+      "T1552"
+    ],
+    "cred/temp_cred_extend": [
+      "T1528"
+    ],
+    "cred/token_lifetime_abuse": [
+      "T1528"
+    ],
+    "digitalocean/api_token_abuse": [
+      "T1528"
+    ],
+    "digitalocean/doks_enum": [
+      "T1526"
+    ],
+    "digitalocean/droplet_agent_rce": [
+      "T1059"
+    ],
+    "digitalocean/droplet_enum": [
+      "T1580"
+    ],
+    "digitalocean/firewall_enum": [
+      "T1046",
+      "T1580"
+    ],
+    "digitalocean/metadata_ssrf": [
+      "T1552.005"
+    ],
+    "digitalocean/spaces_enum": [
+      "T1526"
+    ],
+    "digitalocean/spaces_exploit": [
+      "T1530"
+    ],
+    "gcp/artifact_registry": [
+      "T1525"
+    ],
+    "gcp/bigquery_exploit": [
+      "T1530"
+    ],
+    "gcp/bucket_enum": [
+      "T1530"
+    ],
+    "gcp/bucket_exfil": [
+      "T1537"
+    ],
+    "gcp/bucket_exploit": [
+      "T1530"
+    ],
+    "gcp/cloud_armor_bypass": [
+      "T1190",
+      "T1562"
+    ],
+    "gcp/cloudbuild_exploit": [
+      "T1195.002"
+    ],
+    "gcp/cloudbuild_supply_chain": [
+      "T1195.002",
+      "T1525"
+    ],
+    "gcp/cloudfunctions_exploit": [
+      "T1648"
+    ],
+    "gcp/cloudfunctions_persist": [
+      "T1525"
+    ],
+    "gcp/cloudrun_exploit": [
+      "T1648"
+    ],
+    "gcp/cloudsql_enum": [
+      "T1526"
+    ],
+    "gcp/cloudsql_exploit": [
+      "T1530"
+    ],
+    "gcp/composer_exploit": [
+      "T1648"
+    ],
+    "gcp/compute_enum": [
+      "T1580"
+    ],
+    "gcp/compute_exploit": [
+      "T1059"
+    ],
+    "gcp/compute_imds": [
+      "T1552.005"
+    ],
+    "gcp/cve_2025_51591": [
+      "T1190"
+    ],
+    "gcp/cve_2026_2031": [
+      "T1190"
+    ],
+    "gcp/cve_2026_2264": [
+      "T1190"
+    ],
+    "gcp/cve_2026_31431": [
+      "T1611"
+    ],
+    "gcp/cve_2026_46300": [
+      "T1611"
+    ],
+    "gcp/cve_2026_81867": [
+      "T1190"
+    ],
+    "gcp/dataflow_exploit": [
+      "T1648"
+    ],
+    "gcp/dns_takeover": [
+      "T1584.001"
+    ],
+    "gcp/gcpbucketbrute_bridge": [
+      "T1530"
+    ],
+    "gcp/gke_autopilot_escape": [
+      "T1611"
+    ],
+    "gcp/gke_enum": [
+      "T1526"
+    ],
+    "gcp/gke_exploit": [
+      "T1610"
+    ],
+    "gcp/iam_privesc": [
+      "T1078",
+      "T1068"
+    ],
+    "gcp/iap_bypass": [
+      "T1190",
+      "T1557"
+    ],
+    "gcp/imagerunner_exploit": [
+      "T1525"
+    ],
+    "gcp/kms_exploit": [
+      "T1552"
+    ],
+    "gcp/logging_bypass": [
+      "T1562.008"
+    ],
+    "gcp/metadata_ssrf": [
+      "T1552.005"
+    ],
+    "gcp/org_policy_enum": [
+      "T1580"
+    ],
+    "gcp/project_enum": [
+      "T1526"
+    ],
+    "gcp/pubsub_exploit": [
+      "T1530"
+    ],
+    "gcp/sa_impersonate": [
+      "T1078"
+    ],
+    "gcp/sa_key_theft": [
+      "T1552"
+    ],
+    "gcp/secretmanager_exploit": [
+      "T1552"
+    ],
+    "gcp/service_account_enum": [
+      "T1087.004"
+    ],
+    "gcp/terraform_state": [
+      "T1552"
+    ],
+    "gcp/vpc_firewall_enum": [
+      "T1580"
+    ],
+    "gcp/wif_abuse": [
+      "T1078.004",
+      "T1528"
+    ],
+    "gcp/workload_identity": [
+      "T1078"
+    ],
+    "hetzner/api_token_abuse": [
+      "T1528"
+    ],
+    "hetzner/firewall_enum": [
+      "T1046",
+      "T1580"
+    ],
+    "hetzner/floating_ip_hijack": [
+      "T1584.001"
+    ],
+    "hetzner/metadata_ssrf": [
+      "T1552.005"
+    ],
+    "hetzner/server_enum": [
+      "T1580"
+    ],
+    "ibm/cloudpak_exploit": [
+      "T1190"
+    ],
+    "ibm/cos_enum": [
+      "T1526"
+    ],
+    "ibm/cos_exploit": [
+      "T1530"
+    ],
+    "ibm/iam_enum": [
+      "T1087.004"
+    ],
+    "ibm/qradar_exploit": [
+      "T1552"
+    ],
+    "ibm/vpc_enum": [
+      "T1580"
+    ],
+    "k8s/admission_bypass": [
+      "T1562"
+    ],
+    "k8s/api_server_anon": [
+      "T1078"
+    ],
+    "k8s/cluster_enum": [
+      "T1526"
+    ],
+    "k8s/configmap_dump": [
+      "T1552"
+    ],
+    "k8s/container_escape": [
+      "T1611"
+    ],
+    "k8s/crd_abuse": [
+      "T1078"
+    ],
+    "k8s/cve_2019_5736": [
+      "T1611"
+    ],
+    "k8s/cve_2021_30465": [
+      "T1611"
+    ],
+    "k8s/cve_2022_0492": [
+      "T1611"
+    ],
+    "k8s/cve_2022_0847": [
+      "T1611",
+      "T1068"
+    ],
+    "k8s/cve_2022_23648": [
+      "T1611",
+      "T1005"
+    ],
+    "k8s/cve_2024_0132": [
+      "T1611"
+    ],
+    "k8s/cve_2024_1753": [
+      "T1611"
+    ],
+    "k8s/cve_2024_21626": [
+      "T1611"
+    ],
+    "k8s/cve_2024_23651": [
+      "T1611"
+    ],
+    "k8s/cve_2024_23652": [
+      "T1485",
+      "T1611"
+    ],
+    "k8s/cve_2024_23653": [
+      "T1611"
+    ],
+    "k8s/cve_2025_23266": [
+      "T1611"
+    ],
+    "k8s/cve_2025_31133": [
+      "T1611"
+    ],
+    "k8s/cve_2025_52565": [
+      "T1611"
+    ],
+    "k8s/cve_2025_52881": [
+      "T1611"
+    ],
+    "k8s/etcd_exploit": [
+      "T1552"
+    ],
+    "k8s/helm_exploit": [
+      "T1552"
+    ],
+    "k8s/hostpath_mount": [
+      "T1611"
+    ],
+    "k8s/kube_hunter_bridge": [
+      "T1526"
+    ],
+    "k8s/kubelet_exploit": [
+      "T1610"
+    ],
+    "k8s/network_policy_bypass": [
+      "T1562"
+    ],
+    "k8s/node_proxy": [
+      "T1090"
+    ],
+    "k8s/peirates_bridge": [
+      "T1610"
+    ],
+    "k8s/pod_enum": [
+      "T1526"
+    ],
+    "k8s/pod_escape_cve": [
+      "T1611"
+    ],
+    "k8s/privileged_pod": [
+      "T1611"
+    ],
+    "k8s/rbac_enum": [
+      "T1069"
+    ],
+    "k8s/rbac_escalation": [
+      "T1078"
+    ],
+    "k8s/registry_exploit": [
+      "T1525"
+    ],
+    "k8s/runc_cve_2019_5736": [
+      "T1611"
+    ],
+    "k8s/sa_token_theft": [
+      "T1528"
+    ],
+    "k8s/secret_dump": [
+      "T1552"
+    ],
+    "k8s/service_mesh_exploit": [
+      "T1557"
+    ],
+    "k8s/sidecar_inject": [
+      "T1610"
+    ],
+    "multi/ci_cd_exploit": [
+      "T1195.002"
+    ],
+    "multi/cloud_side_channel": [
+      "T1040",
+      "T1005"
+    ],
+    "multi/cloudfox_bridge": [
+      "T1580"
+    ],
+    "multi/cloudtoolkit_multi": [
+      "T1526"
+    ],
+    "multi/cross_cloud_pivot": [
+      "T1078"
+    ],
+    "multi/docker_escape": [
+      "T1611"
+    ],
+    "multi/docker_socket": [
+      "T1611"
+    ],
+    "multi/firecracker_escape": [
+      "T1611"
+    ],
+    "multi/git_secret_scan": [
+      "T1552"
+    ],
+    "multi/huawei_recon": [
+      "T1526",
+      "T1580"
+    ],
+    "multi/iac_secret_scan": [
+      "T1552"
+    ],
+    "multi/openstack_generic": [
+      "T1526"
+    ],
+    "multi/prowler_bridge": [
+      "T1526"
+    ],
+    "multi/scoutsuite_bridge": [
+      "T1526"
+    ],
+    "multi/steampipe_bridge": [
+      "T1526"
+    ],
+    "multi/terraform_plan_inject": [
+      "T1195.002"
+    ],
+    "multi/terraform_state_exploit": [
+      "T1552"
+    ],
+    "net/dns_takeover": [
+      "T1584.001"
+    ],
+    "net/exposed_services": [
+      "T1046"
+    ],
+    "net/load_balancer_enum": [
+      "T1580"
+    ],
+    "net/peering_abuse": [
+      "T1599"
+    ],
+    "net/privatelink_abuse": [
+      "T1599"
+    ],
+    "net/sg_analysis": [
+      "T1580"
+    ],
+    "net/vpc_enum": [
+      "T1580"
+    ],
+    "net/vpn_exploit": [
+      "T1133"
+    ],
+    "oci/audit_bypass": [
+      "T1562.008"
+    ],
+    "oci/bucket_enum": [
+      "T1526",
+      "T1580"
+    ],
+    "oci/bucket_exploit": [
+      "T1530"
+    ],
+    "oci/compute_enum": [
+      "T1580"
+    ],
+    "oci/cve_2025_61882": [
+      "T1190"
+    ],
+    "oci/cve_2026_21962": [
+      "T1190"
+    ],
+    "oci/iam_enum": [
+      "T1087.004"
+    ],
+    "oci/metadata_ssrf": [
+      "T1552.005"
+    ],
+    "oci/ocinfernobridge": [
+      "T1526"
+    ],
+    "oci/volume_attach": [
+      "T1530",
+      "T1578"
+    ],
+    "ovh/api_abuse": [
+      "T1528"
+    ],
+    "ovh/bare_metal_ipmi": [
+      "T1133"
+    ],
+    "ovh/email_spoof": [
+      "T1566"
+    ],
+    "ovh/openstack_enum": [
+      "T1526",
+      "T1580"
+    ],
+    "ovh/swift_exploit": [
+      "T1530"
+    ],
+    "ovh/vrack_lateral": [
+      "T1021"
+    ],
+    "paas/aci_azurescape": [
+      "T1611"
+    ],
+    "paas/appservice_sandbox_escape": [
+      "T1611"
+    ],
+    "paas/beanstalk_escape": [
+      "T1611"
+    ],
+    "paas/cloudrun_runc_escape": [
+      "T1611"
+    ],
+    "paas/fargate_firecracker": [
+      "T1611"
+    ],
+    "paas/gcp_appint_sandbox": [
+      "T1611"
+    ],
+    "paas/heroku_dyno_recon": [
+      "T1526",
+      "T1082"
+    ],
+    "paas/lambda_tmp_persist": [
+      "T1547",
+      "T1059"
+    ],
+    "paas/paas_metadata_pivot": [
+      "T1552.005"
+    ],
+    "paas/railway_escape": [
+      "T1611",
+      "T1526"
+    ],
+    "serverless/api_gateway_bypass": [
+      "T1190"
+    ],
+    "serverless/cold_start_abuse": [
+      "T1499"
+    ],
+    "serverless/concurrency_abuse": [
+      "T1499"
+    ],
+    "serverless/env_extraction": [
+      "T1552"
+    ],
+    "serverless/event_injection": [
+      "T1648"
+    ],
+    "serverless/iam_role_chain": [
+      "T1078"
+    ],
+    "serverless/layer_poisoning": [
+      "T1525"
+    ],
+    "serverless/log_injection": [
+      "T1562.008"
+    ],
+    "serverless/reverse_shell": [
+      "T1219"
+    ],
+    "serverless/runtime_rce": [
+      "T1059"
+    ],
+    "serverless/step_function_abuse": [
+      "T1648"
+    ],
+    "serverless/tmp_persistence": [
+      "T1525"
+    ],
+    "serverless/trigger_hijack": [
+      "T1648"
+    ],
+    "serverless/vpc_pivot": [
+      "T1021"
+    ],
+    "storage/acl_check": [
+      "T1530"
+    ],
+    "storage/bucket_bruteforce": [
+      "T1530"
+    ],
+    "storage/bucket_finder": [
+      "T1530"
+    ],
+    "storage/bucketloot_bridge": [
+      "T1530"
+    ],
+    "storage/cors_exploit": [
+      "T1530"
+    ],
+    "storage/download_mass": [
+      "T1530"
+    ],
+    "storage/grayhat_search": [
+      "T1530"
+    ],
+    "storage/policy_abuse": [
+      "T1530"
+    ],
+    "storage/presigned_abuse": [
+      "T1530"
+    ],
+    "storage/public_objects": [
+      "T1530"
+    ],
+    "storage/ransomware_sim": [
+      "T1486"
+    ],
+    "storage/s3scanner_bridge": [
+      "T1530"
+    ],
+    "storage/static_site_takeover": [
+      "T1584.001"
+    ],
+    "storage/upload_exploit": [
+      "T1530"
+    ],
+    "storage/versioning_exploit": [
+      "T1530"
+    ],
+    "tencent/cam_enum": [
+      "T1087.004"
+    ],
+    "tencent/cloudtoolkit_bridge": [
+      "T1526"
+    ],
+    "tencent/cos_enum": [
+      "T1526"
+    ],
+    "tencent/cos_exploit": [
+      "T1530"
+    ],
+    "tencent/cve_2026_30859": [
+      "T1530"
+    ],
+    "tencent/cvm_metadata": [
+      "T1552.005"
+    ],
+    "vdi/avd_privesc": [
+      "T1068",
+      "T1078.004"
+    ],
+    "vdi/citrix_session_recording_rce": [
+      "T1190",
+      "T1068"
+    ],
+    "vdi/citrix_vda_lpe": [
+      "T1068"
+    ],
+    "vdi/horizon_escape": [
+      "T1611"
+    ],
+    "vdi/vdi_breakout_clipboard": [
+      "T1115",
+      "T1611"
+    ],
+    "vdi/vdi_breakout_dialog": [
+      "T1611"
+    ],
+    "vdi/vdi_breakout_drive": [
+      "T1039",
+      "T1611"
+    ],
+    "vdi/vdi_breakout_print": [
+      "T1611"
+    ],
+    "vdi/vdi_breakout_usb": [
+      "T1200",
+      "T1611"
+    ],
+    "vdi/vdi_kiosk_escape": [
+      "T1611"
+    ],
+    "vdi/workspaces_lpe": [
+      "T1068"
+    ],
+    "virt/citrix_cve_2026_53562": [
+      "T1611"
+    ],
+    "virt/citrix_escape": [
+      "T1611"
+    ],
+    "virt/citrix_xsa_486": [
+      "T1611"
+    ],
+    "virt/cve_2019_5544": [
+      "T1210",
+      "T1190"
+    ],
+    "virt/cve_2020_3952": [
+      "T1078",
+      "T1190"
+    ],
+    "virt/cve_2020_3992": [
+      "T1210",
+      "T1190"
+    ],
+    "virt/cve_2021_21972": [
+      "T1190",
+      "T1505.003"
+    ],
+    "virt/cve_2021_21974": [
+      "T1210",
+      "T1486"
+    ],
+    "virt/cve_2021_21985": [
+      "T1190",
+      "T1059"
+    ],
+    "virt/cve_2021_22005": [
+      "T1190",
+      "T1059"
+    ],
+    "virt/cve_2022_22954": [
+      "T1190",
+      "T1059.007"
+    ],
+    "virt/cve_2022_31705": [
+      "T1611"
+    ],
+    "virt/cve_2023_20867": [
+      "T1078",
+      "T1564"
+    ],
+    "virt/cve_2023_34048": [
+      "T1190",
+      "T1059"
+    ],
+    "virt/cve_2024_37085": [
+      "T1078.002",
+      "T1484"
+    ],
+    "virt/cve_2025_22225": [
+      "T1611"
+    ],
+    "virt/cve_2025_22226": [
+      "T1005",
+      "T1611"
+    ],
+    "virt/esxi_cve_2024_22252": [
+      "T1611"
+    ],
+    "virt/esxi_cve_2024_22253": [
+      "T1611"
+    ],
+    "virt/esxi_cve_2024_22254": [
+      "T1611"
+    ],
+    "virt/esxi_cve_2024_22255": [
+      "T1082"
+    ],
+    "virt/esxi_cve_2025_22224": [
+      "T1611"
+    ],
+    "virt/esxi_cve_2026_47876": [
+      "T1611"
+    ],
+    "virt/esxi_enum": [
+      "T1526",
+      "T1580"
+    ],
+    "virt/esxi_log4shell": [
+      "T1190",
+      "T1059"
+    ],
+    "virt/esxi_ransomware": [
+      "T1486"
+    ],
+    "virt/esxi_ssh_exploit": [
+      "T1078"
+    ],
+    "virt/esxi_vm_escape": [
+      "T1611"
+    ],
+    "virt/firecracker_escape": [
+      "T1611"
+    ],
+    "virt/hyperv_cve_2021_28476": [
+      "T1611"
+    ],
+    "virt/hyperv_cve_2022_30163": [
+      "T1611"
+    ],
+    "virt/hyperv_cve_2024_20700": [
+      "T1611"
+    ],
+    "virt/hyperv_cve_2024_21407": [
+      "T1611"
+    ],
+    "virt/hyperv_cve_2024_38080": [
+      "T1068"
+    ],
+    "virt/hyperv_cve_2025_21333": [
+      "T1068",
+      "T1611"
+    ],
+    "virt/hyperv_cve_2025_21334": [
+      "T1068"
+    ],
+    "virt/hyperv_cve_2025_21335": [
+      "T1068"
+    ],
+    "virt/hyperv_cve_2026_40402": [
+      "T1611"
+    ],
+    "virt/hyperv_cve_2026_45607": [
+      "T1611"
+    ],
+    "virt/hyperv_cve_2026_45641": [
+      "T1611"
+    ],
+    "virt/hyperv_cve_2026_57092": [
+      "T1611"
+    ],
+    "virt/hyperv_cve_2026_69603": [
+      "T1611"
+    ],
+    "virt/hyperv_cve_2026_72961": [
+      "T1611"
+    ],
+    "virt/hyperv_cve_2026_80083": [
+      "T1611"
+    ],
+    "virt/hyperv_cve_2026_89927": [
+      "T1499"
+    ],
+    "virt/hyperv_enum": [
+      "T1580"
+    ],
+    "virt/hyperv_escape": [
+      "T1611"
+    ],
+    "virt/hyperv_remotefx": [
+      "T1611",
+      "T1210"
+    ],
+    "virt/kata_escape": [
+      "T1611"
+    ],
+    "virt/kvm_arm64_escape": [
+      "T1611"
+    ],
+    "virt/kvm_cve_2019_14835": [
+      "T1611"
+    ],
+    "virt/kvm_cve_2019_18389": [
+      "T1611"
+    ],
+    "virt/kvm_cve_2026_3842": [
+      "T1499"
+    ],
+    "virt/kvm_cve_2026_64561": [
+      "T1611"
+    ],
+    "virt/kvm_cve_2026_99999": [
+      "T1611"
+    ],
+    "virt/kvm_januscape": [
+      "T1611"
+    ],
+    "virt/libvirt_enum": [
+      "T1580"
+    ],
+    "virt/msf_vmware_bridge": [
+      "T1190",
+      "T1059"
+    ],
+    "virt/nutanix_cve_2026_84731": [
+      "T1190",
+      "T1078"
+    ],
+    "virt/nutanix_enum": [
+      "T1526",
+      "T1580"
+    ],
+    "virt/qemu_cve_2020_14364": [
+      "T1611"
+    ],
+    "virt/qemu_cve_2023_6693": [
+      "T1611"
+    ],
+    "virt/qemu_cve_2024_3446": [
+      "T1611"
+    ],
+    "virt/qemu_cve_2024_4467": [
+      "T1611"
+    ],
+    "virt/qemu_cve_2024_49841": [
+      "T1611"
+    ],
+    "virt/qemu_cve_2024_6519": [
+      "T1611"
+    ],
+    "virt/qemu_dma_reentrancy": [
+      "T1611"
+    ],
+    "virt/qemu_rtl8139_chain": [
+      "T1611",
+      "T1005"
+    ],
+    "virt/qemu_slirp_escape": [
+      "T1611"
+    ],
+    "virt/qemu_virtio_exploit": [
+      "T1611"
+    ],
+    "virt/vcenter_cve_2024_37079": [
+      "T1190"
+    ],
+    "virt/vcenter_cve_2024_37080": [
+      "T1190"
+    ],
+    "virt/vcenter_cve_2024_38812": [
+      "T1190"
+    ],
+    "virt/vcenter_cve_2024_38813": [
+      "T1068"
+    ],
+    "virt/vcenter_cve_2025_41225": [
+      "T1059"
+    ],
+    "virt/vcenter_cve_2026_59309": [
+      "T1190"
+    ],
+    "virt/vcenter_cve_2026_59310": [
+      "T1190"
+    ],
+    "virt/vcenter_exploit": [
+      "T1190"
+    ],
+    "virt/vcenter_saml_bypass": [
+      "T1078",
+      "T1550"
+    ],
+    "virt/vcenterkit_bridge": [
+      "T1526"
+    ],
+    "virt/vdi_breakout": [
+      "T1611",
+      "T1548"
+    ],
+    "virt/virt_cross_domain": [
+      "T1611"
+    ],
+    "virt/virt_maestro_detect": [
+      "T1611",
+      "T1082"
+    ],
+    "virt/virt_side_channel": [
+      "T1005",
+      "T1040"
+    ],
+    "virt/virt_snapshot_theft": [
+      "T1005",
+      "T1552"
+    ],
+    "virt/virt_vtpm_extract": [
+      "T1552",
+      "T1005"
+    ],
+    "virt/vmware_tools_lpe": [
+      "T1068"
+    ],
+    "virt/xen_cve_2023_46842": [
+      "T1499"
+    ],
+    "virt/xen_grant_escape": [
+      "T1611"
+    ],
+    "virt/xen_iommu_exploit": [
+      "T1611"
+    ],
+    "virt/xen_venom": [
+      "T1611"
+    ],
+    "virt/xen_xsa486": [
+      "T1611"
+    ],
+    "virt/xen_xsa500": [
+      "T1611"
+    ],
+    "virt/xen_xsa505": [
+      "T1611"
+    ],
+    "virt/xen_xsa517": [
+      "T1068",
+      "T1611"
+    ],
+    "virt/xen_xsa521": [
+      "T1611"
+    ]
+  },
+  "technique_count": 54,
+  "total_modules": 421,
+  "unique_techniques": [
+    "T1005",
+    "T1021",
+    "T1039",
+    "T1040",
+    "T1046",
+    "T1059",
+    "T1059.007",
+    "T1068",
+    "T1069",
+    "T1078",
+    "T1078.002",
+    "T1078.004",
+    "T1082",
+    "T1087.004",
+    "T1090",
+    "T1098",
+    "T1098.003",
+    "T1111",
+    "T1115",
+    "T1133",
+    "T1190",
+    "T1195.002",
+    "T1200",
+    "T1210",
+    "T1219",
+    "T1484",
+    "T1485",
+    "T1486",
+    "T1499",
+    "T1505.003",
+    "T1525",
+    "T1526",
+    "T1528",
+    "T1530",
+    "T1537",
+    "T1547",
+    "T1548",
+    "T1550",
+    "T1552",
+    "T1552.001",
+    "T1552.005",
+    "T1557",
+    "T1562",
+    "T1562.001",
+    "T1562.008",
+    "T1564",
+    "T1566",
+    "T1578",
+    "T1580",
+    "T1584.001",
+    "T1599",
+    "T1610",
+    "T1611",
+    "T1648"
+  ]
+}

@@ -1,50 +1,68 @@
 {
   "metadata": {
-    "total_modules": 296,
-    "total_techniques": 38,
+    "total_modules": 421,
+    "total_techniques": 54,
     "categories": {
       "alibaba": 8,
       "aws": 45,
-      "azure": 42,
+      "azure": 46,
+      "cicd": 10,
       "cred": 14,
       "digitalocean": 8,
       "gcp": 46,
       "hetzner": 5,
       "ibm": 6,
-      "k8s": 28,
-      "multi": 15,
+      "k8s": 40,
+      "multi": 17,
       "net": 8,
       "oci": 10,
       "ovh": 6,
+      "paas": 10,
       "serverless": 14,
       "storage": 15,
       "tencent": 6,
-      "virt": 20
+      "vdi": 11,
+      "virt": 96
     },
     "techniques_list": [
+      "T1005",
       "T1021",
+      "T1039",
+      "T1040",
       "T1046",
       "T1059",
+      "T1059.007",
       "T1068",
       "T1069",
       "T1078",
+      "T1078.002",
       "T1078.004",
+      "T1082",
       "T1087.004",
       "T1090",
       "T1098",
       "T1098.003",
       "T1111",
+      "T1115",
       "T1133",
       "T1190",
       "T1195.002",
+      "T1200",
+      "T1210",
       "T1219",
+      "T1484",
+      "T1485",
       "T1486",
       "T1499",
+      "T1505.003",
       "T1525",
       "T1526",
       "T1528",
       "T1530",
       "T1537",
+      "T1547",
+      "T1548",
+      "T1550",
       "T1552",
       "T1552.001",
       "T1552.005",
@@ -52,6 +70,7 @@
       "T1562",
       "T1562.001",
       "T1562.008",
+      "T1564",
       "T1566",
       "T1578",
       "T1580",
@@ -484,6 +503,14 @@
         "T1087.004"
       ]
     },
+    "azure/azurescape": {
+      "capability_id": "cloudxpl.azure.azurescape.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611",
+        "T1552"
+      ]
+    },
     "azure/blob_exfil": {
       "capability_id": "cloudxpl.azure.blob_exfil.v1",
       "safety_class": "ACTIVE",
@@ -547,6 +574,14 @@
         "T1190"
       ]
     },
+    "azure/cve_2026_20965": {
+      "capability_id": "cloudxpl.azure.cve_2026_20965.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1190",
+        "T1210"
+      ]
+    },
     "azure/defender_bypass": {
       "capability_id": "cloudxpl.azure.defender_bypass.v1",
       "safety_class": "READ_ONLY",
@@ -589,6 +624,14 @@
         "T1528"
       ]
     },
+    "azure/fabricscape": {
+      "capability_id": "cloudxpl.azure.fabricscape.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611",
+        "T1068"
+      ]
+    },
     "azure/function_exploit": {
       "capability_id": "cloudxpl.azure.function_exploit.v1",
       "safety_class": "ACTIVE",
@@ -601,6 +644,13 @@
       "safety_class": "ACTIVE",
       "mitre": [
         "T1525"
+      ]
+    },
+    "azure/functions_escape": {
+      "capability_id": "cloudxpl.azure.functions_escape.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
       ]
     },
     "azure/graph_api_abuse": {
@@ -734,6 +784,82 @@
       "safety_class": "ACTIVE",
       "mitre": [
         "T1552.005"
+      ]
+    },
+    "cicd/cicd_secret_dump": {
+      "capability_id": "cloudxpl.cicd.cicd_secret_dump",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1552.001"
+      ]
+    },
+    "cicd/circleci_runner_escape": {
+      "capability_id": "cloudxpl.cicd.circleci_runner_escape",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1611",
+        "T1059"
+      ]
+    },
+    "cicd/gha_runner_escape": {
+      "capability_id": "cloudxpl.cicd.gha_runner_escape",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611",
+        "T1195.002"
+      ]
+    },
+    "cicd/gha_supply_chain": {
+      "capability_id": "cloudxpl.cicd.gha_supply_chain",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1195.002"
+      ]
+    },
+    "cicd/gitlab_ci_rce": {
+      "capability_id": "cloudxpl.cicd.gitlab_ci_rce",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1059",
+        "T1068"
+      ]
+    },
+    "cicd/gitlab_runner_hijack": {
+      "capability_id": "cloudxpl.cicd.gitlab_runner_hijack",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1078",
+        "T1068"
+      ]
+    },
+    "cicd/jenkins_agent_abuse": {
+      "capability_id": "cloudxpl.cicd.jenkins_agent_abuse",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1552",
+        "T1068"
+      ]
+    },
+    "cicd/jenkins_plugin_privesc": {
+      "capability_id": "cloudxpl.cicd.jenkins_plugin_privesc",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1068",
+        "T1552"
+      ]
+    },
+    "cicd/terraform_agent_abuse": {
+      "capability_id": "cloudxpl.cicd.terraform_agent_abuse",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1195.002"
+      ]
+    },
+    "cicd/terraform_token_leak": {
+      "capability_id": "cloudxpl.cicd.terraform_token_leak",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1552"
       ]
     },
     "cred/config_file_scan": {
@@ -1339,9 +1465,89 @@
         "T1078"
       ]
     },
+    "k8s/cve_2019_5736": {
+      "capability_id": "cloudxpl.k8s.cve_2019_5736.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "k8s/cve_2021_30465": {
+      "capability_id": "cloudxpl.k8s.cve_2021_30465.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "k8s/cve_2022_0492": {
+      "capability_id": "cloudxpl.k8s.cve_2022_0492.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "k8s/cve_2022_0847": {
+      "capability_id": "cloudxpl.k8s.cve_2022_0847.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611",
+        "T1068"
+      ]
+    },
+    "k8s/cve_2022_23648": {
+      "capability_id": "cloudxpl.k8s.cve_2022_23648.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611",
+        "T1005"
+      ]
+    },
+    "k8s/cve_2024_0132": {
+      "capability_id": "cloudxpl.k8s.cve_2024_0132.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "k8s/cve_2024_1753": {
+      "capability_id": "cloudxpl.k8s.cve_2024_1753.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
     "k8s/cve_2024_21626": {
       "capability_id": "cloudxpl.k8s.cve_2024_21626.v1",
       "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "k8s/cve_2024_23651": {
+      "capability_id": "cloudxpl.k8s.cve_2024_23651.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "k8s/cve_2024_23652": {
+      "capability_id": "cloudxpl.k8s.cve_2024_23652.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1485",
+        "T1611"
+      ]
+    },
+    "k8s/cve_2024_23653": {
+      "capability_id": "cloudxpl.k8s.cve_2024_23653.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "k8s/cve_2025_23266": {
+      "capability_id": "cloudxpl.k8s.cve_2025_23266.v1",
+      "safety_class": "EXPLOIT",
       "mitre": [
         "T1611"
       ]
@@ -1465,6 +1671,13 @@
         "T1525"
       ]
     },
+    "k8s/runc_cve_2019_5736": {
+      "capability_id": "cloudxpl.k8s.runc_cve_2019_5736.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
     "k8s/sa_token_theft": {
       "capability_id": "cloudxpl.k8s.sa_token_theft.v1",
       "safety_class": "READ_ONLY",
@@ -1500,6 +1713,14 @@
         "T1195.002"
       ]
     },
+    "multi/cloud_side_channel": {
+      "capability_id": "cloudxpl.multi.cloud_side_channel.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1040",
+        "T1005"
+      ]
+    },
     "multi/cloudfox_bridge": {
       "capability_id": "cloudxpl.multi.cloudfox_bridge.v1",
       "safety_class": "READ_ONLY",
@@ -1530,6 +1751,13 @@
     },
     "multi/docker_socket": {
       "capability_id": "cloudxpl.multi.docker_socket.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "multi/firecracker_escape": {
+      "capability_id": "cloudxpl.multi.firecracker_escape.v1",
       "safety_class": "READ_ONLY",
       "mitre": [
         "T1611"
@@ -1768,6 +1996,79 @@
       "safety_class": "EXPLOIT",
       "mitre": [
         "T1021"
+      ]
+    },
+    "paas/aci_azurescape": {
+      "capability_id": "cloudxpl.paas.aci_azurescape",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "paas/appservice_sandbox_escape": {
+      "capability_id": "cloudxpl.paas.appservice_sandbox_escape",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "paas/beanstalk_escape": {
+      "capability_id": "cloudxpl.paas.beanstalk_escape",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "paas/cloudrun_runc_escape": {
+      "capability_id": "cloudxpl.paas.cloudrun_runc_escape",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "paas/fargate_firecracker": {
+      "capability_id": "cloudxpl.paas.fargate_firecracker",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "paas/gcp_appint_sandbox": {
+      "capability_id": "cloudxpl.paas.gcp_appint_sandbox",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "paas/heroku_dyno_recon": {
+      "capability_id": "cloudxpl.paas.heroku_dyno_recon",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1526",
+        "T1082"
+      ]
+    },
+    "paas/lambda_tmp_persist": {
+      "capability_id": "cloudxpl.paas.lambda_tmp_persist",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1547",
+        "T1059"
+      ]
+    },
+    "paas/paas_metadata_pivot": {
+      "capability_id": "cloudxpl.paas.paas_metadata_pivot",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1552.005"
+      ]
+    },
+    "paas/railway_escape": {
+      "capability_id": "cloudxpl.paas.railway_escape",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1611",
+        "T1526"
       ]
     },
     "serverless/api_gateway_bypass": {
@@ -2015,6 +2316,95 @@
         "T1552.005"
       ]
     },
+    "vdi/avd_privesc": {
+      "capability_id": "cloudxpl.vdi.avd_privesc",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1068",
+        "T1078.004"
+      ]
+    },
+    "vdi/citrix_session_recording_rce": {
+      "capability_id": "cloudxpl.vdi.citrix_session_recording_rce",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1190",
+        "T1068"
+      ]
+    },
+    "vdi/citrix_vda_lpe": {
+      "capability_id": "cloudxpl.vdi.citrix_vda_lpe",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1068"
+      ]
+    },
+    "vdi/horizon_escape": {
+      "capability_id": "cloudxpl.vdi.horizon_escape",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "vdi/vdi_breakout_clipboard": {
+      "capability_id": "cloudxpl.vdi.vdi_breakout_clipboard",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1115",
+        "T1611"
+      ]
+    },
+    "vdi/vdi_breakout_dialog": {
+      "capability_id": "cloudxpl.vdi.vdi_breakout_dialog",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "vdi/vdi_breakout_drive": {
+      "capability_id": "cloudxpl.vdi.vdi_breakout_drive",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1039",
+        "T1611"
+      ]
+    },
+    "vdi/vdi_breakout_print": {
+      "capability_id": "cloudxpl.vdi.vdi_breakout_print",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "vdi/vdi_breakout_usb": {
+      "capability_id": "cloudxpl.vdi.vdi_breakout_usb",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1200",
+        "T1611"
+      ]
+    },
+    "vdi/vdi_kiosk_escape": {
+      "capability_id": "cloudxpl.vdi.vdi_kiosk_escape",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "vdi/workspaces_lpe": {
+      "capability_id": "cloudxpl.vdi.workspaces_lpe",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1068"
+      ]
+    },
+    "virt/citrix_cve_2026_53562": {
+      "capability_id": "cloudxpl.virt.citrix_cve_2026_53562.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
     "virt/citrix_escape": {
       "capability_id": "cloudxpl.virt.citrix_escape.v1",
       "safety_class": "EXPLOIT",
@@ -2022,8 +2412,160 @@
         "T1611"
       ]
     },
+    "virt/citrix_xsa_486": {
+      "capability_id": "cloudxpl.virt.citrix_xsa_486.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "virt/cve_2019_5544": {
+      "capability_id": "cloudxpl.virt.cve_2019_5544.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1210",
+        "T1190"
+      ]
+    },
+    "virt/cve_2020_3952": {
+      "capability_id": "cloudxpl.virt.cve_2020_3952.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1078",
+        "T1190"
+      ]
+    },
+    "virt/cve_2020_3992": {
+      "capability_id": "cloudxpl.virt.cve_2020_3992.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1210",
+        "T1190"
+      ]
+    },
+    "virt/cve_2021_21972": {
+      "capability_id": "cloudxpl.virt.cve_2021_21972.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1190",
+        "T1505.003"
+      ]
+    },
+    "virt/cve_2021_21974": {
+      "capability_id": "cloudxpl.virt.cve_2021_21974.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1210",
+        "T1486"
+      ]
+    },
+    "virt/cve_2021_21985": {
+      "capability_id": "cloudxpl.virt.cve_2021_21985.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1190",
+        "T1059"
+      ]
+    },
+    "virt/cve_2021_22005": {
+      "capability_id": "cloudxpl.virt.cve_2021_22005.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1190",
+        "T1059"
+      ]
+    },
+    "virt/cve_2022_22954": {
+      "capability_id": "cloudxpl.virt.cve_2022_22954.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1190",
+        "T1059.007"
+      ]
+    },
+    "virt/cve_2022_31705": {
+      "capability_id": "cloudxpl.virt.cve_2022_31705.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "virt/cve_2023_20867": {
+      "capability_id": "cloudxpl.virt.cve_2023_20867.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1078",
+        "T1564"
+      ]
+    },
+    "virt/cve_2023_34048": {
+      "capability_id": "cloudxpl.virt.cve_2023_34048.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1190",
+        "T1059"
+      ]
+    },
+    "virt/cve_2024_37085": {
+      "capability_id": "cloudxpl.virt.cve_2024_37085.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1078.002",
+        "T1484"
+      ]
+    },
+    "virt/cve_2025_22225": {
+      "capability_id": "cloudxpl.virt.cve_2025_22225.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "virt/cve_2025_22226": {
+      "capability_id": "cloudxpl.virt.cve_2025_22226.v1",
+      "safety_class": "RECON",
+      "mitre": [
+        "T1005",
+        "T1611"
+      ]
+    },
+    "virt/esxi_cve_2024_22252": {
+      "capability_id": "cloudxpl.virt.esxi_cve_2024_22252.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "virt/esxi_cve_2024_22253": {
+      "capability_id": "cloudxpl.virt.esxi_cve_2024_22253.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "virt/esxi_cve_2024_22254": {
+      "capability_id": "cloudxpl.virt.esxi_cve_2024_22254.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "virt/esxi_cve_2024_22255": {
+      "capability_id": "cloudxpl.virt.esxi_cve_2024_22255.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1082"
+      ]
+    },
     "virt/esxi_cve_2025_22224": {
       "capability_id": "cloudxpl.virt.esxi_cve_2025_22224.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "virt/esxi_cve_2026_47876": {
+      "capability_id": "cloudxpl.virt.esxi_cve_2026_47876.v1",
       "safety_class": "EXPLOIT",
       "mitre": [
         "T1611"
@@ -2035,6 +2577,14 @@
       "mitre": [
         "T1526",
         "T1580"
+      ]
+    },
+    "virt/esxi_log4shell": {
+      "capability_id": "cloudxpl.virt.esxi_log4shell.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1190",
+        "T1059"
       ]
     },
     "virt/esxi_ransomware": {
@@ -2058,11 +2608,124 @@
         "T1611"
       ]
     },
+    "virt/firecracker_escape": {
+      "capability_id": "cloudxpl.virt.firecracker_escape.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "virt/hyperv_cve_2021_28476": {
+      "capability_id": "cloudxpl.virt.hyperv_cve_2021_28476.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "virt/hyperv_cve_2022_30163": {
+      "capability_id": "cloudxpl.virt.hyperv_cve_2022_30163.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "virt/hyperv_cve_2024_20700": {
+      "capability_id": "cloudxpl.virt.hyperv_cve_2024_20700.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "virt/hyperv_cve_2024_21407": {
+      "capability_id": "cloudxpl.virt.hyperv_cve_2024_21407.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "virt/hyperv_cve_2024_38080": {
+      "capability_id": "cloudxpl.virt.hyperv_cve_2024_38080.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1068"
+      ]
+    },
+    "virt/hyperv_cve_2025_21333": {
+      "capability_id": "cloudxpl.virt.hyperv_cve_2025_21333.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1068",
+        "T1611"
+      ]
+    },
+    "virt/hyperv_cve_2025_21334": {
+      "capability_id": "cloudxpl.virt.hyperv_cve_2025_21334.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1068"
+      ]
+    },
+    "virt/hyperv_cve_2025_21335": {
+      "capability_id": "cloudxpl.virt.hyperv_cve_2025_21335.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1068"
+      ]
+    },
     "virt/hyperv_cve_2026_40402": {
       "capability_id": "cloudxpl.virt.hyperv_cve_2026_40402.v1",
       "safety_class": "EXPLOIT",
       "mitre": [
         "T1611"
+      ]
+    },
+    "virt/hyperv_cve_2026_45607": {
+      "capability_id": "cloudxpl.virt.hyperv_cve_2026_45607.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "virt/hyperv_cve_2026_45641": {
+      "capability_id": "cloudxpl.virt.hyperv_cve_2026_45641.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "virt/hyperv_cve_2026_57092": {
+      "capability_id": "cloudxpl.virt.hyperv_cve_2026_57092.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "virt/hyperv_cve_2026_69603": {
+      "capability_id": "cloudxpl.virt.hyperv_cve_2026_69603.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "virt/hyperv_cve_2026_72961": {
+      "capability_id": "cloudxpl.virt.hyperv_cve_2026_72961.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "virt/hyperv_cve_2026_80083": {
+      "capability_id": "cloudxpl.virt.hyperv_cve_2026_80083.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "virt/hyperv_cve_2026_89927": {
+      "capability_id": "cloudxpl.virt.hyperv_cve_2026_89927.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1499"
       ]
     },
     "virt/hyperv_enum": {
@@ -2079,8 +2742,58 @@
         "T1611"
       ]
     },
+    "virt/hyperv_remotefx": {
+      "capability_id": "cloudxpl.virt.hyperv_remotefx.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611",
+        "T1210"
+      ]
+    },
+    "virt/kata_escape": {
+      "capability_id": "cloudxpl.virt.kata_escape.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
     "virt/kvm_arm64_escape": {
       "capability_id": "cloudxpl.virt.kvm_arm64_escape.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "virt/kvm_cve_2019_14835": {
+      "capability_id": "cloudxpl.virt.kvm_cve_2019_14835.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "virt/kvm_cve_2019_18389": {
+      "capability_id": "cloudxpl.virt.kvm_cve_2019_18389.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "virt/kvm_cve_2026_3842": {
+      "capability_id": "cloudxpl.virt.kvm_cve_2026_3842.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1499"
+      ]
+    },
+    "virt/kvm_cve_2026_64561": {
+      "capability_id": "cloudxpl.virt.kvm_cve_2026_64561.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "virt/kvm_cve_2026_99999": {
+      "capability_id": "cloudxpl.virt.kvm_cve_2026_99999.v1",
       "safety_class": "EXPLOIT",
       "mitre": [
         "T1611"
@@ -2100,6 +2813,22 @@
         "T1580"
       ]
     },
+    "virt/msf_vmware_bridge": {
+      "capability_id": "cloudxpl.virt.msf_vmware_bridge.v1",
+      "safety_class": "BRIDGE",
+      "mitre": [
+        "T1190",
+        "T1059"
+      ]
+    },
+    "virt/nutanix_cve_2026_84731": {
+      "capability_id": "cloudxpl.virt.nutanix_cve_2026_84731.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1190",
+        "T1078"
+      ]
+    },
     "virt/nutanix_enum": {
       "capability_id": "cloudxpl.virt.nutanix_enum.v1",
       "safety_class": "READ_ONLY",
@@ -2108,8 +2837,72 @@
         "T1580"
       ]
     },
+    "virt/qemu_cve_2020_14364": {
+      "capability_id": "cloudxpl.virt.qemu_cve_2020_14364.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "virt/qemu_cve_2023_6693": {
+      "capability_id": "cloudxpl.virt.qemu_cve_2023_6693.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "virt/qemu_cve_2024_3446": {
+      "capability_id": "cloudxpl.virt.qemu_cve_2024_3446.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "virt/qemu_cve_2024_4467": {
+      "capability_id": "cloudxpl.virt.qemu_cve_2024_4467.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "virt/qemu_cve_2024_49841": {
+      "capability_id": "cloudxpl.virt.qemu_cve_2024_49841.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
     "virt/qemu_cve_2024_6519": {
       "capability_id": "cloudxpl.virt.qemu_cve_2024_6519.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "virt/qemu_dma_reentrancy": {
+      "capability_id": "cloudxpl.virt.qemu_dma_reentrancy.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "virt/qemu_rtl8139_chain": {
+      "capability_id": "cloudxpl.virt.qemu_rtl8139_chain.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611",
+        "T1005"
+      ]
+    },
+    "virt/qemu_slirp_escape": {
+      "capability_id": "cloudxpl.virt.qemu_slirp_escape.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "virt/qemu_virtio_exploit": {
+      "capability_id": "cloudxpl.virt.qemu_virtio_exploit.v1",
       "safety_class": "EXPLOIT",
       "mitre": [
         "T1611"
@@ -2120,6 +2913,34 @@
       "safety_class": "EXPLOIT",
       "mitre": [
         "T1190"
+      ]
+    },
+    "virt/vcenter_cve_2024_37080": {
+      "capability_id": "cloudxpl.virt.vcenter_cve_2024_37080.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1190"
+      ]
+    },
+    "virt/vcenter_cve_2024_38812": {
+      "capability_id": "cloudxpl.virt.vcenter_cve_2024_38812.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1190"
+      ]
+    },
+    "virt/vcenter_cve_2024_38813": {
+      "capability_id": "cloudxpl.virt.vcenter_cve_2024_38813.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1068"
+      ]
+    },
+    "virt/vcenter_cve_2025_41225": {
+      "capability_id": "cloudxpl.virt.vcenter_cve_2025_41225.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1059"
       ]
     },
     "virt/vcenter_cve_2026_59309": {
@@ -2143,6 +2964,14 @@
         "T1190"
       ]
     },
+    "virt/vcenter_saml_bypass": {
+      "capability_id": "cloudxpl.virt.vcenter_saml_bypass.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1078",
+        "T1550"
+      ]
+    },
     "virt/vcenterkit_bridge": {
       "capability_id": "cloudxpl.virt.vcenterkit_bridge.v1",
       "safety_class": "READ_ONLY",
@@ -2150,11 +2979,122 @@
         "T1526"
       ]
     },
+    "virt/vdi_breakout": {
+      "capability_id": "cloudxpl.virt.vdi_breakout.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611",
+        "T1548"
+      ]
+    },
+    "virt/virt_cross_domain": {
+      "capability_id": "cloudxpl.virt.virt_cross_domain.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "virt/virt_maestro_detect": {
+      "capability_id": "cloudxpl.virt.virt_maestro_detect.v1",
+      "safety_class": "READ_ONLY",
+      "mitre": [
+        "T1611",
+        "T1082"
+      ]
+    },
+    "virt/virt_side_channel": {
+      "capability_id": "cloudxpl.virt.virt_side_channel.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1005",
+        "T1040"
+      ]
+    },
+    "virt/virt_snapshot_theft": {
+      "capability_id": "cloudxpl.virt.virt_snapshot_theft.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1005",
+        "T1552"
+      ]
+    },
+    "virt/virt_vtpm_extract": {
+      "capability_id": "cloudxpl.virt.virt_vtpm_extract.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1552",
+        "T1005"
+      ]
+    },
     "virt/vmware_tools_lpe": {
       "capability_id": "cloudxpl.virt.vmware_tools_lpe.v1",
       "safety_class": "EXPLOIT",
       "mitre": [
         "T1068"
+      ]
+    },
+    "virt/xen_cve_2023_46842": {
+      "capability_id": "cloudxpl.virt.xen_cve_2023_46842.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1499"
+      ]
+    },
+    "virt/xen_grant_escape": {
+      "capability_id": "cloudxpl.virt.xen_grant_escape.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "virt/xen_iommu_exploit": {
+      "capability_id": "cloudxpl.virt.xen_iommu_exploit.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "virt/xen_venom": {
+      "capability_id": "cloudxpl.virt.xen_venom.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "virt/xen_xsa486": {
+      "capability_id": "cloudxpl.virt.xen_xsa486.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "virt/xen_xsa500": {
+      "capability_id": "cloudxpl.virt.xen_xsa500.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "virt/xen_xsa505": {
+      "capability_id": "cloudxpl.virt.xen_xsa505.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
+      ]
+    },
+    "virt/xen_xsa517": {
+      "capability_id": "cloudxpl.virt.xen_xsa517.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1068",
+        "T1611"
+      ]
+    },
+    "virt/xen_xsa521": {
+      "capability_id": "cloudxpl.virt.xen_xsa521.v1",
+      "safety_class": "EXPLOIT",
+      "mitre": [
+        "T1611"
       ]
     }
   }

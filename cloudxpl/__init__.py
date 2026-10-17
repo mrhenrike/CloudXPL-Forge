@@ -1,6 +1,6 @@
 """CloudXPL-Forge — Cloud security assessment framework."""
 
-__version__ = "2.0.0"
+__version__ = "3.0.0"
 __product__ = "CloudXPL-Forge"
 __cli__ = "cxf"
 

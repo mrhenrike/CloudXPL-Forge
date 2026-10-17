@@ -1,40 +1,30 @@
-"""CloudXPL-Forge module: CVE-2020-14364 — QEMU USB EHCI OOB read/write"""
+"""CloudXPL-Forge — QEMU USB Emulator OOB R/W (CVE-2020-14364)."""
 
 from __future__ import annotations
 
-from typing import Any
-
-
-MANIFEST = {
-    "capability_id": "cloudxpl.virt.qemu_cve_2020_14364.v1",
-    "safety_class": "EXPLOIT",
-    "requires_authorization": True,
-    "side_effects": ["api_calls", "state_change"],
-    "output_schema": "xpl.finding.v1",
+MANIFEST: dict = {
+    "name": "QEMU USB Emulator OOB R/W (CVE-2020-14364)",
+    "cve": "CVE-2020-14364",
     "mitre": ["T1611"],
+    "description": "Exploits out-of-bounds read/write in QEMU USB emulator for information disclosure or code execution.",
+    "references": ["https://nvd.nist.gov/vuln/detail/CVE-2020-14364"],
 }
 
 
-def run(args: Any) -> int:
-    """Detect CVE-2020-14364 — QEMU USB EHCI OOB access. Can lead to guest-to-host escape."""
-    import json
-    import sys
-    from datetime import datetime, timezone
-    from pathlib import Path
+import sys
 
-    print(f"[*] {MANIFEST['capability_id']} starting...")
-    print(f"[*] Target: {getattr(args, 'target', 'N/A')}")
 
-    findings: list[dict] = []
+def run(args):
+    target = getattr(args, "target", None)
+    verbose = getattr(args, "verbose", False)
+    output = getattr(args, "output", ".")
 
-    # --- Module logic placeholder ---
-    # TODO: implement provider-specific logic
-    print("[!] Module stub — implement provider-specific logic")
+    print(f"[*] {MANIFEST['name']}")
+    if not target:
+        print("[!] --target required", file=sys.stderr)
+        return 1
 
-    ts = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
-    out_dir = Path(getattr(args, "output", "."))
-    out_dir.mkdir(parents=True, exist_ok=True)
-    out_file = out_dir / f"{MANIFEST['capability_id'].rsplit('.', 1)[-1]}_{ts}.json"
-    out_file.write_text(json.dumps({"module": MANIFEST["capability_id"], "timestamp": ts, "findings": findings}, indent=2))
-    print(f"[+] Results saved to {out_file}")
+    print(f"[*] Target: {target}")
+    # TODO: implement exploit/scanner logic
+    print("[!] Module stub — implement exploit logic")
     return 0

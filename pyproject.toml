@@ -6,8 +6,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "cloudxpl-forge"
-version = "3.0.0"
-description = "CloudXPL-Forge (CXF) — Cloud security assessment framework. 296 modules across 17 categories: AWS, Azure, GCP, OCI, Alibaba, Tencent, IBM, DigitalOcean, OVHcloud, Hetzner, Kubernetes, serverless, storage, multi-cloud, hypervisors (VMware/Hyper-V/KVM/QEMU/Citrix/Nutanix), credential and network attack surfaces."
+version = "4.0.0"
+description = "CloudXPL-Forge (CXF) — Cloud security assessment framework. 424 modules across 20 categories: AWS, Azure, GCP, OCI, Alibaba, Tencent, IBM, DigitalOcean, OVHcloud, Hetzner, Kubernetes, serverless, storage, multi-cloud, hypervisors (VMware ESXi/vCenter, Hyper-V, KVM/QEMU, Xen/Citrix, Nutanix, Firecracker, Kata), VDI escape (Horizon, Citrix VDA, AVD, WorkSpaces), PaaS escape (App Service, ACI, Cloud Run, Fargate, Lambda), CI/CD runner escape (GitHub Actions, GitLab CI, Jenkins, Terraform), VM escape (80+ CVEs 2019-2026), container/tenant escape, side-channel audit, credential and network attack surfaces."
 readme = { file = "README.md", content-type = "text/markdown" }
 license = { text = "MIT" }
 authors = [
@@ -23,7 +23,13 @@ keywords = [
     "credential-theft", "bucket-exploit", "blob-exploit", "entra-id",
     "aks", "eks", "gke", "cloud-exploit", "red-team", "purple-team",
     "cve", "kev", "rsa-securid", "data-exfiltration", "storage-attack",
-    "multi-cloud", "xpl-forge",
+    "multi-cloud", "xpl-forge", "tenant-escape", "guest-to-host",
+    "firecracker", "kata-containers", "vdi-escape", "runc-escape",
+    "dirty-pipe", "openslp", "vmci", "xen-xsa", "remotefx",
+    "paas-escape", "cicd-escape", "github-actions", "gitlab-ci",
+    "jenkins", "terraform", "azurescape", "cloud-run", "fargate",
+    "horizon", "citrix-vda", "avd", "workspaces", "sev-snp",
+    "tdx", "side-channel", "spectre", "nitro-enclaves",
 ]
 classifiers = [
     "Development Status :: 4 - Beta",

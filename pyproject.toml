@@ -217,6 +217,7 @@ ignore = [
 "cloudxpl/modules/**" = ["F401", "F404", "F523", "F524", "F601", "F821", "F841", "F842", "E402", "E731", "I001", "B006", "B012", "B018", "B026", "SIM101", "SIM112", "SIM116", "SIM118", "SIM201", "SIM211", "SIM212", "SIM905", "RUF034", "BLE001"]
 "cloudxpl/core/**" = ["F401", "F601", "F821", "F841", "E402", "I001", "B005", "B006", "B012", "SIM101", "SIM112", "SIM118", "SIM201", "SIM212", "BLE001"]
 "cloudxpl/__main__.py" = ["E402"]
+"tests/**" = ["E402"]
 "tools/**" = ["F841", "E402", "B005"]
 
 [tool.ruff.lint.isort]

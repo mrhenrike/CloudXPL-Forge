@@ -9,3 +9,22 @@ build/
 .pytest_cache/
 output/
 *.json.bak
+
+# === Secrets & credentials — NEVER commit ===
+.env
+.env.*
+*.env
+.pypirc
+.netrc
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+id_rsa
+id_rsa.*
+*.credentials
+credentials.json
+secrets.json
+.coverage

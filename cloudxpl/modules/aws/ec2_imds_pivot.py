@@ -37,7 +37,8 @@ def run(args: Any) -> int:
     if not target:
         target = "http://169.254.169.254"
     results = {"imds_version": "unknown", "credentials": [], "metadata": {}}
-    import urllib.request, urllib.error
+    import urllib.request
+    import urllib.error
     try:
         req = urllib.request.Request(f"{target}/latest/meta-data/", method="GET")
         with urllib.request.urlopen(req, timeout=5) as resp:

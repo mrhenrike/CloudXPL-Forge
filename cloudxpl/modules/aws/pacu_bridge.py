@@ -33,7 +33,8 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
 
     print("[*] Pacu Framework Bridge")
-    import shutil, subprocess
+    import shutil
+    import subprocess
     pacu_path = shutil.which("pacu")
     if not pacu_path:
         print("[!] Pacu not found in PATH. Install: pip install pacu"); return 1

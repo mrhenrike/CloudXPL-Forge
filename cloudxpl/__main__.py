@@ -5,7 +5,7 @@ from __future__ import annotations
 import argparse
 import sys
 
-from cloudxpl import __version__, __product__
+from cloudxpl import __product__, __version__
 from cloudxpl.core.dispatcher import MODULE_MAP
 
 

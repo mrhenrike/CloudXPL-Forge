@@ -13,7 +13,7 @@ ROOT = Path(__file__).resolve().parent.parent
 
 def test_version():
     import cloudxpl
-    assert cloudxpl.__version__ == "4.1.1"
+    assert cloudxpl.__version__ == "4.2.0"
     assert cloudxpl.PRODUCT == "CloudXPL-Forge"
 
 

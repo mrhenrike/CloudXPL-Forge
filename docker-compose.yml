@@ -1,0 +1,9 @@
+services:
+  cloudxpl:
+    build: .
+    container_name: cloudxpl
+    network_mode: host
+    volumes:
+      - ./output:/opt/cloudxpl/output
+    environment:
+      - TERM=xterm-256color

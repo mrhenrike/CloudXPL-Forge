@@ -110,8 +110,11 @@ full = [
 ]
 
 [project.urls]
-Homepage   = "https://github.com/mrhenrike/CloudXPL-Forge"
-Repository = "https://github.com/mrhenrike/CloudXPL-Forge"
+Homepage      = "https://github.com/mrhenrike/CloudXPL-Forge"
+Repository    = "https://github.com/mrhenrike/CloudXPL-Forge"
+Documentation = "https://github.com/mrhenrike/CloudXPL-Forge/wiki"
+"Bug Tracker" = "https://github.com/mrhenrike/CloudXPL-Forge/issues"
+Changelog     = "https://github.com/mrhenrike/CloudXPL-Forge/releases"
 
 [project.scripts]
 cxf      = "cloudxpl.__main__:main"

@@ -32,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute nsg_enum module."""
     provider = getattr(args, "command", "azure")
-    print(f"[*] {MANIFEST['capability_id']} — Azure NSG rules enumeration and exposed port analysis")
+    print(f"[*] {MANIFEST['capability_id']}  -  Azure NSG rules enumeration and exposed port analysis")
     print(f"[*] Provider: {provider} | Service: NetworkManagementClient")
     print(f"[*] Target: NSGs, rules")
 
@@ -72,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "0.0.0.0/0 inbound rules",
         }
-        print(f"[+] Analysis complete — key finding indicator: 0.0.0.0/0 inbound rules")
+        print(f"[+] Analysis complete  -  key finding indicator: 0.0.0.0/0 inbound rules")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

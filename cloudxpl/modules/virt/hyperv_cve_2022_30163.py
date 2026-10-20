@@ -1,4 +1,4 @@
-"""CloudXPL-Forge — Hyper-V Race Condition VM Escape (CVE-2022-30163)."""
+"""CloudXPL-Forge  -  Hyper-V Race Condition VM Escape (CVE-2022-30163)."""
 
 
 MANIFEST: dict = {
@@ -25,5 +25,5 @@ def run(args):
 
     print(f"[*] Target: {target}")
     # TODO: implement exploit/scanner logic
-    print("[!] Module stub — implement exploit logic")
+    print("[!] Module stub  -  implement exploit logic")
     return 0

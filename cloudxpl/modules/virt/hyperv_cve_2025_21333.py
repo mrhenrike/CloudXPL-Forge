@@ -1,4 +1,4 @@
-"""CloudXPL-Forge module: CVE-2025-21333 — Hyper-V VSP heap overflow KEV EDB-52436 (CVSS 7.8)"""
+"""CloudXPL-Forge module: CVE-2025-21333  -  Hyper-V VSP heap overflow KEV EDB-52436 (CVSS 7.8)"""
 
 
 from typing import Any
@@ -17,7 +17,7 @@ MANIFEST = {
 
 
 def run(args: Any) -> int:
-    """Execute CVE-2025-21333 — Hyper-V VSP heap overflow KEV EDB-52436 (CVSS 7.8)."""
+    """Execute CVE-2025-21333  -  Hyper-V VSP heap overflow KEV EDB-52436 (CVSS 7.8)."""
     import json
     import sys
     from datetime import datetime, timezone
@@ -30,7 +30,7 @@ def run(args: Any) -> int:
 
     # --- Module logic placeholder ---
     # TODO: implement provider-specific API calls
-    print("[!] Module stub — implement provider-specific logic")
+    print("[!] Module stub  -  implement provider-specific logic")
 
     ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     out_dir = Path(getattr(args, "output", "."))

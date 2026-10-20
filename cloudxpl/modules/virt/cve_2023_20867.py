@@ -1,4 +1,4 @@
-"""CloudXPL-Forge module: CVE-2023-20867 — VMware Tools guest auth bypass (KEV, UNC3886)"""
+"""CloudXPL-Forge module: CVE-2023-20867  -  VMware Tools guest auth bypass (KEV, UNC3886)"""
 
 
 from typing import Any
@@ -16,7 +16,7 @@ MANIFEST = {
 
 
 def run(args: Any) -> int:
-    """Detect/exploit CVE-2023-20867 — VMware Tools SAML token auth bypass. KEV, used by UNC3886 APT since 2021."""
+    """Detect/exploit CVE-2023-20867  -  VMware Tools SAML token auth bypass. KEV, used by UNC3886 APT since 2021."""
     import json
     import sys
     from datetime import datetime, timezone
@@ -29,7 +29,7 @@ def run(args: Any) -> int:
 
     # --- Module logic placeholder ---
     # TODO: implement provider-specific logic
-    print("[!] Module stub — implement provider-specific logic")
+    print("[!] Module stub  -  implement provider-specific logic")
 
     ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     out_dir = Path(getattr(args, "output", "."))

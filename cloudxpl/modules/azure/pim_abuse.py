@@ -1,4 +1,4 @@
-"""Azure PIM escalation — eligible role activation analysis."""
+"""Azure PIM escalation  -  eligible role activation analysis."""
 
 
 import json
@@ -32,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute pim_abuse module."""
     provider = getattr(args, "command", "azure")
-    print(f"[*] {MANIFEST['capability_id']} — Azure PIM escalation — eligible role activation analysis")
+    print(f"[*] {MANIFEST['capability_id']}  -  Azure PIM escalation  -  eligible role activation analysis")
     print(f"[*] Provider: {provider} | Service: GraphServiceClient")
     print(f"[*] Target: PIM eligible assignments")
 
@@ -72,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "activatable privileged roles",
         }
-        print(f"[+] Analysis complete — key finding indicator: activatable privileged roles")
+        print(f"[+] Analysis complete  -  key finding indicator: activatable privileged roles")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

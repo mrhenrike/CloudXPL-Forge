@@ -1,8 +1,8 @@
-"""CloudXPL-Forge — CacheWarp — AMD SEV Fault Injection (CVE-2023-20592)."""
+"""CloudXPL-Forge  -  CacheWarp  -  AMD SEV Fault Injection (CVE-2023-20592)."""
 
 
 MANIFEST: dict = {
-    "name": "CacheWarp — AMD SEV Fault Injection (CVE-2023-20592)",
+    "name": "CacheWarp  -  AMD SEV Fault Injection (CVE-2023-20592)",
     "cve": "CVE-2023-20592",
     "mitre": ["T1003"],
     "description": "Software-based fault injection via INVD on AMD SEV-ES/SNP. Demonstrated RSA key recovery, SSH bypass, sudo privesc.",
@@ -25,5 +25,5 @@ def run(args):
 
     print(f"[*] Target: {target}")
     # TODO: implement exploit/scanner logic
-    print("[!] Module stub — implement exploit logic")
+    print("[!] Module stub  -  implement exploit logic")
     return 0

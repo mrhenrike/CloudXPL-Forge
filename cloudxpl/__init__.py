@@ -1,4 +1,4 @@
-"""CloudXPL-Forge — Cloud security assessment framework."""
+"""CloudXPL-Forge  -  Cloud security assessment framework."""
 
 __version__ = "4.2.0"
 __product__ = "CloudXPL-Forge"

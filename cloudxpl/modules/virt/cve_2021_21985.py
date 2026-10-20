@@ -1,4 +1,4 @@
-"""CloudXPL-Forge module: CVE-2021-21985 — vCenter vSAN Health RCE (KEV, Metasploit)"""
+"""CloudXPL-Forge module: CVE-2021-21985  -  vCenter vSAN Health RCE (KEV, Metasploit)"""
 
 
 from typing import Any
@@ -16,7 +16,7 @@ MANIFEST = {
 
 
 def run(args: Any) -> int:
-    """Detect/exploit CVE-2021-21985 — vCenter vSAN Health plugin RCE. KEV, Metasploit vmware_vcenter_vsan_health_rce. PoC: xnianq, alt3kx."""
+    """Detect/exploit CVE-2021-21985  -  vCenter vSAN Health plugin RCE. KEV, Metasploit vmware_vcenter_vsan_health_rce. PoC: xnianq, alt3kx."""
     import json
     import sys
     from datetime import datetime, timezone
@@ -29,7 +29,7 @@ def run(args: Any) -> int:
 
     # --- Module logic placeholder ---
     # TODO: implement provider-specific logic
-    print("[!] Module stub — implement provider-specific logic")
+    print("[!] Module stub  -  implement provider-specific logic")
 
     ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     out_dir = Path(getattr(args, "output", "."))

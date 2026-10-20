@@ -1,4 +1,4 @@
-"""GCP Metadata SSRF — exploit SSRF to reach GCE metadata server."""
+"""GCP Metadata SSRF  -  exploit SSRF to reach GCE metadata server."""
 
 
 import json

@@ -32,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute iam_privesc module."""
     provider = getattr(args, "command", "gcp")
-    print(f"[*] {MANIFEST['capability_id']} — GCP IAM privilege escalation path analysis")
+    print(f"[*] {MANIFEST['capability_id']}  -  GCP IAM privilege escalation path analysis")
     print(f"[*] Provider: {provider} | Service: IAM API")
     print(f"[*] Target: IAM policies, roles, bindings")
 
@@ -72,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "escalation paths via setIamPolicy",
         }
-        print(f"[+] Analysis complete — key finding indicator: escalation paths via setIamPolicy")
+        print(f"[+] Analysis complete  -  key finding indicator: escalation paths via setIamPolicy")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

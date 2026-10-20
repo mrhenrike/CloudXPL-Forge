@@ -1,4 +1,4 @@
-"""AWS EC2 IMDS pivot — IMDSv1/v2 credential theft and lateral movement."""
+"""AWS EC2 IMDS pivot  -  IMDSv1/v2 credential theft and lateral movement."""
 
 
 import json

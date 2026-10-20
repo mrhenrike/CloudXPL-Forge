@@ -1,4 +1,4 @@
-"""CloudXPL-Forge — BuildKit Mount-Cache Race TOCTOU (CVE-2024-23651)."""
+"""CloudXPL-Forge  -  BuildKit Mount-Cache Race TOCTOU (CVE-2024-23651)."""
 
 
 MANIFEST: dict = {
@@ -25,5 +25,5 @@ def run(args):
 
     print(f"[*] Target: {target}")
     # TODO: implement exploit/scanner logic
-    print("[!] Module stub — implement exploit logic")
+    print("[!] Module stub  -  implement exploit logic")
     return 0

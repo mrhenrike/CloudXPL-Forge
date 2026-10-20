@@ -1,4 +1,4 @@
-"""CloudXPL-Forge module: Citrix Hypervisor XSA-486 — CVE-2026-23558 guest-to-host compromise"""
+"""CloudXPL-Forge module: Citrix Hypervisor XSA-486  -  CVE-2026-23558 guest-to-host compromise"""
 
 
 from typing import Any
@@ -16,7 +16,7 @@ MANIFEST = {
 
 
 def run(args: Any) -> int:
-    """Detect CVE-2026-23558 (XSA-486) — Citrix Hypervisor privileged guest-to-host compromise."""
+    """Detect CVE-2026-23558 (XSA-486)  -  Citrix Hypervisor privileged guest-to-host compromise."""
     import json
     import sys
     from datetime import datetime, timezone
@@ -29,7 +29,7 @@ def run(args: Any) -> int:
 
     # --- Module logic placeholder ---
     # TODO: implement provider-specific logic
-    print("[!] Module stub — implement provider-specific logic")
+    print("[!] Module stub  -  implement provider-specific logic")
 
     ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     out_dir = Path(getattr(args, "output", "."))

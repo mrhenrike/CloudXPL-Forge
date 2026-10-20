@@ -1,4 +1,4 @@
-"""CloudXPL-Forge — VMware Horizon Log4Shell (CVE-2021-44228)."""
+"""CloudXPL-Forge  -  VMware Horizon Log4Shell (CVE-2021-44228)."""
 
 
 MANIFEST: dict = {
@@ -25,5 +25,5 @@ def run(args):
 
     print(f"[*] Target: {target}")
     # TODO: implement exploit/scanner logic
-    print("[!] Module stub — implement exploit logic")
+    print("[!] Module stub  -  implement exploit logic")
     return 0

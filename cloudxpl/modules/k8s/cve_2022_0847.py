@@ -1,4 +1,4 @@
-"""CloudXPL-Forge module: CVE-2022-0847 (Dirty Pipe) — container escape via runc binary overwrite"""
+"""CloudXPL-Forge module: CVE-2022-0847 (Dirty Pipe)  -  container escape via runc binary overwrite"""
 
 
 from typing import Any
@@ -16,7 +16,7 @@ MANIFEST = {
 
 
 def run(args: Any) -> int:
-    """Detect CVE-2022-0847 (Dirty Pipe) — kernel pipe overwrite enabling container escape via runc entrypoint injection."""
+    """Detect CVE-2022-0847 (Dirty Pipe)  -  kernel pipe overwrite enabling container escape via runc entrypoint injection."""
     import json
     import sys
     from datetime import datetime, timezone
@@ -29,7 +29,7 @@ def run(args: Any) -> int:
 
     # --- Module logic placeholder ---
     # TODO: implement provider-specific logic
-    print("[!] Module stub — implement provider-specific logic")
+    print("[!] Module stub  -  implement provider-specific logic")
 
     ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     out_dir = Path(getattr(args, "output", "."))

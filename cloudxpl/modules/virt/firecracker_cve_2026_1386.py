@@ -1,4 +1,4 @@
-"""CloudXPL-Forge — Firecracker Jailer Symlink Host-Write (CVE-2026-1386)."""
+"""CloudXPL-Forge  -  Firecracker Jailer Symlink Host-Write (CVE-2026-1386)."""
 
 
 MANIFEST: dict = {
@@ -25,5 +25,5 @@ def run(args):
 
     print(f"[*] Target: {target}")
     # TODO: implement exploit/scanner logic
-    print("[!] Module stub — implement exploit logic")
+    print("[!] Module stub  -  implement exploit logic")
     return 0

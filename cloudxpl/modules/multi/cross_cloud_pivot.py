@@ -32,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute cross_cloud_pivot module."""
     provider = getattr(args, "command", "multi")
-    print(f"[*] {MANIFEST['capability_id']} — Cross-cloud credential pivoting")
+    print(f"[*] {MANIFEST['capability_id']}  -  Cross-cloud credential pivoting")
     print(f"[*] Provider: {provider} | Service: Multi-cloud")
     print(f"[*] Target: cross-provider resources")
 
@@ -72,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "cross-cloud credential",
         }
-        print(f"[+] Analysis complete — key finding indicator: cross-cloud credential")
+        print(f"[+] Analysis complete  -  key finding indicator: cross-cloud credential")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

@@ -1,4 +1,4 @@
-"""CloudXPL-Forge — QEMU USB Emulator OOB R/W (CVE-2020-14364)."""
+"""CloudXPL-Forge  -  QEMU USB Emulator OOB R/W (CVE-2020-14364)."""
 
 
 MANIFEST: dict = {
@@ -25,5 +25,5 @@ def run(args):
 
     print(f"[*] Target: {target}")
     # TODO: implement exploit/scanner logic
-    print("[!] Module stub — implement exploit logic")
+    print("[!] Module stub  -  implement exploit logic")
     return 0

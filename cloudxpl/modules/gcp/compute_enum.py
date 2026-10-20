@@ -32,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute compute_enum module."""
     provider = getattr(args, "command", "gcp")
-    print(f"[*] {MANIFEST['capability_id']} — GCP Compute Engine instance enumeration")
+    print(f"[*] {MANIFEST['capability_id']}  -  GCP Compute Engine instance enumeration")
     print(f"[*] Provider: {provider} | Service: InstancesClient")
     print(f"[*] Target: instances, disks, firewall")
 
@@ -72,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "publicly exposed instances",
         }
-        print(f"[+] Analysis complete — key finding indicator: publicly exposed instances")
+        print(f"[+] Analysis complete  -  key finding indicator: publicly exposed instances")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

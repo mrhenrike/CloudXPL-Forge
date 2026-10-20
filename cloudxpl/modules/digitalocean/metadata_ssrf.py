@@ -1,4 +1,4 @@
-"""CloudXPL-Forge module: SSRF to DO metadata (169.254.169.254) — SSH keys, user-data, network"""
+"""CloudXPL-Forge module: SSRF to DO metadata (169.254.169.254)  -  SSH keys, user-data, network"""
 
 
 from typing import Any
@@ -16,7 +16,7 @@ MANIFEST = {
 
 
 def run(args: Any) -> int:
-    """Execute SSRF to DO metadata (169.254.169.254) — SSH keys, user-data, network."""
+    """Execute SSRF to DO metadata (169.254.169.254)  -  SSH keys, user-data, network."""
     import json
     import sys
     from datetime import datetime, timezone
@@ -29,7 +29,7 @@ def run(args: Any) -> int:
 
     # --- Module logic placeholder ---
     # TODO: implement provider-specific API calls
-    print("[!] Module stub — implement provider-specific logic")
+    print("[!] Module stub  -  implement provider-specific logic")
 
     ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     out_dir = Path(getattr(args, "output", "."))

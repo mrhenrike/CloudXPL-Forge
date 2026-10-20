@@ -32,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute entra_consent module."""
     provider = getattr(args, "command", "azure")
-    print(f"[*] {MANIFEST['capability_id']} — Entra ID illicit consent grant attack analysis")
+    print(f"[*] {MANIFEST['capability_id']}  -  Entra ID illicit consent grant attack analysis")
     print(f"[*] Provider: {provider} | Service: GraphServiceClient")
     print(f"[*] Target: OAuth consent grants, app permissions")
 
@@ -72,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "overly permissive consent grants",
         }
-        print(f"[+] Analysis complete — key finding indicator: overly permissive consent grants")
+        print(f"[+] Analysis complete  -  key finding indicator: overly permissive consent grants")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

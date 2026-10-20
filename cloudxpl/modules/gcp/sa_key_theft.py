@@ -32,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute sa_key_theft module."""
     provider = getattr(args, "command", "gcp")
-    print(f"[*] {MANIFEST['capability_id']} — GCP service account key extraction and analysis")
+    print(f"[*] {MANIFEST['capability_id']}  -  GCP service account key extraction and analysis")
     print(f"[*] Provider: {provider} | Service: IAM API")
     print(f"[*] Target: SA keys, key metadata")
 
@@ -72,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "long-lived SA keys",
         }
-        print(f"[+] Analysis complete — key finding indicator: long-lived SA keys")
+        print(f"[+] Analysis complete  -  key finding indicator: long-lived SA keys")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

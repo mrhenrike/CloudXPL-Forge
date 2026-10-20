@@ -1,8 +1,8 @@
-"""CloudXPL-Forge — Downfall — Intel Gather Data Sampling (CVE-2022-40982)."""
+"""CloudXPL-Forge  -  Downfall  -  Intel Gather Data Sampling (CVE-2022-40982)."""
 
 
 MANIFEST: dict = {
-    "name": "Downfall — Intel Gather Data Sampling (CVE-2022-40982)",
+    "name": "Downfall  -  Intel Gather Data Sampling (CVE-2022-40982)",
     "cve": "CVE-2022-40982",
     "mitre": ["T1003"],
     "description": "Exploits Intel GDS transient execution vulnerability for cross-VM data exfiltration on 6th-11th gen CPUs.",
@@ -25,5 +25,5 @@ def run(args):
 
     print(f"[*] Target: {target}")
     # TODO: implement exploit/scanner logic
-    print("[!] Module stub — implement exploit logic")
+    print("[!] Module stub  -  implement exploit logic")
     return 0

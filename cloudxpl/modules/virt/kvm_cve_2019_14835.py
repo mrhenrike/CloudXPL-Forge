@@ -1,4 +1,4 @@
-"""CloudXPL-Forge module: CVE-2019-14835 — KVM vhost_net buffer overflow guest-to-host"""
+"""CloudXPL-Forge module: CVE-2019-14835  -  KVM vhost_net buffer overflow guest-to-host"""
 
 
 from typing import Any
@@ -16,7 +16,7 @@ MANIFEST = {
 
 
 def run(args: Any) -> int:
-    """Detect CVE-2019-14835 — KVM vhost_net buffer overflow during live migration. Guest-to-host escape."""
+    """Detect CVE-2019-14835  -  KVM vhost_net buffer overflow during live migration. Guest-to-host escape."""
     import json
     import sys
     from datetime import datetime, timezone
@@ -29,7 +29,7 @@ def run(args: Any) -> int:
 
     # --- Module logic placeholder ---
     # TODO: implement provider-specific logic
-    print("[!] Module stub — implement provider-specific logic")
+    print("[!] Module stub  -  implement provider-specific logic")
 
     ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     out_dir = Path(getattr(args, "output", "."))

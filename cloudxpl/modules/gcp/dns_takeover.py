@@ -32,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute dns_takeover module."""
     provider = getattr(args, "command", "gcp")
-    print(f"[*] {MANIFEST['capability_id']} — GCP Cloud DNS dangling record takeover analysis")
+    print(f"[*] {MANIFEST['capability_id']}  -  GCP Cloud DNS dangling record takeover analysis")
     print(f"[*] Provider: {provider} | Service: ManagedZonesClient")
     print(f"[*] Target: DNS zones, records")
 
@@ -72,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "dangling CNAME records",
         }
-        print(f"[+] Analysis complete — key finding indicator: dangling CNAME records")
+        print(f"[+] Analysis complete  -  key finding indicator: dangling CNAME records")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

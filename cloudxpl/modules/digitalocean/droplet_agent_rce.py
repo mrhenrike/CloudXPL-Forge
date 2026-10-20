@@ -1,4 +1,4 @@
-"""CloudXPL-Forge module: CDE-2026-0993 — Droplet Agent command injection as root (CVSS 8.8)"""
+"""CloudXPL-Forge module: CDE-2026-0993  -  Droplet Agent command injection as root (CVSS 8.8)"""
 
 
 from typing import Any
@@ -16,7 +16,7 @@ MANIFEST = {
 
 
 def run(args: Any) -> int:
-    """Execute CDE-2026-0993 — Droplet Agent command injection as root (CVSS 8.8)."""
+    """Execute CDE-2026-0993  -  Droplet Agent command injection as root (CVSS 8.8)."""
     import json
     import sys
     from datetime import datetime, timezone
@@ -29,7 +29,7 @@ def run(args: Any) -> int:
 
     # --- Module logic placeholder ---
     # TODO: implement provider-specific API calls
-    print("[!] Module stub — implement provider-specific logic")
+    print("[!] Module stub  -  implement provider-specific logic")
 
     ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     out_dir = Path(getattr(args, "output", "."))

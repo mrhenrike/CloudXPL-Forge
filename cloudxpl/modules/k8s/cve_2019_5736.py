@@ -1,4 +1,4 @@
-"""CloudXPL-Forge module: CVE-2019-5736 — runc /proc/self/exe overwrite host escape"""
+"""CloudXPL-Forge module: CVE-2019-5736  -  runc /proc/self/exe overwrite host escape"""
 
 
 from typing import Any
@@ -16,7 +16,7 @@ MANIFEST = {
 
 
 def run(args: Any) -> int:
-    """Detect/exploit CVE-2019-5736 — runc host binary overwrite via /proc/self/exe. Grants host root."""
+    """Detect/exploit CVE-2019-5736  -  runc host binary overwrite via /proc/self/exe. Grants host root."""
     import json
     import sys
     from datetime import datetime, timezone
@@ -29,7 +29,7 @@ def run(args: Any) -> int:
 
     # --- Module logic placeholder ---
     # TODO: implement provider-specific logic
-    print("[!] Module stub — implement provider-specific logic")
+    print("[!] Module stub  -  implement provider-specific logic")
 
     ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     out_dir = Path(getattr(args, "output", "."))

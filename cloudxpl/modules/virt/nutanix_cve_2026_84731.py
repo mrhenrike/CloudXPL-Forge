@@ -1,11 +1,11 @@
-"""CloudXPL-Forge — Nutanix Prism Auth Bypass (CVE-2026-84731)."""
+"""CloudXPL-Forge  -  Nutanix Prism Auth Bypass (CVE-2026-84731)."""
 
 
 MANIFEST: dict = {
     "name": "Nutanix Prism Auth Bypass (CVE-2026-84731)",
     "cve": "CVE-2026-84731",
     "mitre": ["T1078"],
-    "description": "Exploits authentication bypass in Nutanix Prism Element. CVSS 9.8. (Unverified — check NVD.)",
+    "description": "Exploits authentication bypass in Nutanix Prism Element. CVSS 9.8. (Unverified  -  check NVD.)",
     "references": [],
 }
 
@@ -25,5 +25,5 @@ def run(args):
 
     print(f"[*] Target: {target}")
     # TODO: implement exploit/scanner logic
-    print("[!] Module stub — implement exploit logic")
+    print("[!] Module stub  -  implement exploit logic")
     return 0

@@ -14,8 +14,8 @@ MANIFEST = {
 
 
 def run(args: Any) -> int:
-    print(f"[*] {MANIFEST['name']} — {MANIFEST['description']}")
+    print(f"[*] {MANIFEST['name']}  -  {MANIFEST['description']}")
     print(f"[*] CVE: {MANIFEST['cve']} | CVSS: {MANIFEST['cvss']} | Safety: {MANIFEST['safety_class']}")
     print(f"[*] MITRE: {', '.join(MANIFEST['mitre'])}")
-    print("[!] Module stub — implement exploit/assessment logic")
+    print("[!] Module stub  -  implement exploit/assessment logic")
     return 0

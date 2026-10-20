@@ -1,4 +1,4 @@
-"""AWS ECR enumeration — repositories, images, scan findings."""
+"""AWS ECR enumeration  -  repositories, images, scan findings."""
 
 
 import json

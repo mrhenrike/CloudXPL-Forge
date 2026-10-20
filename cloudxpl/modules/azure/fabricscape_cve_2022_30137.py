@@ -1,4 +1,4 @@
-"""CloudXPL-Forge — Azure FabricScape Container Escape (CVE-2022-30137)."""
+"""CloudXPL-Forge  -  Azure FabricScape Container Escape (CVE-2022-30137)."""
 
 
 MANIFEST: dict = {
@@ -25,5 +25,5 @@ def run(args):
 
     print(f"[*] Target: {target}")
     # TODO: implement exploit/scanner logic
-    print("[!] Module stub — implement exploit logic")
+    print("[!] Module stub  -  implement exploit logic")
     return 0

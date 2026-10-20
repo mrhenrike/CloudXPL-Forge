@@ -32,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute resource_group_enum module."""
     provider = getattr(args, "command", "azure")
-    print(f"[*] {MANIFEST['capability_id']} — Azure Resource Group enumeration and scope analysis")
+    print(f"[*] {MANIFEST['capability_id']}  -  Azure Resource Group enumeration and scope analysis")
     print(f"[*] Provider: {provider} | Service: ResourceManagementClient")
     print(f"[*] Target: resource groups, resources")
 
@@ -72,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "high-value resource groups",
         }
-        print(f"[+] Analysis complete — key finding indicator: high-value resource groups")
+        print(f"[+] Analysis complete  -  key finding indicator: high-value resource groups")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

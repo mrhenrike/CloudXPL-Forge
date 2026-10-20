@@ -1,4 +1,4 @@
-"""AWS S3 data exfiltration — object listing, download, cross-account copy simulation."""
+"""AWS S3 data exfiltration  -  object listing, download, cross-account copy simulation."""
 
 
 import json

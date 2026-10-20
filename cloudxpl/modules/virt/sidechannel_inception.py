@@ -1,8 +1,8 @@
-"""CloudXPL-Forge — Inception — AMD Speculative RAS (CVE-2023-20569)."""
+"""CloudXPL-Forge  -  Inception  -  AMD Speculative RAS (CVE-2023-20569)."""
 
 
 MANIFEST: dict = {
-    "name": "Inception — AMD Speculative RAS (CVE-2023-20569)",
+    "name": "Inception  -  AMD Speculative RAS (CVE-2023-20569)",
     "cve": "CVE-2023-20569",
     "mitre": ["T1003"],
     "description": "Exploits AMD Zen 3/4 speculative Return Address Stack manipulation for cross-VM data leakage.",
@@ -25,5 +25,5 @@ def run(args):
 
     print(f"[*] Target: {target}")
     # TODO: implement exploit/scanner logic
-    print("[!] Module stub — implement exploit logic")
+    print("[!] Module stub  -  implement exploit logic")
     return 0

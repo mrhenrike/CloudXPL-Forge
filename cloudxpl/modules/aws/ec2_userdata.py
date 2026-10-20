@@ -1,4 +1,4 @@
-"""AWS EC2 User Data extraction — cloud-init scripts, embedded credentials."""
+"""AWS EC2 User Data extraction  -  cloud-init scripts, embedded credentials."""
 
 
 import json

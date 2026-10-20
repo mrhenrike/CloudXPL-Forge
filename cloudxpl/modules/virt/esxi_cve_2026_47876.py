@@ -1,4 +1,4 @@
-"""CloudXPL-Forge — ESXi VMXNET3 OOB Write VM Escape (CVE-2026-47876)."""
+"""CloudXPL-Forge  -  ESXi VMXNET3 OOB Write VM Escape (CVE-2026-47876)."""
 
 
 MANIFEST: dict = {
@@ -25,5 +25,5 @@ def run(args):
 
     print(f"[*] Target: {target}")
     # TODO: implement exploit/scanner logic
-    print("[!] Module stub — implement exploit logic")
+    print("[!] Module stub  -  implement exploit logic")
     return 0

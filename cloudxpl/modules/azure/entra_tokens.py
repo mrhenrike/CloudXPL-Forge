@@ -32,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute entra_tokens module."""
     provider = getattr(args, "command", "azure")
-    print(f"[*] {MANIFEST['capability_id']} — Entra ID OAuth token theft, refresh token abuse, PRT extraction")
+    print(f"[*] {MANIFEST['capability_id']}  -  Entra ID OAuth token theft, refresh token abuse, PRT extraction")
     print(f"[*] Provider: {provider} | Service: TokenCredential")
     print(f"[*] Target: OAuth tokens, refresh tokens, PRT")
 
@@ -72,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "leaked or reusable tokens",
         }
-        print(f"[+] Analysis complete — key finding indicator: leaked or reusable tokens")
+        print(f"[+] Analysis complete  -  key finding indicator: leaked or reusable tokens")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

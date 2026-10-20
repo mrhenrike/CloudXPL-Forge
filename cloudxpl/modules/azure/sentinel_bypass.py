@@ -32,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute sentinel_bypass module."""
     provider = getattr(args, "command", "azure")
-    print(f"[*] {MANIFEST['capability_id']} — Microsoft Sentinel logging evasion analysis")
+    print(f"[*] {MANIFEST['capability_id']}  -  Microsoft Sentinel logging evasion analysis")
     print(f"[*] Provider: {provider} | Service: SecurityInsights")
     print(f"[*] Target: Sentinel workspaces, connectors")
 
@@ -72,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "disabled data connectors",
         }
-        print(f"[+] Analysis complete — key finding indicator: disabled data connectors")
+        print(f"[+] Analysis complete  -  key finding indicator: disabled data connectors")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

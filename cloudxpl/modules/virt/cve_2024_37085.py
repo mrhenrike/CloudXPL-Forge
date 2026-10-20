@@ -1,4 +1,4 @@
-"""CloudXPL-Forge module: CVE-2024-37085 — ESXi AD integration auth bypass (KEV, ransomware)"""
+"""CloudXPL-Forge module: CVE-2024-37085  -  ESXi AD integration auth bypass (KEV, ransomware)"""
 
 
 from typing import Any
@@ -16,7 +16,7 @@ MANIFEST = {
 
 
 def run(args: Any) -> int:
-    """Detect/exploit CVE-2024-37085 — ESXi AD group recreation admin bypass. KEV, used by Storm-0506, Octo Tempest."""
+    """Detect/exploit CVE-2024-37085  -  ESXi AD group recreation admin bypass. KEV, used by Storm-0506, Octo Tempest."""
     import json
     import sys
     from datetime import datetime, timezone
@@ -29,7 +29,7 @@ def run(args: Any) -> int:
 
     # --- Module logic placeholder ---
     # TODO: implement provider-specific logic
-    print("[!] Module stub — implement provider-specific logic")
+    print("[!] Module stub  -  implement provider-specific logic")
 
     ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     out_dir = Path(getattr(args, "output", "."))

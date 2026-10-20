@@ -1,4 +1,4 @@
-"""AWS Lambda event injection — trigger abuse, environment extraction, layer analysis."""
+"""AWS Lambda event injection  -  trigger abuse, environment extraction, layer analysis."""
 
 
 import json

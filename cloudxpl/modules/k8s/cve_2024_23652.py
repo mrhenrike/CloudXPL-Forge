@@ -1,4 +1,4 @@
-"""CloudXPL-Forge module: CVE-2024-23652 — BuildKit arbitrary file delete during build"""
+"""CloudXPL-Forge module: CVE-2024-23652  -  BuildKit arbitrary file delete during build"""
 
 
 from typing import Any
@@ -17,7 +17,7 @@ MANIFEST = {
 
 
 def run(args: Any) -> int:
-    """Execute CVE-2024-23652 — BuildKit arbitrary file delete during build."""
+    """Execute CVE-2024-23652  -  BuildKit arbitrary file delete during build."""
     import json
     import sys
     from datetime import datetime, timezone
@@ -30,7 +30,7 @@ def run(args: Any) -> int:
 
     # --- Module logic placeholder ---
     # TODO: implement provider-specific API calls
-    print("[!] Module stub — implement provider-specific logic")
+    print("[!] Module stub  -  implement provider-specific logic")
 
     ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     out_dir = Path(getattr(args, "output", "."))

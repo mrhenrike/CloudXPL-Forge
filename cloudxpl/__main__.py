@@ -18,7 +18,7 @@ def _add_common(p: argparse.ArgumentParser) -> None:
 def _build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(
         prog="cxf",
-        description=f"{__product__} v{__version__} — Cloud security assessment framework",
+        description=f"{__product__} v{__version__}  -  Cloud security assessment framework",
     )
     p.add_argument("--version", action="version", version=f"{__product__} {__version__}")
 

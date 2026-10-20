@@ -32,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute conditional_access module."""
     provider = getattr(args, "command", "azure")
-    print(f"[*] {MANIFEST['capability_id']} — Azure Conditional Access policy bypass analysis")
+    print(f"[*] {MANIFEST['capability_id']}  -  Azure Conditional Access policy bypass analysis")
     print(f"[*] Provider: {provider} | Service: GraphServiceClient")
     print(f"[*] Target: conditional access policies")
 
@@ -72,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "bypassable or weak policies",
         }
-        print(f"[+] Analysis complete — key finding indicator: bypassable or weak policies")
+        print(f"[+] Analysis complete  -  key finding indicator: bypassable or weak policies")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

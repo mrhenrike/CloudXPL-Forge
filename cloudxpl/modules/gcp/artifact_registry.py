@@ -32,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute artifact_registry module."""
     provider = getattr(args, "command", "gcp")
-    print(f"[*] {MANIFEST['capability_id']} — GCP Artifact Registry image enumeration")
+    print(f"[*] {MANIFEST['capability_id']}  -  GCP Artifact Registry image enumeration")
     print(f"[*] Provider: {provider} | Service: ArtifactRegistryClient")
     print(f"[*] Target: repositories, images")
 
@@ -72,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "publicly accessible repos",
         }
-        print(f"[+] Analysis complete — key finding indicator: publicly accessible repos")
+        print(f"[+] Analysis complete  -  key finding indicator: publicly accessible repos")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

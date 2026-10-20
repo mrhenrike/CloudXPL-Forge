@@ -1,4 +1,4 @@
-"""CloudXPL-Forge — Xen Grant-Copy Type Confusion (XSA-500 / CVE-2026-62428)."""
+"""CloudXPL-Forge  -  Xen Grant-Copy Type Confusion (XSA-500 / CVE-2026-62428)."""
 
 
 MANIFEST: dict = {
@@ -25,5 +25,5 @@ def run(args):
 
     print(f"[*] Target: {target}")
     # TODO: implement exploit/scanner logic
-    print("[!] Module stub — implement exploit logic")
+    print("[!] Module stub  -  implement exploit logic")
     return 0

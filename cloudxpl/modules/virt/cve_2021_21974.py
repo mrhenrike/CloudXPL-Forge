@@ -1,4 +1,4 @@
-"""CloudXPL-Forge module: CVE-2021-21974 — ESXi OpenSLP heap overflow RCE (KEV, ESXiArgs ransomware)"""
+"""CloudXPL-Forge module: CVE-2021-21974  -  ESXi OpenSLP heap overflow RCE (KEV, ESXiArgs ransomware)"""
 
 
 from typing import Any
@@ -16,7 +16,7 @@ MANIFEST = {
 
 
 def run(args: Any) -> int:
-    """Detect/exploit CVE-2021-21974 — ESXi OpenSLP heap overflow (port 427). KEV, ESXiArgs campaign. PoC: Shadow0ps."""
+    """Detect/exploit CVE-2021-21974  -  ESXi OpenSLP heap overflow (port 427). KEV, ESXiArgs campaign. PoC: Shadow0ps."""
     import json
     import sys
     from datetime import datetime, timezone
@@ -29,7 +29,7 @@ def run(args: Any) -> int:
 
     # --- Module logic placeholder ---
     # TODO: implement provider-specific logic
-    print("[!] Module stub — implement provider-specific logic")
+    print("[!] Module stub  -  implement provider-specific logic")
 
     ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     out_dir = Path(getattr(args, "output", "."))

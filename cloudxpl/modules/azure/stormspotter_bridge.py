@@ -32,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute stormspotter_bridge module."""
     provider = getattr(args, "command", "azure")
-    print(f"[*] {MANIFEST['capability_id']} — Stormspotter graph analysis bridge for Azure")
+    print(f"[*] {MANIFEST['capability_id']}  -  Stormspotter graph analysis bridge for Azure")
     print(f"[*] Provider: {provider} | Service: stormspotter")
     print(f"[*] Target: Azure AD graph")
 
@@ -72,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "attack paths in Azure AD",
         }
-        print(f"[+] Analysis complete — key finding indicator: attack paths in Azure AD")
+        print(f"[+] Analysis complete  -  key finding indicator: attack paths in Azure AD")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

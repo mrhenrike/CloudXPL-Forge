@@ -1,4 +1,4 @@
-"""AWS GuardDuty evasion analysis — detector status, suppression rules, finding types."""
+"""AWS GuardDuty evasion analysis  -  detector status, suppression rules, finding types."""
 
 
 import json

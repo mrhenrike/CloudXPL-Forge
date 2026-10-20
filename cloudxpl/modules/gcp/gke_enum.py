@@ -1,4 +1,4 @@
-"""GKE cluster enumeration — RBAC, Workload Identity, node pools."""
+"""GKE cluster enumeration  -  RBAC, Workload Identity, node pools."""
 
 
 import json
@@ -32,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute gke_enum module."""
     provider = getattr(args, "command", "gcp")
-    print(f"[*] {MANIFEST['capability_id']} — GKE cluster enumeration — RBAC, Workload Identity, node pools")
+    print(f"[*] {MANIFEST['capability_id']}  -  GKE cluster enumeration  -  RBAC, Workload Identity, node pools")
     print(f"[*] Provider: {provider} | Service: ClusterManagerClient")
     print(f"[*] Target: GKE clusters, node pools")
 
@@ -72,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "public GKE API, legacy ABAC",
         }
-        print(f"[+] Analysis complete — key finding indicator: public GKE API, legacy ABAC")
+        print(f"[+] Analysis complete  -  key finding indicator: public GKE API, legacy ABAC")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

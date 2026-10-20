@@ -1,10 +1,10 @@
-"""CloudXPL-Forge — LOLESXi Living Off The Land (Bridge)."""
+"""CloudXPL-Forge  -  LOLESXi Living Off The Land (Bridge)."""
 
 
 MANIFEST: dict = {
     "name": "LOLESXi Living Off The Land (Bridge)",
     "mitre": ["T1059"],
-    "description": "Bridge to LOLESXi-Project/LOLESXi — living-off-the-land techniques using native ESXi binaries.",
+    "description": "Bridge to LOLESXi-Project/LOLESXi  -  living-off-the-land techniques using native ESXi binaries.",
     "references": ["https://github.com/LOLESXi-Project/LOLESXi"],
 }
 

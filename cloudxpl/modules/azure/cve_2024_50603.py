@@ -32,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute cve_2024_50603 module."""
     provider = getattr(args, "command", "azure")
-    print(f"[*] {MANIFEST['capability_id']} — CVE-2024-50603 Aviatrix Controller RCE CVSS 10")
+    print(f"[*] {MANIFEST['capability_id']}  -  CVE-2024-50603 Aviatrix Controller RCE CVSS 10")
     print(f"[*] Provider: {provider} | Service: Azure API")
     print(f"[*] Target: deployment indicators")
 
@@ -72,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "vulnerable deployment detected",
         }
-        print(f"[+] Analysis complete — key finding indicator: vulnerable deployment detected")
+        print(f"[+] Analysis complete  -  key finding indicator: vulnerable deployment detected")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

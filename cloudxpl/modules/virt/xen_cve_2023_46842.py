@@ -1,4 +1,4 @@
-"""CloudXPL-Forge module: CVE-2023-46842 — Xen hypervisor crash DoS via malicious HVM guest"""
+"""CloudXPL-Forge module: CVE-2023-46842  -  Xen hypervisor crash DoS via malicious HVM guest"""
 
 
 from typing import Any
@@ -17,7 +17,7 @@ MANIFEST = {
 
 
 def run(args: Any) -> int:
-    """Execute CVE-2023-46842 — Xen hypervisor crash DoS via malicious HVM guest."""
+    """Execute CVE-2023-46842  -  Xen hypervisor crash DoS via malicious HVM guest."""
     import json
     import sys
     from datetime import datetime, timezone
@@ -30,7 +30,7 @@ def run(args: Any) -> int:
 
     # --- Module logic placeholder ---
     # TODO: implement provider-specific API calls
-    print("[!] Module stub — implement provider-specific logic")
+    print("[!] Module stub  -  implement provider-specific logic")
 
     ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     out_dir = Path(getattr(args, "output", "."))

@@ -1,4 +1,4 @@
-"""CloudXPL-Forge — vCenter Authenticated RCE (CVE-2024-22274)."""
+"""CloudXPL-Forge  -  vCenter Authenticated RCE (CVE-2024-22274)."""
 
 
 MANIFEST: dict = {
@@ -25,5 +25,5 @@ def run(args):
 
     print(f"[*] Target: {target}")
     # TODO: implement exploit/scanner logic
-    print("[!] Module stub — implement exploit logic")
+    print("[!] Module stub  -  implement exploit logic")
     return 0

@@ -6,16 +6,16 @@
 
 ## Categorias e Módulos Planejados
 
-### 1. AWS (aws) — 45 módulos
+### 1. AWS (aws)  -  45 módulos
 
 #### Enumeração (existentes + novos)
 | # | Módulo | Prioridade | Descrição |
 |---|--------|-----------|-----------|
-| 1 | iam-enum | P1 | **EXISTENTE** — Enumera IAM users, roles, policies |
-| 2 | s3-enum | P1 | **EXISTENTE** — Lista e audita buckets S3 |
-| 3 | lambda-enum | P1 | **EXISTENTE** — Enumera Lambda functions |
-| 4 | ssrf-imds | P1 | **EXISTENTE** — SSRF para metadata IMDS v1/v2 |
-| 5 | ec2-enum | P1 | **EXISTENTE** — Enumera instâncias EC2 |
+| 1 | iam-enum | P1 | **EXISTENTE**  -  Enumera IAM users, roles, policies |
+| 2 | s3-enum | P1 | **EXISTENTE**  -  Lista e audita buckets S3 |
+| 3 | lambda-enum | P1 | **EXISTENTE**  -  Enumera Lambda functions |
+| 4 | ssrf-imds | P1 | **EXISTENTE**  -  SSRF para metadata IMDS v1/v2 |
+| 5 | ec2-enum | P1 | **EXISTENTE**  -  Enumera instâncias EC2 |
 | 6 | iam-privesc | P1 | Identifica caminhos de escalação IAM (20+ vetores Pacu/PMapper) |
 | 7 | sts-enum | P1 | Enumera credenciais STS, assume-role chains |
 | 8 | s3-exploit | P1 | Exploração de buckets: ACL bypass, policy abuse, object takeover |
@@ -57,14 +57,14 @@
 | 44 | cve-2026-5709 | P1 | AWS RES access control bypass (CVE-2026-5709) |
 | 45 | pacu-bridge | P2 | Bridge para Pacu framework (execução e import de resultados) |
 
-### 2. Azure (azure) — 42 módulos
+### 2. Azure (azure)  -  42 módulos
 
 | # | Módulo | Prioridade | Descrição |
 |---|--------|-----------|-----------|
-| 1 | enum-subs | P1 | **EXISTENTE** — Enumera subscriptions |
-| 2 | enum-storage | P1 | **EXISTENTE** — Enumera storage accounts |
-| 3 | managed-identity | P1 | **EXISTENTE** — Managed Identity token theft |
-| 4 | arm-injection | P1 | **EXISTENTE** — ARM template injection |
+| 1 | enum-subs | P1 | **EXISTENTE**  -  Enumera subscriptions |
+| 2 | enum-storage | P1 | **EXISTENTE**  -  Enumera storage accounts |
+| 3 | managed-identity | P1 | **EXISTENTE**  -  Managed Identity token theft |
+| 4 | arm-injection | P1 | **EXISTENTE**  -  ARM template injection |
 | 5 | entra-enum | P1 | Entra ID (Azure AD) user/group/app enumeration |
 | 6 | entra-tokens | P1 | OAuth token theft, refresh token abuse, PRT extraction |
 | 7 | entra-consent | P1 | Illicit consent grant attack |
@@ -96,22 +96,22 @@
 | 33 | graph-api-abuse | P2 | Microsoft Graph API over-scoped permissions |
 | 34 | stormspotter-bridge | P3 | Stormspotter graph analysis bridge |
 | 35 | azurehound-bridge | P2 | AzureHound data collection bridge |
-| 36 | cve-2025-29813 | P1 | Azure DevOps CVSS 10.0 — pipeline secret exposure |
+| 36 | cve-2025-29813 | P1 | Azure DevOps CVSS 10.0  -  pipeline secret exposure |
 | 37 | cve-2025-29972 | P1 | Azure Storage SSRF CVSS 9.9 |
-| 38 | cve-2025-29827 | P1 | Azure Automation CVSS 9.9 — managed identity abuse |
+| 38 | cve-2025-29827 | P1 | Azure Automation CVSS 9.9  -  managed identity abuse |
 | 39 | cve-2025-53767 | P1 | Azure DevOps Services CVSS 10.0 |
 | 40 | cve-2024-50603 | P1 | Aviatrix Controller RCE (CVE-2024-50603) |
 | 41 | defender-bypass | P2 | Microsoft Defender for Cloud evasion |
 | 42 | sentinel-bypass | P3 | Microsoft Sentinel logging evasion |
 
-### 3. GCP (gcp) — 38 módulos
+### 3. GCP (gcp)  -  38 módulos
 
 | # | Módulo | Prioridade | Descrição |
 |---|--------|-----------|-----------|
-| 1 | bucket-enum | P1 | **EXISTENTE** — GCS bucket enumeration |
-| 2 | sa-enum | P1 | **EXISTENTE** — Service account enumeration |
-| 3 | metadata-ssrf | P1 | **EXISTENTE** — GCP metadata SSRF |
-| 4 | project-enum | P1 | **EXISTENTE** — Project enumeration |
+| 1 | bucket-enum | P1 | **EXISTENTE**  -  GCS bucket enumeration |
+| 2 | sa-enum | P1 | **EXISTENTE**  -  Service account enumeration |
+| 3 | metadata-ssrf | P1 | **EXISTENTE**  -  GCP metadata SSRF |
+| 4 | project-enum | P1 | **EXISTENTE**  -  Project enumeration |
 | 5 | iam-privesc | P1 | GCP IAM privilege escalation paths |
 | 6 | bucket-exploit | P1 | GCS ACL abuse, bucket takeover, uniform bucket-level access bypass |
 | 7 | bucket-exfil | P2 | GCS data exfiltration, cross-project copy |
@@ -141,13 +141,13 @@
 | 31 | workload-identity | P1 | Workload Identity Federation exploitation |
 | 32 | artifact-registry | P3 | Artifact Registry image manipulation |
 | 33 | terraform-state | P2 | GCS Terraform state extraction (secretos em state files) |
-| 34 | cve-2026-2031 | P1 | GCP Iam Trust CVSS 10.0 — cross-tenant escalation |
-| 35 | cve-2026-2264 | P1 | GCP Compute CVSS 9.2 — metadata service escape |
+| 34 | cve-2026-2031 | P1 | GCP Iam Trust CVSS 10.0  -  cross-tenant escalation |
+| 35 | cve-2026-2264 | P1 | GCP Compute CVSS 9.2  -  metadata service escape |
 | 36 | cve-2026-81867 | P1 | GCP Org Policy bypass CVSS 9.4 |
 | 37 | cve-2025-51591 | P2 | Pandoc SSRF affecting GCP IMDS |
 | 38 | gcpbucketbrute-bridge | P3 | GCPBucketBrute tool bridge |
 
-### 4. Kubernetes (k8s) — 28 módulos
+### 4. Kubernetes (k8s)  -  28 módulos
 
 | # | Módulo | Prioridade | Descrição |
 |---|--------|-----------|-----------|
@@ -180,7 +180,7 @@
 | 27 | peirates-bridge | P3 | Peirates K8s pentesting bridge |
 | 28 | kube-hunter-bridge | P3 | Kube-hunter scanner bridge |
 
-### 5. Serverless (serverless) — 14 módulos
+### 5. Serverless (serverless)  -  14 módulos
 
 | # | Módulo | Prioridade | Descrição |
 |---|--------|-----------|-----------|
@@ -199,7 +199,7 @@
 | 13 | log-injection | P3 | CloudWatch/Stackdriver log injection |
 | 14 | reverse-shell | P1 | Serverless reverse shell via HTTP poll |
 
-### 6. Storage/Buckets (storage) — 15 módulos
+### 6. Storage/Buckets (storage)  -  15 módulos
 
 | # | Módulo | Prioridade | Descrição |
 |---|--------|-----------|-----------|
@@ -219,7 +219,7 @@
 | 14 | grayhat-search | P2 | Busca de buckets via GrayHatWarfare patterns |
 | 15 | ransomware-sim | P3 | Storage ransomware simulation (encrypt objects) |
 
-### 7. Multi-Cloud (multi) — 12 módulos
+### 7. Multi-Cloud (multi)  -  12 módulos
 
 | # | Módulo | Prioridade | Descrição |
 |---|--------|-----------|-----------|
@@ -236,7 +236,7 @@
 | 11 | prowler-bridge | P2 | Prowler compliance/security bridge |
 | 12 | steampipe-bridge | P3 | Steampipe query bridge |
 
-### 8. Credential (cred) — 10 módulos
+### 8. Credential (cred)  -  10 módulos
 
 | # | Módulo | Prioridade | Descrição |
 |---|--------|-----------|-----------|
@@ -251,7 +251,7 @@
 | 9 | credential-report | P2 | IAM credential report analysis |
 | 10 | leaked-key-exploit | P1 | Exploração de chaves vazadas (GitHub, paste sites) |
 
-### 9. Network (net) — 8 módulos
+### 9. Network (net)  -  8 módulos
 
 | # | Módulo | Prioridade | Descrição |
 |---|--------|-----------|-----------|
@@ -281,13 +281,13 @@
 
 ## Fases de Implementação
 
-### Fase 1 — P1 (88 módulos)
+### Fase 1  -  P1 (88 módulos)
 Módulos prioritários de cada categoria. Cobre enumeração essencial, exploração primária, CVEs críticas e credential access.
 
-### Fase 2 — P2 (73 módulos)
+### Fase 2  -  P2 (73 módulos)
 Módulos de exploração avançada, evasão, persistência e bridge tools.
 
-### Fase 3 — P3 (51 módulos)
+### Fase 3  -  P3 (51 módulos)
 Módulos especializados, bridges opcionais e técnicas avançadas.
 
 ## CVEs Cobertas

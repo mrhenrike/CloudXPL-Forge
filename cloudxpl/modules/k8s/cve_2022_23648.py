@@ -1,4 +1,4 @@
-"""CloudXPL-Forge module: CVE-2022-23648 — containerd volume mount host file read/escape"""
+"""CloudXPL-Forge module: CVE-2022-23648  -  containerd volume mount host file read/escape"""
 
 
 from typing import Any
@@ -16,7 +16,7 @@ MANIFEST = {
 
 
 def run(args: Any) -> int:
-    """Detect CVE-2022-23648 — containerd volume mounting allowing arbitrary host file read. Leads to container breakout."""
+    """Detect CVE-2022-23648  -  containerd volume mounting allowing arbitrary host file read. Leads to container breakout."""
     import json
     import sys
     from datetime import datetime, timezone
@@ -29,7 +29,7 @@ def run(args: Any) -> int:
 
     # --- Module logic placeholder ---
     # TODO: implement provider-specific logic
-    print("[!] Module stub — implement provider-specific logic")
+    print("[!] Module stub  -  implement provider-specific logic")
 
     ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     out_dir = Path(getattr(args, "output", "."))

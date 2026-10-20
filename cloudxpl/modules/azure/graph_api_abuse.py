@@ -32,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute graph_api_abuse module."""
     provider = getattr(args, "command", "azure")
-    print(f"[*] {MANIFEST['capability_id']} — Microsoft Graph API over-scoped permission analysis")
+    print(f"[*] {MANIFEST['capability_id']}  -  Microsoft Graph API over-scoped permission analysis")
     print(f"[*] Provider: {provider} | Service: GraphServiceClient")
     print(f"[*] Target: app permissions, delegated permissions")
 
@@ -72,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "over-scoped Graph API permissions",
         }
-        print(f"[+] Analysis complete — key finding indicator: over-scoped Graph API permissions")
+        print(f"[+] Analysis complete  -  key finding indicator: over-scoped Graph API permissions")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

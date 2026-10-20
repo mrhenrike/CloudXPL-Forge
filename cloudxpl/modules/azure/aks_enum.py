@@ -1,4 +1,4 @@
-"""AKS cluster enumeration — RBAC, managed identity, network policies."""
+"""AKS cluster enumeration  -  RBAC, managed identity, network policies."""
 
 
 import json
@@ -32,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute aks_enum module."""
     provider = getattr(args, "command", "azure")
-    print(f"[*] {MANIFEST['capability_id']} — AKS cluster enumeration — RBAC, managed identity, network policies")
+    print(f"[*] {MANIFEST['capability_id']}  -  AKS cluster enumeration  -  RBAC, managed identity, network policies")
     print(f"[*] Provider: {provider} | Service: ContainerServiceClient")
     print(f"[*] Target: AKS clusters, node pools")
 
@@ -72,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "public API server, weak RBAC",
         }
-        print(f"[+] Analysis complete — key finding indicator: public API server, weak RBAC")
+        print(f"[+] Analysis complete  -  key finding indicator: public API server, weak RBAC")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

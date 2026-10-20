@@ -1,4 +1,4 @@
-"""AWS STS credential enumeration — caller identity, assume-role chains, session tokens."""
+"""AWS STS credential enumeration  -  caller identity, assume-role chains, session tokens."""
 
 
 import json

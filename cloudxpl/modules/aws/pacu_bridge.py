@@ -1,4 +1,4 @@
-"""Bridge para Pacu AWS exploitation framework — execute and import results."""
+"""Bridge para Pacu AWS exploitation framework  -  execute and import results."""
 
 
 import json
@@ -40,5 +40,5 @@ def run(args: Any) -> int:
     print(f"[+] Pacu found: {pacu_path}")
     results = {"pacu_path": pacu_path, "available": True, "note": "Use pacu interactively for exploitation. This bridge verifies availability."}
     _save(args, "aws_pacu_bridge", results)
-    print("[+] Pacu bridge ready — launch with: pacu")
+    print("[+] Pacu bridge ready  -  launch with: pacu")
     return 0

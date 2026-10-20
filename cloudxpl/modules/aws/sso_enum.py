@@ -1,4 +1,4 @@
-"""AWS SSO/Identity Center enumeration — instances, permission sets."""
+"""AWS SSO/Identity Center enumeration  -  instances, permission sets."""
 
 
 import json

@@ -32,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute temp_cred_extend module."""
     provider = getattr(args, "command", "cred")
-    print(f"[*] {MANIFEST['capability_id']} — Temporary credential extension techniques")
+    print(f"[*] {MANIFEST['capability_id']}  -  Temporary credential extension techniques")
     print(f"[*] Provider: {provider} | Service: Credential")
     print(f"[*] Target: cloud credentials")
 
@@ -72,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "exposed credential",
         }
-        print(f"[+] Analysis complete — key finding indicator: exposed credential")
+        print(f"[+] Analysis complete  -  key finding indicator: exposed credential")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

@@ -1,4 +1,4 @@
-"""CloudXPL-Forge module: CVE-2026-59310 — vCenter directory traversal Syslog (CVSS 9.8, KEV)"""
+"""CloudXPL-Forge module: CVE-2026-59310  -  vCenter directory traversal Syslog (CVSS 9.8, KEV)"""
 
 
 from typing import Any
@@ -16,7 +16,7 @@ MANIFEST = {
 
 
 def run(args: Any) -> int:
-    """Execute CVE-2026-59310 — vCenter directory traversal Syslog (CVSS 9.8, KEV)."""
+    """Execute CVE-2026-59310  -  vCenter directory traversal Syslog (CVSS 9.8, KEV)."""
     import json
     import sys
     from datetime import datetime, timezone
@@ -29,7 +29,7 @@ def run(args: Any) -> int:
 
     # --- Module logic placeholder ---
     # TODO: implement provider-specific API calls
-    print("[!] Module stub — implement provider-specific logic")
+    print("[!] Module stub  -  implement provider-specific logic")
 
     ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     out_dir = Path(getattr(args, "output", "."))

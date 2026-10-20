@@ -1,4 +1,4 @@
-"""CloudXPL-Forge module: CVE-2021-30465 — runc mount race condition host access"""
+"""CloudXPL-Forge module: CVE-2021-30465  -  runc mount race condition host access"""
 
 
 from typing import Any
@@ -16,7 +16,7 @@ MANIFEST = {
 
 
 def run(args: Any) -> int:
-    """Detect CVE-2021-30465 — runc mount race condition allowing host filesystem access."""
+    """Detect CVE-2021-30465  -  runc mount race condition allowing host filesystem access."""
     import json
     import sys
     from datetime import datetime, timezone
@@ -29,7 +29,7 @@ def run(args: Any) -> int:
 
     # --- Module logic placeholder ---
     # TODO: implement provider-specific logic
-    print("[!] Module stub — implement provider-specific logic")
+    print("[!] Module stub  -  implement provider-specific logic")
 
     ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     out_dir = Path(getattr(args, "output", "."))

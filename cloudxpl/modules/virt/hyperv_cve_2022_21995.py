@@ -1,4 +1,4 @@
-"""CloudXPL-Forge — Hyper-V Adjacent Network RCE (CVE-2022-21995)."""
+"""CloudXPL-Forge  -  Hyper-V Adjacent Network RCE (CVE-2022-21995)."""
 
 
 MANIFEST: dict = {
@@ -25,5 +25,5 @@ def run(args):
 
     print(f"[*] Target: {target}")
     # TODO: implement exploit/scanner logic
-    print("[!] Module stub — implement exploit logic")
+    print("[!] Module stub  -  implement exploit logic")
     return 0

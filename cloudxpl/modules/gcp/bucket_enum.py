@@ -1,4 +1,4 @@
-"""GCP Cloud Storage bucket enumeration — list buckets, IAM, public access."""
+"""GCP Cloud Storage bucket enumeration  -  list buckets, IAM, public access."""
 
 
 import json

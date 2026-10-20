@@ -1,4 +1,4 @@
-"""AWS Organizations enumeration — accounts, OUs, SCPs."""
+"""AWS Organizations enumeration  -  accounts, OUs, SCPs."""
 
 
 import json

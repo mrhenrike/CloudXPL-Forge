@@ -1,4 +1,4 @@
-"""Azure Blob data exfiltration — snapshot, cross-tenant copy."""
+"""Azure Blob data exfiltration  -  snapshot, cross-tenant copy."""
 
 
 import json
@@ -32,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute blob_exfil module."""
     provider = getattr(args, "command", "azure")
-    print(f"[*] {MANIFEST['capability_id']} — Azure Blob data exfiltration — snapshot, cross-tenant copy")
+    print(f"[*] {MANIFEST['capability_id']}  -  Azure Blob data exfiltration  -  snapshot, cross-tenant copy")
     print(f"[*] Provider: {provider} | Service: BlobServiceClient")
     print(f"[*] Target: blob data, snapshots")
 
@@ -72,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "accessible data volumes",
         }
-        print(f"[+] Analysis complete — key finding indicator: accessible data volumes")
+        print(f"[+] Analysis complete  -  key finding indicator: accessible data volumes")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

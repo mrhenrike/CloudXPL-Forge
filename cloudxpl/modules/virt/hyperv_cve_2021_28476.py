@@ -1,4 +1,4 @@
-"""CloudXPL-Forge module: CVE-2021-28476 — Hyper-V vmswitch guest-to-host RCE (CVSS 9.9, PoC: 0vercl0k)"""
+"""CloudXPL-Forge module: CVE-2021-28476  -  Hyper-V vmswitch guest-to-host RCE (CVSS 9.9, PoC: 0vercl0k)"""
 
 
 from typing import Any
@@ -16,7 +16,7 @@ MANIFEST = {
 
 
 def run(args: Any) -> int:
-    """Detect/exploit CVE-2021-28476 — Hyper-V vmswitch guest-to-host. CVSS 9.9. PoC: 0vercl0k (archived)."""
+    """Detect/exploit CVE-2021-28476  -  Hyper-V vmswitch guest-to-host. CVSS 9.9. PoC: 0vercl0k (archived)."""
     import json
     import sys
     from datetime import datetime, timezone
@@ -29,7 +29,7 @@ def run(args: Any) -> int:
 
     # --- Module logic placeholder ---
     # TODO: implement provider-specific logic
-    print("[!] Module stub — implement provider-specific logic")
+    print("[!] Module stub  -  implement provider-specific logic")
 
     ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     out_dir = Path(getattr(args, "output", "."))

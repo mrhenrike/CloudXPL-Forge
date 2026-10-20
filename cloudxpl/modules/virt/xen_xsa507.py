@@ -1,4 +1,4 @@
-"""CloudXPL-Forge — Xen Populate-on-Demand Memory Corruption (XSA-507 / CVE-2026-62434)."""
+"""CloudXPL-Forge  -  Xen Populate-on-Demand Memory Corruption (XSA-507 / CVE-2026-62434)."""
 
 
 MANIFEST: dict = {
@@ -25,5 +25,5 @@ def run(args):
 
     print(f"[*] Target: {target}")
     # TODO: implement exploit/scanner logic
-    print("[!] Module stub — implement exploit logic")
+    print("[!] Module stub  -  implement exploit logic")
     return 0

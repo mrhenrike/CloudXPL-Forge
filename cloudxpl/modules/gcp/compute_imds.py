@@ -32,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute compute_imds module."""
     provider = getattr(args, "command", "gcp")
-    print(f"[*] {MANIFEST['capability_id']} — GCP IMDS token theft from metadata")
+    print(f"[*] {MANIFEST['capability_id']}  -  GCP IMDS token theft from metadata")
     print(f"[*] Provider: {provider} | Service: GCP metadata server")
     print(f"[*] Target: SA tokens, project metadata")
 
@@ -72,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "default SA token accessible",
         }
-        print(f"[+] Analysis complete — key finding indicator: default SA token accessible")
+        print(f"[+] Analysis complete  -  key finding indicator: default SA token accessible")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

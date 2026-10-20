@@ -1,4 +1,4 @@
-"""CloudXPL-Forge module: Bridge to VcenterKit — vCenter pentest toolkit"""
+"""CloudXPL-Forge module: Bridge to VcenterKit  -  vCenter pentest toolkit"""
 
 
 from typing import Any
@@ -16,7 +16,7 @@ MANIFEST = {
 
 
 def run(args: Any) -> int:
-    """Execute Bridge to VcenterKit — vCenter pentest toolkit."""
+    """Execute Bridge to VcenterKit  -  vCenter pentest toolkit."""
     import json
     import sys
     from datetime import datetime, timezone
@@ -29,7 +29,7 @@ def run(args: Any) -> int:
 
     # --- Module logic placeholder ---
     # TODO: implement provider-specific API calls
-    print("[!] Module stub — implement provider-specific logic")
+    print("[!] Module stub  -  implement provider-specific logic")
 
     ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     out_dir = Path(getattr(args, "output", "."))

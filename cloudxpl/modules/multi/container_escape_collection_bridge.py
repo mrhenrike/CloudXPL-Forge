@@ -1,10 +1,10 @@
-"""CloudXPL-Forge — Container Escape PoC Collection (Bridge)."""
+"""CloudXPL-Forge  -  Container Escape PoC Collection (Bridge)."""
 
 
 MANIFEST: dict = {
     "name": "Container Escape PoC Collection (Bridge)",
     "mitre": ["T1611"],
-    "description": "Bridge to Markakd/Container_escape — PoCs for CVE-2026-80521 and CVE-2026-52910 container escapes.",
+    "description": "Bridge to Markakd/Container_escape  -  PoCs for CVE-2026-80521 and CVE-2026-52910 container escapes.",
     "references": ["https://github.com/Markakd/Container_escape"],
 }
 

@@ -35,5 +35,5 @@ def run(args: Any) -> int:
     print("[*] Vulnerability: Stored XSS in AWS RES web interface")
     results = {"cve": "CVE-2026-5708", "type": "stored_xss", "target": "AWS RES web console", "check": "stack_detection"}
     _save(args, "aws_cve_2026_5708", results)
-    print("[+] Check complete — review output for RES deployment indicators")
+    print("[+] Check complete  -  review output for RES deployment indicators")
     return 0

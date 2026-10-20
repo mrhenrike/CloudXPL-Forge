@@ -1,4 +1,4 @@
-"""AWS EC2 instance enumeration — instances, security groups, metadata."""
+"""AWS EC2 instance enumeration  -  instances, security groups, metadata."""
 
 
 import json

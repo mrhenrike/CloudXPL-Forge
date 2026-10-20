@@ -10,6 +10,12 @@ from typing import Any
 from cloudxpl import __version__
 from cloudxpl.core.dispatcher import MODULE_MAP
 
+try:
+    from xpl_core.config import ForgeConfig
+    _HAS_CONFIG = True
+except ImportError:
+    _HAS_CONFIG = False
+
 
 # ---------------------------------------------------------------------------
 # Banner
@@ -112,6 +118,7 @@ class Interpreter:
         self.current_module: str | None = None
         self.options: dict[str, str] = {}
         self._loaded_mod: Any = None
+        self._config: ForgeConfig | None = ForgeConfig("cloudxpl") if _HAS_CONFIG else None
 
     # -- prompt --
     @property
@@ -172,6 +179,8 @@ class Interpreter:
         self.current_module = mod
         self.options = {}
         self._loaded_mod = None
+        if self._config:
+            self._config.set_val("last_module", f"{cat}/{mod}")
         print(f"[*] Module set: {cat}/{mod}")
         return True
 

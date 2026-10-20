@@ -28,7 +28,7 @@ def run(args: Any) -> int:
     findings: list[dict] = []
 
     # --- Module logic placeholder ---
-    # TODO: implement provider-specific logic
+    # TODO(wave12): implement provider-specific logic
     print("[!] Module stub — implement provider-specific logic")
 
     ts = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")

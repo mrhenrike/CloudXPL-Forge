@@ -1,6 +1,5 @@
 """CloudXPL-Forge — Hyper-V Adjacent Network RCE (CVE-2022-21995)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "Hyper-V Adjacent Network RCE (CVE-2022-21995)",

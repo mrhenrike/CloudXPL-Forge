@@ -1,6 +1,5 @@
 """CloudXPL-Forge — Hyper-V Status Code RCE (CVE-2024-49117)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "Hyper-V Status Code RCE (CVE-2024-49117)",

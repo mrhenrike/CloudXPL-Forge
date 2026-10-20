@@ -1,6 +1,5 @@
 """CloudXPL module: Lambda/Cloud Functions /tmp cold-start persistence and cross-invocation pivot"""
 
-from __future__ import annotations
 from typing import Any
 
 MANIFEST = {

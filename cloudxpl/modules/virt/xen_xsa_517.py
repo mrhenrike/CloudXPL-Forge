@@ -1,6 +1,5 @@
 """CloudXPL-Forge — Xen Grant-Table Version Race — Host Privesc (XSA-517 / CVE-2026-79610)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "Xen Grant-Table Version Race — Host Privesc (XSA-517 / CVE-2026-79610)",

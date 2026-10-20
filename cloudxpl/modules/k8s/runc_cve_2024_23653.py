@@ -1,6 +1,5 @@
 """CloudXPL-Forge — BuildKit Privilege Check Bypass (CVE-2024-23653)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "BuildKit Privilege Check Bypass (CVE-2024-23653)",

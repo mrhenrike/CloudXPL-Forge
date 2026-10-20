@@ -1,6 +1,5 @@
 """CloudXPL-Forge — vCenter Secrets Dump (Metasploit Bridge)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "vCenter Secrets Dump (Metasploit Bridge)",

@@ -1,6 +1,5 @@
 """CloudXPL module: Jenkins plugin privesc: Vault cred capture, Nexus SSRF, stored XSS chains"""
 
-from __future__ import annotations
 from typing import Any
 
 MANIFEST = {

@@ -1,6 +1,5 @@
 """Tests for cloudxpl.core.identity_resolver."""
 
-from __future__ import annotations
 
 from cloudxpl.core.identity_resolver import (
     CloudIdentity,

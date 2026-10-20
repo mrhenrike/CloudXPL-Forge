@@ -1,6 +1,5 @@
 """CloudXPL-Forge — Linux Kernel Container Breakout (CVE-2026-52910)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "Linux Kernel Container Breakout (CVE-2026-52910)",

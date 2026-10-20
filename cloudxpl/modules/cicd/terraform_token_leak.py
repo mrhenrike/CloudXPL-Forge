@@ -1,6 +1,5 @@
 """CloudXPL module: CI/CD Terraform Cloud/registry token exfil via untrusted input in providers"""
 
-from __future__ import annotations
 from typing import Any
 
 MANIFEST = {

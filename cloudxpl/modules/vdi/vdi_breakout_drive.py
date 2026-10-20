@@ -1,6 +1,5 @@
 """CloudXPL module: VDI drive mapping escape via local drive redirection to host filesystem"""
 
-from __future__ import annotations
 from typing import Any
 
 MANIFEST = {

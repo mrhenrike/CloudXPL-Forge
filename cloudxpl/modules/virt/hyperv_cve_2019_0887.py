@@ -1,6 +1,5 @@
 """CloudXPL-Forge — Hyper-V RDP Path Traversal Guest-to-Host (CVE-2019-0887)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "Hyper-V RDP Path Traversal Guest-to-Host (CVE-2019-0887)",

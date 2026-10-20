@@ -1,6 +1,5 @@
 """CloudXPL-Forge — AMD Microcode Signature Bypass (CVE-2024-56161)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "AMD Microcode Signature Bypass (CVE-2024-56161)",

@@ -1,6 +1,5 @@
 """CloudXPL module: GitLab Runner API authz bypass for project runner hijacking and privilege escalation"""
 
-from __future__ import annotations
 from typing import Any
 
 MANIFEST = {

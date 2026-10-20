@@ -4,7 +4,6 @@ Evaluates IAM policies (AWS, Azure, GCP) for overly permissive
 configurations, privilege escalation paths and misconfigurations.
 """
 
-from __future__ import annotations
 
 from dataclasses import dataclass, field
 from typing import Any

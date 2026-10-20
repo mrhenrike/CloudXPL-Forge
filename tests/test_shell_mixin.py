@@ -1,6 +1,5 @@
 """Tests for cloudxpl.core.shell_mixin cloud-specific payloads."""
 
-from __future__ import annotations
 
 import pytest
 
@@ -18,6 +17,7 @@ from cloudxpl.core.shell_mixin import (
     _cloud_payload,
     get_session_manager,
 )
+
 
 def test_cloud_shell_types_tuple():
     assert isinstance(CLOUD_SHELL_TYPES, tuple)

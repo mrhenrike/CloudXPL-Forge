@@ -1,6 +1,5 @@
 """CloudXPL module: Amazon WorkSpaces Skylight Agent TOCTOU race condition to SYSTEM"""
 
-from __future__ import annotations
 from typing import Any
 
 MANIFEST = {

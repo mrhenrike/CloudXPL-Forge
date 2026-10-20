@@ -1,6 +1,5 @@
 """CloudXPL-Forge — Inception — AMD Speculative RAS (CVE-2023-20569)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "Inception — AMD Speculative RAS (CVE-2023-20569)",

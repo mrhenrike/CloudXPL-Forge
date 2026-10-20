@@ -1,6 +1,5 @@
 """CloudXPL module: GCP Application Integration Rhino JavaScript sandbox escape"""
 
-from __future__ import annotations
 from typing import Any
 
 MANIFEST = {

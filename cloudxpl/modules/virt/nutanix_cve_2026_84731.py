@@ -1,6 +1,5 @@
 """CloudXPL-Forge — Nutanix Prism Auth Bypass (CVE-2026-84731)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "Nutanix Prism Auth Bypass (CVE-2026-84731)",

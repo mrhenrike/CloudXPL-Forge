@@ -1,6 +1,5 @@
 """CloudXPL-Forge — VMware API Enumeration."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "VMware API Enumeration",

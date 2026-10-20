@@ -1,6 +1,5 @@
 """CloudXPL module: Google Cloud Run runc container escape via fd leak (GCP-2025-069)"""
 
-from __future__ import annotations
 from typing import Any
 
 MANIFEST = {

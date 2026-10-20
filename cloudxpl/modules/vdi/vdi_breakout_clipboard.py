@@ -1,6 +1,5 @@
 """CloudXPL module: VDI clipboard redirection abuse for data exfiltration via shared clipboard"""
 
-from __future__ import annotations
 from typing import Any
 
 MANIFEST = {

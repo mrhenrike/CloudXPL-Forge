@@ -1,6 +1,5 @@
 """CloudXPL module: Kiosk/restricted desktop escape via StickyKeys, UtilMan, Narrator accessibility shortcuts"""
 
-from __future__ import annotations
 from typing import Any
 
 MANIFEST = {

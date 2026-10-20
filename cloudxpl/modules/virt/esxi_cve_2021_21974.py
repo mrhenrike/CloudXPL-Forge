@@ -1,6 +1,5 @@
 """CloudXPL-Forge — ESXi OpenSLP Heap Overflow — ESXiArgs (CVE-2021-21974)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "ESXi OpenSLP Heap Overflow — ESXiArgs (CVE-2021-21974)",

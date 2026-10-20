@@ -1,6 +1,5 @@
 """Route CLI commands to cloud provider modules."""
 
-from __future__ import annotations
 
 import importlib
 import sys

@@ -1,6 +1,5 @@
 """CloudXPL module: Generic CI/CD runner secret dump from env vars, process memory, and build logs"""
 
-from __future__ import annotations
 from typing import Any
 
 MANIFEST = {

@@ -1,6 +1,5 @@
 """CloudXPL-Forge — Downfall — Intel Gather Data Sampling (CVE-2022-40982)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "Downfall — Intel Gather Data Sampling (CVE-2022-40982)",

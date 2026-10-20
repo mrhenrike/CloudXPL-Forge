@@ -1,6 +1,5 @@
 """CloudXPL-Forge — QEMU SLiRP Heap Overflow (CVE-2019-14378)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "QEMU SLiRP Heap Overflow (CVE-2019-14378)",

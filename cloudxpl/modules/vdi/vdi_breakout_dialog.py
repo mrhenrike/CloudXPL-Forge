@@ -1,6 +1,5 @@
 """CloudXPL module: Application publishing bypass via dialog boxes, help menus, print dialogs to cmd.exe"""
 
-from __future__ import annotations
 from typing import Any
 
 MANIFEST = {

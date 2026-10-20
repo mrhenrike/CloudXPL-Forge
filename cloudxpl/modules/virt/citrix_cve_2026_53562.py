@@ -1,6 +1,5 @@
 """CloudXPL-Forge — Citrix XenServer Local Privilege Escalation (CVE-2026-53562)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "Citrix XenServer Local Privilege Escalation (CVE-2026-53562)",

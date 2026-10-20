@@ -1,6 +1,5 @@
 """CloudXPL-Forge — vCenter Log4Shell (CVE-2021-44228)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "vCenter Log4Shell (CVE-2021-44228)",

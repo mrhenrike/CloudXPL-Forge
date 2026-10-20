@@ -1,6 +1,5 @@
 """CloudXPL-Forge — Xen Populate-on-Demand Memory Corruption (XSA-507 / CVE-2026-62434)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "Xen Populate-on-Demand Memory Corruption (XSA-507 / CVE-2026-62434)",

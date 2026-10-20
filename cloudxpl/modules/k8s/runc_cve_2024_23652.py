@@ -1,6 +1,5 @@
 """CloudXPL-Forge — BuildKit Arbitrary File Deletion (CVE-2024-23652)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "BuildKit Arbitrary File Deletion (CVE-2024-23652)",

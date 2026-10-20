@@ -1,6 +1,5 @@
 """CloudXPL-Forge — QEMU SLiRP Escape PoC (Bridge)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "QEMU SLiRP Escape PoC (Bridge)",

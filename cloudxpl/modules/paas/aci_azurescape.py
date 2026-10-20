@@ -1,6 +1,5 @@
 """CloudXPL module: Azure Container Instances guest-to-host escape and cross-tenant pivot (Azurescape)"""
 
-from __future__ import annotations
 from typing import Any
 
 MANIFEST = {

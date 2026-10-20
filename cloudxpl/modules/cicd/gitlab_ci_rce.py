@@ -1,6 +1,5 @@
 """CloudXPL module: GitLab CI regex compiler RCE and job modal privilege escalation (CVSS 10.0)"""
 
-from __future__ import annotations
 from typing import Any
 
 MANIFEST = {

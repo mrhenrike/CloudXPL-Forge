@@ -1,6 +1,5 @@
 """CloudXPL module: AWS Elastic Beanstalk container escape assessment and boundary reconnaissance"""
 
-from __future__ import annotations
 from typing import Any
 
 MANIFEST = {

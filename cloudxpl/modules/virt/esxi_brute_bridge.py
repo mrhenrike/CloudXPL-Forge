@@ -1,6 +1,5 @@
 """CloudXPL-Forge — ESXi Brute Force (Bridge)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "ESXi Brute Force (Bridge)",

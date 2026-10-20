@@ -1,6 +1,5 @@
 """CloudXPL module: GitHub Actions supply-chain: compromised actions (tj-actions), secret exfiltration from runner"""
 
-from __future__ import annotations
 from typing import Any
 
 MANIFEST = {

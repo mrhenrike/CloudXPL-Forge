@@ -1,6 +1,5 @@
 """CloudXPL-Forge — vCenter Local Privilege Escalation (CVE-2024-37081)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "vCenter Local Privilege Escalation (CVE-2024-37081)",

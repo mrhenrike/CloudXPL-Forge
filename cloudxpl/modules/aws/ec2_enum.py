@@ -1,11 +1,10 @@
 """AWS EC2 instance enumeration — instances, security groups, metadata."""
 
-from __future__ import annotations
 
 import json
 import os
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timezone, UTC
 from typing import Any
 
 
@@ -60,7 +59,7 @@ def run(args: Any) -> int:
             results.append(entry)
 
     os.makedirs(args.output, exist_ok=True)
-    ts = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
+    ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     out_path = os.path.join(args.output, f"aws_ec2_{ts}.json")
     with open(out_path, "w") as fh:
         json.dump(results, fh, indent=2, default=str)

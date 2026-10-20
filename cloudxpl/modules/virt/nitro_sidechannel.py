@@ -1,6 +1,5 @@
 """CloudXPL-Forge — AWS Nitro LLC Side-Channel."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "AWS Nitro LLC Side-Channel",

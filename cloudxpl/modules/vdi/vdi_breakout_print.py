@@ -1,6 +1,5 @@
 """CloudXPL module: Print redirect exploit via printer dialog file-save-as path traversal to host filesystem"""
 
-from __future__ import annotations
 from typing import Any
 
 MANIFEST = {

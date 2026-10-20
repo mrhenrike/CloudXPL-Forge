@@ -1,6 +1,5 @@
 """CloudXPL-Forge — CacheWarp — AMD SEV Fault Injection (CVE-2023-20592)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "CacheWarp — AMD SEV Fault Injection (CVE-2023-20592)",

@@ -229,7 +229,7 @@ known-first-party = ["cloudxpl"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 python_files = ["test_*.py"]
-addopts = "-v --tb=short"
+addopts = "-v --tb=short --cov=cloudxpl --cov-fail-under=15"
 
 [tool.setuptools]
 license-files = []

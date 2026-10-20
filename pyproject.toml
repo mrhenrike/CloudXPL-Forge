@@ -114,8 +114,9 @@ Documentation = "https://github.com/mrhenrike/CloudXPL-Forge/wiki"
 Changelog     = "https://github.com/mrhenrike/CloudXPL-Forge/releases"
 
 [project.scripts]
-cxf      = "cloudxpl.__main__:main"
-cloudxpl = "cloudxpl.__main__:main"
+cxf        = "cloudxpl.__main__:main"
+cloudxpl   = "cloudxpl.__main__:main"
+cloudxpl-i = "cloudxpl.interpreter:main"
 
 [tool.mypy]
 python_version = "3.12"

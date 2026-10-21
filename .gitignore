@@ -28,3 +28,40 @@ id_rsa.*
 credentials.json
 secrets.json
 .coverage
+.coveragerc
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.tox/
+
+# === Dev tooling ===
+tools/
+.githooks/
+Makefile
+Makefile.native
+
+# === Docker ===
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# === Documentos internos ===
+HANDOFF.md
+HANDOFF-AUDIT.md
+pypi-manifests/
+CloudXPL-Forge-Roadmap.md
+
+# === Temporarios e logs ===
+.tmp/
+.log/
+*.log
+
+# === IDE e sessoes ===
+.claude/
+.cursor/
+.idea/
+.vscode/
+*.swp
+
+# === OS ===
+.DS_Store

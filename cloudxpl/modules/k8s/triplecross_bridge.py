@@ -19,7 +19,7 @@ from typing import Any
 
 MANIFEST = {
     "capability_id": "cloudxpl.k8s.triplecross_bridge.v1",
-    "safety_class": "INVASIVE",
+    "safety_class": "BRIDGE",
     "requires_authorization": True,
     "side_effects": [
         "loads_ebpf_programs",

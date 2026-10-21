@@ -1,6 +1,5 @@
 """CloudXPL module: Railway/Render/Fly.io container boundary recon and escape assessment"""
 
-from __future__ import annotations
 from typing import Any
 
 MANIFEST = {

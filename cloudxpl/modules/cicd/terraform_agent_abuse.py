@@ -1,6 +1,5 @@
 """CloudXPL module: Terraform Cloud agent pool authz bypass and poisoned provider manifest RCE"""
 
-from __future__ import annotations
 from typing import Any
 
 MANIFEST = {

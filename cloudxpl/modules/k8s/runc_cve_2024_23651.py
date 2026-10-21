@@ -1,6 +1,5 @@
 """CloudXPL-Forge — BuildKit Mount-Cache Race TOCTOU (CVE-2024-23651)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "BuildKit Mount-Cache Race TOCTOU (CVE-2024-23651)",

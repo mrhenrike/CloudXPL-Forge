@@ -1,6 +1,5 @@
 """CloudXPL-Forge — vCenter vmdir Auth Bypass (Metasploit Bridge)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "vCenter vmdir Auth Bypass (Metasploit Bridge)",

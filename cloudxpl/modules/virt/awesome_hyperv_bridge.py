@@ -1,6 +1,5 @@
 """CloudXPL-Forge — Awesome Hyper-V Exploitation (Bridge)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "Awesome Hyper-V Exploitation (Bridge)",

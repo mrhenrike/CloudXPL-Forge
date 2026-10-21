@@ -1,6 +1,5 @@
 """CloudXPL-Forge — vCenter URB Excalibur All-Platform Escape (CVE-2024-22252)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "vCenter URB Excalibur All-Platform Escape (CVE-2024-22252)",

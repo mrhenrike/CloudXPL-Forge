@@ -1,6 +1,5 @@
 """CloudXPL-Forge — Citrix Virtual Apps LPE (CVE-2025-6759)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "Citrix Virtual Apps LPE (CVE-2025-6759)",

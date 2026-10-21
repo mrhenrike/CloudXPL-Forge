@@ -1,6 +1,5 @@
 """CloudXPL-Forge — ESXi OpenSLP UAF RCE (CVE-2020-3992)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "ESXi OpenSLP UAF RCE (CVE-2020-3992)",

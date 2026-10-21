@@ -1,11 +1,10 @@
 """Azure Managed Identity abuse — token theft from IMDS and env vars."""
 
-from __future__ import annotations
 
 import json
 import os
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timezone, UTC
 from typing import Any
 
 import requests
@@ -104,7 +103,7 @@ def run(args: Any) -> int:
 
     if results["findings"] or results.get("azure_env_vars"):
         os.makedirs(args.output, exist_ok=True)
-        ts = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
+        ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
         out_path = os.path.join(args.output, f"azure_identity_{ts}.json")
         with open(out_path, "w") as fh:
             json.dump(results, fh, indent=2, default=str)

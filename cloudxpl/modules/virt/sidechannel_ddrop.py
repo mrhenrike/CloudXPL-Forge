@@ -1,6 +1,5 @@
 """CloudXPL-Forge — DDRop — Physical Memory Interposer (Intel TDX + AMD SEV)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "DDRop — Physical Memory Interposer (Intel TDX + AMD SEV)",

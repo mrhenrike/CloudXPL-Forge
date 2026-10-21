@@ -1,6 +1,5 @@
 """CloudXPL module: VMware Horizon session escape via underlying VM escape primitives"""
 
-from __future__ import annotations
 from typing import Any
 
 MANIFEST = {

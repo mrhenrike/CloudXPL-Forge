@@ -1,6 +1,5 @@
 """CloudXPL-Forge — Xen tapdisk Stack Overflow (XSA-521 / CVE-2026-102701)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "Xen tapdisk Stack Overflow (XSA-521 / CVE-2026-102701)",

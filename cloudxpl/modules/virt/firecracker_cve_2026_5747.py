@@ -1,6 +1,5 @@
 """CloudXPL-Forge — Firecracker virtio-pci OOB Write (CVE-2026-5747)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "Firecracker virtio-pci OOB Write (CVE-2026-5747)",

@@ -1,6 +1,5 @@
 """CloudXPL-Forge — ESXi VMXNET3 OOB Write VM Escape (CVE-2026-47876)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "ESXi VMXNET3 OOB Write VM Escape (CVE-2026-47876)",

@@ -1,8 +1,8 @@
 """CloudXPL-Forge module: CVE-2024-37079 — vCenter heap overflow chain to root (KEV)"""
 
-from __future__ import annotations
 
 from typing import Any
+from datetime import UTC
 
 
 MANIFEST = {
@@ -31,7 +31,7 @@ def run(args: Any) -> int:
     # TODO(wave12): implement provider-specific API calls
     print("[!] Module stub — implement provider-specific logic")
 
-    ts = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
+    ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     out_dir = Path(getattr(args, "output", "."))
     out_dir.mkdir(parents=True, exist_ok=True)
     out_file = out_dir / f"{MANIFEST['capability_id'].rsplit('.', 1)[-1]}_{ts}.json"

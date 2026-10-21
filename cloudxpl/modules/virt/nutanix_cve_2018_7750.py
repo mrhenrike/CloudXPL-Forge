@@ -1,6 +1,5 @@
 """CloudXPL-Forge — Nutanix Prism SFTP Auth Bypass (CVE-2018-7750)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "Nutanix Prism SFTP Auth Bypass (CVE-2018-7750)",

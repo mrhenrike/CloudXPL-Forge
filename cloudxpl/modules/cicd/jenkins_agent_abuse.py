@@ -1,6 +1,5 @@
 """CloudXPL module: Jenkins agent config copy secret leak + agent overwrite via name manipulation"""
 
-from __future__ import annotations
 from typing import Any
 
 MANIFEST = {

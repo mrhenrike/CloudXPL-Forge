@@ -1,6 +1,5 @@
 """Tests for cloudxpl.core.dispatcher module."""
 
-from __future__ import annotations
 
 import sys
 from pathlib import Path
@@ -24,7 +23,7 @@ def test_module_map_has_providers():
 def test_module_paths_are_dotted():
     for provider, modules in MODULE_MAP.items():
         for key, path in modules.items():
-            assert "." in path, "{}/{} module path must be dotted".format(provider, key)
+            assert "." in path, f"{provider}/{key} module path must be dotted"
 
 
 def test_total_module_count():

@@ -1,6 +1,5 @@
 """CloudXPL module: Citrix VDA GfxMgr.exe PROCESS_ALL_ACCESS handle leak to SYSTEM"""
 
-from __future__ import annotations
 from typing import Any
 
 MANIFEST = {

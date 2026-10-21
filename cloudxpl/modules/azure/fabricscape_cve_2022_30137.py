@@ -1,6 +1,5 @@
 """CloudXPL-Forge — Azure FabricScape Container Escape (CVE-2022-30137)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "Azure FabricScape Container Escape (CVE-2022-30137)",

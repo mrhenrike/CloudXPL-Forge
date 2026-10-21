@@ -1,6 +1,5 @@
 """CloudXPL-Forge — Azure Functions Docker Escape."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "Azure Functions Docker Escape",

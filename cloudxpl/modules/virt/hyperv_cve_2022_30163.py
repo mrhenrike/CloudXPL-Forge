@@ -1,6 +1,5 @@
 """CloudXPL-Forge — Hyper-V Race Condition VM Escape (CVE-2022-30163)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "Hyper-V Race Condition VM Escape (CVE-2022-30163)",

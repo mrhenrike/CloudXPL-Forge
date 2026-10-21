@@ -1,6 +1,5 @@
 """CloudXPL-Forge — Hyper-V Low-Priv Guest-to-Host RCE (CVE-2021-34450)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "Hyper-V Low-Priv Guest-to-Host RCE (CVE-2021-34450)",

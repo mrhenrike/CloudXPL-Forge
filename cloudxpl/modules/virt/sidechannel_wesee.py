@@ -1,6 +1,5 @@
 """CloudXPL-Forge — WeSee — AMD SEV-SNP #VC Interrupt (CVE-2024-25742)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "WeSee — AMD SEV-SNP #VC Interrupt (CVE-2024-25742)",

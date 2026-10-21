@@ -1,6 +1,5 @@
 """CloudXPL-Forge — vCenter vmdir Auth Bypass (CVE-2020-3952)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "vCenter vmdir Auth Bypass (CVE-2020-3952)",

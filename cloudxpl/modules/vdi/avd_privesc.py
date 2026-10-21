@@ -1,6 +1,5 @@
 """CloudXPL module: Azure Virtual Desktop elevation of privilege via missing authorization"""
 
-from __future__ import annotations
 from typing import Any
 
 MANIFEST = {

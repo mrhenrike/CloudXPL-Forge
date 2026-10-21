@@ -1,6 +1,5 @@
 """CloudXPL-Forge — LOLESXi Living Off The Land (Bridge)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "LOLESXi Living Off The Land (Bridge)",

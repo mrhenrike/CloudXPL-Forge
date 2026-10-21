@@ -1,6 +1,5 @@
 """CloudXPL module: VDI USB/device redirection abuse for HID injection and storage pass-through"""
 
-from __future__ import annotations
 from typing import Any
 
 MANIFEST = {

@@ -1,6 +1,5 @@
 """CloudXPL-Forge — Hypervisor Resources Collection (Bridge)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "Hypervisor Resources Collection (Bridge)",

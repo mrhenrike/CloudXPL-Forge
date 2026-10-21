@@ -1,6 +1,5 @@
 """CloudXPL module: Heroku dyno container recon for process namespace, mount points, network boundaries"""
 
-from __future__ import annotations
 from typing import Any
 
 MANIFEST = {

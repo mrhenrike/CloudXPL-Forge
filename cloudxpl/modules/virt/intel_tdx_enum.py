@@ -1,6 +1,5 @@
 """CloudXPL-Forge — Intel TDX Attack Surface Scanner."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "Intel TDX Attack Surface Scanner",

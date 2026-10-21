@@ -1,6 +1,5 @@
 """CloudXPL-Forge — VMware Horizon Log4Shell (CVE-2021-44228)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "VMware Horizon Log4Shell (CVE-2021-44228)",

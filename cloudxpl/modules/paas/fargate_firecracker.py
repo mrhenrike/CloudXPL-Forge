@@ -1,6 +1,5 @@
 """CloudXPL module: AWS Fargate/Firecracker microVM escape via virtio-pci OOB write or jailer symlink"""
 
-from __future__ import annotations
 from typing import Any
 
 MANIFEST = {

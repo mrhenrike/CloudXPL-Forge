@@ -1,6 +1,5 @@
 """CloudXPL-Forge — Zenbleed — AMD Zen 2 vzeroupper (CVE-2023-20593)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "Zenbleed — AMD Zen 2 vzeroupper (CVE-2023-20593)",

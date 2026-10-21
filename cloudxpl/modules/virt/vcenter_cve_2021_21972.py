@@ -1,6 +1,5 @@
 """CloudXPL-Forge — vCenter Unauthenticated RCE (CVE-2021-21972)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "vCenter Unauthenticated RCE (CVE-2021-21972)",

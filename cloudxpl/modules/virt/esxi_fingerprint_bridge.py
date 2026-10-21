@@ -1,6 +1,5 @@
 """CloudXPL-Forge — ESXi Fingerprint (Metasploit Bridge)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "ESXi Fingerprint (Metasploit Bridge)",

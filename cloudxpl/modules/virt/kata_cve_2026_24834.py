@@ -1,6 +1,5 @@
 """CloudXPL-Forge — Kata Containers virtio-pmem/DAX Overwrite (CVE-2026-24834)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "Kata Containers virtio-pmem/DAX Overwrite (CVE-2026-24834)",

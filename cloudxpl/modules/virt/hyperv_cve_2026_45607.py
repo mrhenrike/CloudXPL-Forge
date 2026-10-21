@@ -1,6 +1,5 @@
 """CloudXPL-Forge — Hyper-V OOB Read Info Disclosure (CVE-2026-45607)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "Hyper-V OOB Read Info Disclosure (CVE-2026-45607)",

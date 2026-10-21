@@ -1,6 +1,5 @@
 """CloudXPL-Forge — Azurescape ACI Cross-Tenant Escape (Bridge)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "Azurescape ACI Cross-Tenant Escape (Bridge)",

@@ -1,6 +1,5 @@
 """CloudXPL-Forge — vCenter Analytics File Upload RCE (CVE-2021-22005)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "vCenter Analytics File Upload RCE (CVE-2021-22005)",

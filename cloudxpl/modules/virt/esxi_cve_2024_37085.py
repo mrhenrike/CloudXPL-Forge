@@ -1,6 +1,5 @@
 """CloudXPL-Forge — ESXi AD Auth Bypass (CVE-2024-37085)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "ESXi AD Auth Bypass (CVE-2024-37085)",

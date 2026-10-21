@@ -1,6 +1,5 @@
 """CloudXPL module: GitHub Actions self-hosted runner escape via artifact path traversal or workflow injection"""
 
-from __future__ import annotations
 from typing import Any
 
 MANIFEST = {

@@ -1,6 +1,5 @@
 """CloudXPL module: Universal PaaS IMDS/metadata endpoint discovery for App Service, Cloud Run, Heroku, Railway"""
 
-from __future__ import annotations
 from typing import Any
 
 MANIFEST = {

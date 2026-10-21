@@ -1,6 +1,5 @@
 """CloudXPL-Forge — QEMU USB Emulator OOB R/W (CVE-2020-14364)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "QEMU USB Emulator OOB R/W (CVE-2020-14364)",

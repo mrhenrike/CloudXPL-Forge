@@ -1,6 +1,5 @@
 """CloudXPL-Forge — Firecracker Jailer Symlink Host-Write (CVE-2026-1386)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "Firecracker Jailer Symlink Host-Write (CVE-2026-1386)",

@@ -1,6 +1,5 @@
 """CloudXPL-Forge — Container Escape PoC Collection (Bridge)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "Container Escape PoC Collection (Bridge)",

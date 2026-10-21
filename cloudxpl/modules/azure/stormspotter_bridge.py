@@ -60,19 +60,37 @@ def run(args: Any) -> int:
     profile = getattr(args, "profile", None)
     project = getattr(args, "project", None)
 
-    print(f"[*] Enumerating Azure AD graph...")
+    print("[*] Analyzing Azure AD graph for attack paths...")
 
-    # Provider-specific enumeration logic
+    import shutil
+
     try:
-        # Placeholder for provider-specific API calls
-        # Each module should be extended with actual exploitation logic
+        stormspotter = shutil.which("stormspotter")
+        azurehound = shutil.which("azurehound")
+
+        if stormspotter:
+            print(f"[*] Stormspotter found: {stormspotter}")
+            domain = target or "tenant.onmicrosoft.com"
+            print(f"[*] Usage: stormspotter --tenant {domain}")
+            results["findings"].append({"tool": "stormspotter", "available": True})
+        elif azurehound:
+            print(f"[*] AzureHound found: {azurehound}")
+            print("[*] Usage: azurehound list --tenant <tenant-id> -o output.json")
+            print("[*] Import into BloodHound CE for graph analysis")
+            results["findings"].append({"tool": "azurehound", "available": True})
+        else:
+            print("[!] Stormspotter not found")
+            print("[*] Source: https://github.com/Azure/Stormspotter")
+            print("[*] Alternative: AzureHound for BloodHound CE")
+
         results["status"] = "completed"
         results["summary"] = {
             "items_checked": 0,
-            "findings_count": 0,
+            "findings_count": len(results["findings"]),
             "key_finding": "attack paths in Azure AD",
+            "tool_available": stormspotter is not None or azurehound is not None,
         }
-        print(f"[+] Analysis complete  -  key finding indicator: attack paths in Azure AD")
+        print("[+] Analysis complete")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

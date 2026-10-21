@@ -60,19 +60,41 @@ def run(args: Any) -> int:
     profile = getattr(args, "profile", None)
     project = getattr(args, "project", None)
 
-    print(f"[*] Enumerating users, groups, applications, service principals...")
+    print("[*] Enumerating users, groups, applications, service principals...")
 
-    # Provider-specific enumeration logic
+    import shutil
+    import subprocess
+
     try:
-        # Placeholder for provider-specific API calls
-        # Each module should be extended with actual exploitation logic
+        roadrecon = shutil.which("roadrecon")
+        if roadrecon:
+            cmd = [roadrecon, "gather"]
+            if target:
+                cmd += ["-d", target]
+            if profile:
+                cmd += ["-u", profile]
+            print("[*] CMD: {}".format(" ".join(cmd)))
+            proc = subprocess.run(cmd, capture_output=True, text=True)
+            results["findings"].append({
+                "tool": "roadrecon",
+                "stdout": proc.stdout[:4096],
+                "returncode": proc.returncode,
+            })
+            print(proc.stdout)
+            print("[*] View: roadrecon gui")
+        else:
+            print("[!] ROADrecon not found")
+            print("[*] Install: pip install roadrecon")
+            print("[*] Alternative tools: AADInternals, AzureHound")
+
         results["status"] = "completed"
         results["summary"] = {
             "items_checked": 0,
-            "findings_count": 0,
+            "findings_count": len(results["findings"]),
             "key_finding": "over-privileged app registrations",
+            "tool_available": roadrecon is not None,
         }
-        print(f"[+] Analysis complete  -  key finding indicator: over-privileged app registrations")
+        print("[+] Analysis complete")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

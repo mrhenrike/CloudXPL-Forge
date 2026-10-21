@@ -1,11 +1,10 @@
-"""GCP Metadata SSRF — exploit SSRF to reach GCE metadata server."""
+"""GCP Metadata SSRF  -  exploit SSRF to reach GCE metadata server."""
 
-from __future__ import annotations
 
 import json
 import os
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timezone, UTC
 from typing import Any
 
 import requests
@@ -83,7 +82,7 @@ def run(args: Any) -> int:
 
     if results["findings"]:
         os.makedirs(args.output, exist_ok=True)
-        ts = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
+        ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
         out_path = os.path.join(args.output, f"gcp_metadata_ssrf_{ts}.json")
         with open(out_path, "w") as fh:
             json.dump(results, fh, indent=2, default=str)

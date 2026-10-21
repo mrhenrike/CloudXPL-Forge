@@ -1,11 +1,10 @@
 """IaC secret scanning (TF, CF, Pulumi, ARM)."""
 
-from __future__ import annotations
 
 import json
 import os
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timezone, UTC
 from typing import Any
 
 
@@ -22,7 +21,7 @@ MANIFEST = {
 def _save(args: Any, prefix: str, data: Any) -> str:
     out = getattr(args, "output", ".")
     os.makedirs(out, exist_ok=True)
-    ts = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
+    ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     path = os.path.join(out, f"{prefix}_{ts}.json")
     with open(path, "w") as fh:
         json.dump(data, fh, indent=2, default=str)
@@ -33,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute iac_secret_scan module."""
     provider = getattr(args, "command", "multi")
-    print(f"[*] {MANIFEST['capability_id']} — IaC secret scanning (TF, CF, Pulumi, ARM)")
+    print(f"[*] {MANIFEST['capability_id']}  -  IaC secret scanning (TF, CF, Pulumi, ARM)")
     print(f"[*] Provider: {provider} | Service: Multi-cloud")
     print(f"[*] Target: cross-provider resources")
 
@@ -73,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "cross-cloud credential",
         }
-        print(f"[+] Analysis complete — key finding indicator: cross-cloud credential")
+        print(f"[+] Analysis complete  -  key finding indicator: cross-cloud credential")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

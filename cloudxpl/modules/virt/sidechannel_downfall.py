@@ -1,6 +1,5 @@
 """CloudXPL-Forge — Downfall — Intel Gather Data Sampling (CVE-2022-40982)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "Downfall — Intel Gather Data Sampling (CVE-2022-40982)",
@@ -25,6 +24,6 @@ def run(args):
         return 1
 
     print(f"[*] Target: {target}")
-    # TODO: implement exploit/scanner logic
+    # TODO(wave12): implement exploit/scanner logic
     print("[!] Module stub — implement exploit logic")
     return 0

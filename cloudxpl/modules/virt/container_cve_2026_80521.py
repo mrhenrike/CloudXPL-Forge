@@ -1,6 +1,5 @@
-"""CloudXPL-Forge — AF_UNIX Container Escape (CVE-2026-80521)."""
+"""CloudXPL-Forge  -  AF_UNIX Container Escape (CVE-2026-80521)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "AF_UNIX Container Escape (CVE-2026-80521)",

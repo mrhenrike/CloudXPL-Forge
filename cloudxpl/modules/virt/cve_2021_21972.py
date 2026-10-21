@@ -1,8 +1,8 @@
 """CloudXPL-Forge module: CVE-2021-21972 — vCenter file upload RCE (CVSS 9.8, KEV, EDB-49602/50056, Metasploit)"""
 
-from __future__ import annotations
 
 from typing import Any
+from datetime import UTC
 
 
 MANIFEST = {
@@ -28,10 +28,10 @@ def run(args: Any) -> int:
     findings: list[dict] = []
 
     # --- Module logic placeholder ---
-    # TODO: implement provider-specific logic
+    # TODO(wave12): implement provider-specific logic
     print("[!] Module stub — implement provider-specific logic")
 
-    ts = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
+    ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     out_dir = Path(getattr(args, "output", "."))
     out_dir.mkdir(parents=True, exist_ok=True)
     out_file = out_dir / f"{MANIFEST['capability_id'].rsplit('.', 1)[-1]}_{ts}.json"

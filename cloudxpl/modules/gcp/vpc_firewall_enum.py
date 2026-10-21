@@ -1,11 +1,10 @@
 """GCP VPC firewall rules enumeration."""
 
-from __future__ import annotations
 
 import json
 import os
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timezone, UTC
 from typing import Any
 
 
@@ -22,7 +21,7 @@ MANIFEST = {
 def _save(args: Any, prefix: str, data: Any) -> str:
     out = getattr(args, "output", ".")
     os.makedirs(out, exist_ok=True)
-    ts = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
+    ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     path = os.path.join(out, f"{prefix}_{ts}.json")
     with open(path, "w") as fh:
         json.dump(data, fh, indent=2, default=str)
@@ -33,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute vpc_firewall_enum module."""
     provider = getattr(args, "command", "gcp")
-    print(f"[*] {MANIFEST['capability_id']} — GCP VPC firewall rules enumeration")
+    print(f"[*] {MANIFEST['capability_id']}  -  GCP VPC firewall rules enumeration")
     print(f"[*] Provider: {provider} | Service: FirewallsClient")
     print(f"[*] Target: firewall rules")
 
@@ -73,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "0.0.0.0/0 ingress rules",
         }
-        print(f"[+] Analysis complete — key finding indicator: 0.0.0.0/0 ingress rules")
+        print(f"[+] Analysis complete  -  key finding indicator: 0.0.0.0/0 ingress rules")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

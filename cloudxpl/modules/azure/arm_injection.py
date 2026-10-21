@@ -1,12 +1,11 @@
-"""Azure ARM template injection — detect dangerous template patterns."""
+"""Azure ARM template injection  -  detect dangerous template patterns."""
 
-from __future__ import annotations
 
 import json
 import os
 import re
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timezone, UTC
 from pathlib import Path
 from typing import Any
 
@@ -134,7 +133,7 @@ def run(args: Any) -> int:
                 print(f"  [{f['severity']}] {path.name}: {f['description']}")
 
     os.makedirs(args.output, exist_ok=True)
-    ts = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
+    ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     out_path = os.path.join(args.output, f"arm_injection_{ts}.json")
     with open(out_path, "w") as fh:
         json.dump(results, fh, indent=2, default=str)

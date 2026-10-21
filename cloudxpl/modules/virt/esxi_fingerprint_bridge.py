@@ -1,6 +1,5 @@
-"""CloudXPL-Forge — ESXi Fingerprint (Metasploit Bridge)."""
+"""CloudXPL-Forge  -  ESXi Fingerprint (Metasploit Bridge)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "ESXi Fingerprint (Metasploit Bridge)",
@@ -18,7 +17,7 @@ import sys
 def run(args):
     msfconsole = shutil.which("msfconsole")
     if not msfconsole:
-        print("[!] msfconsole not found — install Metasploit Framework", file=sys.stderr)
+        print("[!] msfconsole not found  -  install Metasploit Framework", file=sys.stderr)
         return 1
 
     target = getattr(args, "target", None) or getattr(args, "vcenter_host", "") or ""

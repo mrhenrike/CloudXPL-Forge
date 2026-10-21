@@ -1,11 +1,10 @@
-"""GKE cluster enumeration — RBAC, Workload Identity, node pools."""
+"""GKE cluster enumeration  -  RBAC, Workload Identity, node pools."""
 
-from __future__ import annotations
 
 import json
 import os
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timezone, UTC
 from typing import Any
 
 
@@ -22,7 +21,7 @@ MANIFEST = {
 def _save(args: Any, prefix: str, data: Any) -> str:
     out = getattr(args, "output", ".")
     os.makedirs(out, exist_ok=True)
-    ts = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
+    ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     path = os.path.join(out, f"{prefix}_{ts}.json")
     with open(path, "w") as fh:
         json.dump(data, fh, indent=2, default=str)
@@ -33,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute gke_enum module."""
     provider = getattr(args, "command", "gcp")
-    print(f"[*] {MANIFEST['capability_id']} — GKE cluster enumeration — RBAC, Workload Identity, node pools")
+    print(f"[*] {MANIFEST['capability_id']}  -  GKE cluster enumeration  -  RBAC, Workload Identity, node pools")
     print(f"[*] Provider: {provider} | Service: ClusterManagerClient")
     print(f"[*] Target: GKE clusters, node pools")
 
@@ -73,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "public GKE API, legacy ABAC",
         }
-        print(f"[+] Analysis complete — key finding indicator: public GKE API, legacy ABAC")
+        print(f"[+] Analysis complete  -  key finding indicator: public GKE API, legacy ABAC")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

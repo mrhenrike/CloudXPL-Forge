@@ -1,6 +1,5 @@
 """Tests for cloudxpl.core.policy_engine."""
 
-from __future__ import annotations
 
 from cloudxpl.core.policy_engine import PolicyEngine
 

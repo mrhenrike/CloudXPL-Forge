@@ -1,11 +1,10 @@
-"""CloudXPL-Forge — ESXi Brute Force (Bridge)."""
+"""CloudXPL-Forge  -  ESXi Brute Force (Bridge)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "ESXi Brute Force (Bridge)",
     "mitre": ["T1110"],
-    "description": "Bridge to Bhanunamikaze/ESXiBrute — ESXi credential brute-force tool.",
+    "description": "Bridge to Bhanunamikaze/ESXiBrute  -  ESXi credential brute-force tool.",
     "references": ["https://github.com/Bhanunamikaze/ESXiBrute"],
 }
 

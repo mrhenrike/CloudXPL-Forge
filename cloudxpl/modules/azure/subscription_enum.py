@@ -1,11 +1,10 @@
-"""Azure subscription enumeration — list subscriptions, resource groups, RBAC."""
+"""Azure subscription enumeration  -  list subscriptions, resource groups, RBAC."""
 
-from __future__ import annotations
 
 import json
 import os
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timezone, UTC
 from typing import Any
 
 
@@ -63,7 +62,7 @@ def run(args: Any) -> int:
         return 1
 
     os.makedirs(args.output, exist_ok=True)
-    ts = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
+    ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     out_path = os.path.join(args.output, f"azure_subscriptions_{ts}.json")
     with open(out_path, "w") as fh:
         json.dump(results, fh, indent=2, default=str)

@@ -1,11 +1,10 @@
-"""AWS S3 bucket enumeration — list buckets, check ACLs, detect public access."""
+"""AWS S3 bucket enumeration  -  list buckets, check ACLs, detect public access."""
 
-from __future__ import annotations
 
 import json
 import os
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timezone, UTC
 from typing import Any
 
 
@@ -54,7 +53,7 @@ def run(args: Any) -> int:
             entry["public_acl"] = bool(public_grants)
             if public_grants:
                 entry["public_grants"] = [g["Permission"] for g in public_grants]
-                print(f"  [!] {name}: PUBLIC ACL — {', '.join(entry['public_grants'])}")
+                print(f"  [!] {name}: PUBLIC ACL  -  {', '.join(entry['public_grants'])}")
         except Exception:
             entry["acl_error"] = "AccessDenied"
 
@@ -86,7 +85,7 @@ def run(args: Any) -> int:
         results.append(entry)
 
     os.makedirs(args.output, exist_ok=True)
-    ts = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
+    ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     out_path = os.path.join(args.output, f"aws_s3_{ts}.json")
     with open(out_path, "w") as fh:
         json.dump(results, fh, indent=2, default=str)

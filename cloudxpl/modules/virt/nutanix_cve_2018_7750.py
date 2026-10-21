@@ -1,6 +1,5 @@
 """CloudXPL-Forge — Nutanix Prism SFTP Auth Bypass (CVE-2018-7750)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "Nutanix Prism SFTP Auth Bypass (CVE-2018-7750)",
@@ -25,6 +24,6 @@ def run(args):
         return 1
 
     print(f"[*] Target: {target}")
-    # TODO: implement exploit/scanner logic
+    # TODO(wave12): implement exploit/scanner logic
     print("[!] Module stub — implement exploit logic")
     return 0

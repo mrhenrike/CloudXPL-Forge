@@ -1,11 +1,10 @@
-"""Bridge para Pacu AWS exploitation framework — execute and import results."""
+"""Bridge para Pacu AWS exploitation framework  -  execute and import results."""
 
-from __future__ import annotations
 
 import json
 import os
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timezone, UTC
 from typing import Any
 
 
@@ -22,7 +21,7 @@ MANIFEST = {
 def _save(args: Any, prefix: str, data: Any) -> str:
     out = getattr(args, "output", ".")
     os.makedirs(out, exist_ok=True)
-    ts = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
+    ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     path = os.path.join(out, f"{prefix}_{ts}.json")
     with open(path, "w") as fh:
         json.dump(data, fh, indent=2, default=str)
@@ -41,5 +40,5 @@ def run(args: Any) -> int:
     print(f"[+] Pacu found: {pacu_path}")
     results = {"pacu_path": pacu_path, "available": True, "note": "Use pacu interactively for exploitation. This bridge verifies availability."}
     _save(args, "aws_pacu_bridge", results)
-    print("[+] Pacu bridge ready — launch with: pacu")
+    print("[+] Pacu bridge ready  -  launch with: pacu")
     return 0

@@ -1,6 +1,5 @@
 """CloudXPL-Forge — Azurescape ACI Cross-Tenant Escape (Bridge)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "Azurescape ACI Cross-Tenant Escape (Bridge)",
@@ -24,6 +23,6 @@ def run(args):
         return 1
 
     print(f"[*] Target: {target}")
-    # TODO: implement exploit/scanner logic
+    # TODO(wave12): implement exploit/scanner logic
     print("[!] Module stub — implement exploit logic")
     return 0

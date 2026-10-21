@@ -1,6 +1,5 @@
 """CloudXPL-Forge — Citrix Virtual Apps LPE (CVE-2025-6759)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "Citrix Virtual Apps LPE (CVE-2025-6759)",
@@ -25,6 +24,6 @@ def run(args):
         return 1
 
     print(f"[*] Target: {target}")
-    # TODO: implement exploit/scanner logic
+    # TODO(wave12): implement exploit/scanner logic
     print("[!] Module stub — implement exploit logic")
     return 0

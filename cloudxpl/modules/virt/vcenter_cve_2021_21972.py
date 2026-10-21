@@ -1,6 +1,5 @@
 """CloudXPL-Forge — vCenter Unauthenticated RCE (CVE-2021-21972)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "vCenter Unauthenticated RCE (CVE-2021-21972)",
@@ -25,6 +24,6 @@ def run(args):
         return 1
 
     print(f"[*] Target: {target}")
-    # TODO: implement exploit/scanner logic
+    # TODO(wave12): implement exploit/scanner logic
     print("[!] Module stub — implement exploit logic")
     return 0

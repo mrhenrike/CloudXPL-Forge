@@ -1,12 +1,11 @@
-"""CloudXPL-Forge — QEMU SLiRP Escape PoC (Bridge)."""
+"""CloudXPL-Forge  -  QEMU SLiRP Escape PoC (Bridge)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "QEMU SLiRP Escape PoC (Bridge)",
     "cve": "CVE-2019-6778",
     "mitre": ["T1611"],
-    "description": "Bridge to 0xKira/qemu-vm-escape — working QEMU VM escape exploit via SLiRP heap overflow.",
+    "description": "Bridge to 0xKira/qemu-vm-escape  -  working QEMU VM escape exploit via SLiRP heap overflow.",
     "references": ["https://github.com/0xKira/qemu-vm-escape"],
 }
 

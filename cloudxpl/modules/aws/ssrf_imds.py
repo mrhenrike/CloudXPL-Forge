@@ -1,11 +1,10 @@
-"""SSRF to IMDS — exploit SSRF to reach EC2 Instance Metadata Service."""
+"""SSRF to IMDS  -  exploit SSRF to reach EC2 Instance Metadata Service."""
 
-from __future__ import annotations
 
 import json
 import os
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timezone, UTC
 from typing import Any
 from urllib.parse import urljoin
 
@@ -86,7 +85,7 @@ def run(args: Any) -> int:
 
     if results["findings"]:
         os.makedirs(args.output, exist_ok=True)
-        ts = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
+        ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
         out_path = os.path.join(args.output, f"ssrf_imds_{ts}.json")
         with open(out_path, "w") as fh:
             json.dump(results, fh, indent=2, default=str)

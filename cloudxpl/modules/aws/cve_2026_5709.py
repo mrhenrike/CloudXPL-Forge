@@ -1,11 +1,10 @@
 """CVE-2026-5709 AWS RES access control bypass PoC."""
 
-from __future__ import annotations
 
 import json
 import os
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timezone, UTC
 from typing import Any
 
 
@@ -22,7 +21,7 @@ MANIFEST = {
 def _save(args: Any, prefix: str, data: Any) -> str:
     out = getattr(args, "output", ".")
     os.makedirs(out, exist_ok=True)
-    ts = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
+    ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     path = os.path.join(out, f"{prefix}_{ts}.json")
     with open(path, "w") as fh:
         json.dump(data, fh, indent=2, default=str)
@@ -36,5 +35,5 @@ def run(args: Any) -> int:
     print("[*] Vulnerability: Authorization bypass in AWS RES API endpoints")
     results = {"cve": "CVE-2026-5709", "type": "access_control_bypass", "target": "AWS RES API", "check": "stack_detection"}
     _save(args, "aws_cve_2026_5709", results)
-    print("[+] Check complete — review output for RES deployment indicators")
+    print("[+] Check complete  -  review output for RES deployment indicators")
     return 0

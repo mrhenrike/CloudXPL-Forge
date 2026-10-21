@@ -1,11 +1,10 @@
 """Entra ID OAuth token theft, refresh token abuse, PRT extraction."""
 
-from __future__ import annotations
 
 import json
 import os
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timezone, UTC
 from typing import Any
 
 
@@ -22,7 +21,7 @@ MANIFEST = {
 def _save(args: Any, prefix: str, data: Any) -> str:
     out = getattr(args, "output", ".")
     os.makedirs(out, exist_ok=True)
-    ts = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
+    ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     path = os.path.join(out, f"{prefix}_{ts}.json")
     with open(path, "w") as fh:
         json.dump(data, fh, indent=2, default=str)
@@ -33,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute entra_tokens module."""
     provider = getattr(args, "command", "azure")
-    print(f"[*] {MANIFEST['capability_id']} — Entra ID OAuth token theft, refresh token abuse, PRT extraction")
+    print(f"[*] {MANIFEST['capability_id']}  -  Entra ID OAuth token theft, refresh token abuse, PRT extraction")
     print(f"[*] Provider: {provider} | Service: TokenCredential")
     print(f"[*] Target: OAuth tokens, refresh tokens, PRT")
 
@@ -73,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "leaked or reusable tokens",
         }
-        print(f"[+] Analysis complete — key finding indicator: leaked or reusable tokens")
+        print(f"[+] Analysis complete  -  key finding indicator: leaked or reusable tokens")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

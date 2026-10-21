@@ -1,11 +1,10 @@
-"""CloudXPL-Forge — Hypervisor Resources Collection (Bridge)."""
+"""CloudXPL-Forge  -  Hypervisor Resources Collection (Bridge)."""
 
-from __future__ import annotations
 
 MANIFEST: dict = {
     "name": "Hypervisor Resources Collection (Bridge)",
     "mitre": ["T1592"],
-    "description": "Bridge to husseinmuhaisen/Hypervisor — comprehensive hypervisor security resources and research.",
+    "description": "Bridge to husseinmuhaisen/Hypervisor  -  comprehensive hypervisor security resources and research.",
     "references": ["https://github.com/husseinmuhaisen/Hypervisor"],
 }
 

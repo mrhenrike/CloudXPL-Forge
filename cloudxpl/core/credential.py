@@ -1,6 +1,5 @@
-"""Cloud credential management — provider-agnostic credential handling."""
+"""Cloud credential management  -  provider-agnostic credential handling."""
 
-from __future__ import annotations
 
 from dataclasses import dataclass, field
 from typing import Any

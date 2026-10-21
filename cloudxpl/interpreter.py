@@ -1,9 +1,7 @@
 """CloudXPL interactive REPL interpreter."""
 
 import importlib
-import os
 import readline
-import sys
 from pathlib import Path
 from typing import Any
 

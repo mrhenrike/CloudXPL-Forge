@@ -3,16 +3,13 @@
 import types
 from unittest.mock import patch
 
-import pytest
-
 from cloudxpl.interpreter import (
     BANNER,
     CloudXPLCompleter,
     Interpreter,
-    _Namespace,
     _build_namespace,
+    _Namespace,
 )
-
 
 # ---------------------------------------------------------------------------
 # _Namespace

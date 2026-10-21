@@ -1,4 +1,4 @@
-"""CloudXPL-Forge  -  Hyper-V RDP Path Traversal Guest-to-Host (CVE-2019-0887)."""
+"""CloudXPL-Forge — Hyper-V RDP Path Traversal Guest-to-Host (CVE-2019-0887)."""
 
 
 MANIFEST: dict = {
@@ -24,6 +24,6 @@ def run(args):
         return 1
 
     print(f"[*] Target: {target}")
-    # TODO: implement exploit/scanner logic
-    print("[!] Module stub  -  implement exploit logic")
+    # TODO(wave12): implement exploit/scanner logic
+    print("[!] Module stub — implement exploit logic")
     return 0

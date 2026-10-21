@@ -1,4 +1,4 @@
-"""CloudXPL-Forge module: XSA-486 / CVE-2026-23558  -  Xen grant table v2 race condition"""
+"""CloudXPL-Forge module: XSA-486 / CVE-2026-23558 — Xen grant table v2 race condition"""
 
 
 from typing import Any
@@ -17,7 +17,7 @@ MANIFEST = {
 
 
 def run(args: Any) -> int:
-    """Execute XSA-486 / CVE-2026-23558  -  Xen grant table v2 race condition."""
+    """Execute XSA-486 / CVE-2026-23558 — Xen grant table v2 race condition."""
     import json
     import sys
     from datetime import datetime, timezone
@@ -29,8 +29,8 @@ def run(args: Any) -> int:
     findings: list[dict] = []
 
     # --- Module logic placeholder ---
-    # TODO: implement provider-specific API calls
-    print("[!] Module stub  -  implement provider-specific logic")
+    # TODO(wave12): implement provider-specific API calls
+    print("[!] Module stub — implement provider-specific logic")
 
     ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     out_dir = Path(getattr(args, "output", "."))

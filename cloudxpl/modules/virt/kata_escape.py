@@ -28,8 +28,8 @@ def run(args: Any) -> int:
     findings: list[dict] = []
 
     # --- Module logic placeholder ---
-    # TODO: implement provider-specific logic
-    print("[!] Module stub  -  implement provider-specific logic")
+    # TODO(wave12): implement provider-specific logic
+    print("[!] Module stub — implement provider-specific logic")
 
     ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     out_dir = Path(getattr(args, "output", "."))

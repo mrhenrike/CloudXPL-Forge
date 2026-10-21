@@ -1,4 +1,4 @@
-"""CloudXPL-Forge module: CVE-2019-18389  -  virglrenderer/virtio-gpu first full VM escape (3dRedPill)"""
+"""CloudXPL-Forge module: CVE-2019-18389 — virglrenderer/virtio-gpu first full VM escape (3dRedPill)"""
 
 
 from typing import Any
@@ -16,7 +16,7 @@ MANIFEST = {
 
 
 def run(args: Any) -> int:
-    """Detect CVE-2019-18389  -  virglrenderer heap overflow. First full virtio-based VM escape (3dRedPill, Geekpwn)."""
+    """Detect CVE-2019-18389 — virglrenderer heap overflow. First full virtio-based VM escape (3dRedPill, Geekpwn)."""
     import json
     import sys
     from datetime import datetime, timezone
@@ -28,8 +28,8 @@ def run(args: Any) -> int:
     findings: list[dict] = []
 
     # --- Module logic placeholder ---
-    # TODO: implement provider-specific logic
-    print("[!] Module stub  -  implement provider-specific logic")
+    # TODO(wave12): implement provider-specific logic
+    print("[!] Module stub — implement provider-specific logic")
 
     ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     out_dir = Path(getattr(args, "output", "."))

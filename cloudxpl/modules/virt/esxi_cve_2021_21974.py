@@ -1,8 +1,8 @@
-"""CloudXPL-Forge  -  ESXi OpenSLP Heap Overflow  -  ESXiArgs (CVE-2021-21974)."""
+"""CloudXPL-Forge — ESXi OpenSLP Heap Overflow — ESXiArgs (CVE-2021-21974)."""
 
 
 MANIFEST: dict = {
-    "name": "ESXi OpenSLP Heap Overflow  -  ESXiArgs (CVE-2021-21974)",
+    "name": "ESXi OpenSLP Heap Overflow — ESXiArgs (CVE-2021-21974)",
     "cve": "CVE-2021-21974",
     "mitre": ["T1210"],
     "description": "Exploits OpenSLP heap overflow in ESXi 6.5/6.7/7.0 used as entry point for ESXiArgs ransomware campaign (Feb 2023).",
@@ -24,6 +24,6 @@ def run(args):
         return 1
 
     print(f"[*] Target: {target}")
-    # TODO: implement exploit/scanner logic
-    print("[!] Module stub  -  implement exploit logic")
+    # TODO(wave12): implement exploit/scanner logic
+    print("[!] Module stub — implement exploit logic")
     return 0

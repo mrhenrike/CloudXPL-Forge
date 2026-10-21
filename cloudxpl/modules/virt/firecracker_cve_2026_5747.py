@@ -1,4 +1,4 @@
-"""CloudXPL-Forge  -  Firecracker virtio-pci OOB Write (CVE-2026-5747)."""
+"""CloudXPL-Forge — Firecracker virtio-pci OOB Write (CVE-2026-5747)."""
 
 
 MANIFEST: dict = {
@@ -24,6 +24,6 @@ def run(args):
         return 1
 
     print(f"[*] Target: {target}")
-    # TODO: implement exploit/scanner logic
-    print("[!] Module stub  -  implement exploit logic")
+    # TODO(wave12): implement exploit/scanner logic
+    print("[!] Module stub — implement exploit logic")
     return 0

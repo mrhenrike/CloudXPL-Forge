@@ -1,8 +1,8 @@
-"""CloudXPL-Forge  -  Xen Grant-Table Version Race  -  Host Privesc (XSA-517 / CVE-2026-79610)."""
+"""CloudXPL-Forge — Xen Grant-Table Version Race — Host Privesc (XSA-517 / CVE-2026-79610)."""
 
 
 MANIFEST: dict = {
-    "name": "Xen Grant-Table Version Race  -  Host Privesc (XSA-517 / CVE-2026-79610)",
+    "name": "Xen Grant-Table Version Race — Host Privesc (XSA-517 / CVE-2026-79610)",
     "cve": "CVE-2026-79610",
     "mitre": ["T1068"],
     "description": "Exploits grant-table version-change race in Xen for guest privilege escalation to host level.",
@@ -24,6 +24,6 @@ def run(args):
         return 1
 
     print(f"[*] Target: {target}")
-    # TODO: implement exploit/scanner logic
-    print("[!] Module stub  -  implement exploit logic")
+    # TODO(wave12): implement exploit/scanner logic
+    print("[!] Module stub — implement exploit logic")
     return 0

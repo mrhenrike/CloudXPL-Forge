@@ -1,8 +1,8 @@
-"""CloudXPL-Forge  -  WeSee  -  AMD SEV-SNP #VC Interrupt (CVE-2024-25742)."""
+"""CloudXPL-Forge — WeSee — AMD SEV-SNP #VC Interrupt (CVE-2024-25742)."""
 
 
 MANIFEST: dict = {
-    "name": "WeSee  -  AMD SEV-SNP #VC Interrupt (CVE-2024-25742)",
+    "name": "WeSee — AMD SEV-SNP #VC Interrupt (CVE-2024-25742)",
     "cve": "CVE-2024-25742",
     "mitre": ["T1003"],
     "description": "Exploits malicious #VC interrupt injection to break AMD SEV-SNP confidential VM isolation.",
@@ -24,6 +24,6 @@ def run(args):
         return 1
 
     print(f"[*] Target: {target}")
-    # TODO: implement exploit/scanner logic
-    print("[!] Module stub  -  implement exploit logic")
+    # TODO(wave12): implement exploit/scanner logic
+    print("[!] Module stub — implement exploit logic")
     return 0

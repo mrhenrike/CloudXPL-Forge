@@ -1,8 +1,8 @@
-"""CloudXPL-Forge  -  DDRop  -  Physical Memory Interposer (Intel TDX + AMD SEV)."""
+"""CloudXPL-Forge — DDRop — Physical Memory Interposer (Intel TDX + AMD SEV)."""
 
 
 MANIFEST: dict = {
-    "name": "DDRop  -  Physical Memory Interposer (Intel TDX + AMD SEV)",
+    "name": "DDRop — Physical Memory Interposer (Intel TDX + AMD SEV)",
     "mitre": ["T1200"],
     "description": "Physical attack using DRAM interposer to break Intel TDX, Scalable SGX, and AMD SEV-SNP confidential computing.",
     "references": ["https://thehackernews.com/2026/09/new-ddrop-attack-breaks-intel-tdx-and.html"],
@@ -23,6 +23,6 @@ def run(args):
         return 1
 
     print(f"[*] Target: {target}")
-    # TODO: implement exploit/scanner logic
-    print("[!] Module stub  -  implement exploit logic")
+    # TODO(wave12): implement exploit/scanner logic
+    print("[!] Module stub — implement exploit logic")
     return 0

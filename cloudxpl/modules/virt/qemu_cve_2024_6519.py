@@ -1,4 +1,4 @@
-"""CloudXPL-Forge module: CVE-2024-6519  -  QEMU LSI53C895A SCSI UAF VM escape"""
+"""CloudXPL-Forge module: CVE-2024-6519 — QEMU LSI53C895A SCSI UAF VM escape"""
 
 
 from typing import Any
@@ -16,7 +16,7 @@ MANIFEST = {
 
 
 def run(args: Any) -> int:
-    """Execute CVE-2024-6519  -  QEMU LSI53C895A SCSI UAF VM escape."""
+    """Execute CVE-2024-6519 — QEMU LSI53C895A SCSI UAF VM escape."""
     import json
     import sys
     from datetime import datetime, timezone
@@ -28,8 +28,8 @@ def run(args: Any) -> int:
     findings: list[dict] = []
 
     # --- Module logic placeholder ---
-    # TODO: implement provider-specific API calls
-    print("[!] Module stub  -  implement provider-specific logic")
+    # TODO(wave12): implement provider-specific API calls
+    print("[!] Module stub — implement provider-specific logic")
 
     ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     out_dir = Path(getattr(args, "output", "."))

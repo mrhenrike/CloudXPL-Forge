@@ -1,4 +1,4 @@
-"""CloudXPL-Forge module: CVE-2021-22005  -  vCenter analytics file upload RCE (KEV, Metasploit)"""
+"""CloudXPL-Forge module: CVE-2021-22005 — vCenter analytics file upload RCE (KEV, Metasploit)"""
 
 
 from typing import Any
@@ -16,7 +16,7 @@ MANIFEST = {
 
 
 def run(args: Any) -> int:
-    """Detect/exploit CVE-2021-22005  -  vCenter CEIP analytics file upload. KEV, Metasploit vmware_vcenter_analytics_file_upload."""
+    """Detect/exploit CVE-2021-22005 — vCenter CEIP analytics file upload. KEV, Metasploit vmware_vcenter_analytics_file_upload."""
     import json
     import sys
     from datetime import datetime, timezone
@@ -28,8 +28,8 @@ def run(args: Any) -> int:
     findings: list[dict] = []
 
     # --- Module logic placeholder ---
-    # TODO: implement provider-specific logic
-    print("[!] Module stub  -  implement provider-specific logic")
+    # TODO(wave12): implement provider-specific logic
+    print("[!] Module stub — implement provider-specific logic")
 
     ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     out_dir = Path(getattr(args, "output", "."))

@@ -1,4 +1,4 @@
-"""CloudXPL-Forge module: CVE-2025-22226  -  ESXi HGFS OOB read memory leak (VMSA-2025-0004)"""
+"""CloudXPL-Forge module: CVE-2025-22226 — ESXi HGFS OOB read memory leak (VMSA-2025-0004)"""
 
 
 from typing import Any
@@ -16,7 +16,7 @@ MANIFEST = {
 
 
 def run(args: Any) -> int:
-    """Detect CVE-2025-22226  -  ESXi HGFS OOB read leaking VMX memory. Enables ASLR bypass for escape chain."""
+    """Detect CVE-2025-22226 — ESXi HGFS OOB read leaking VMX memory. Enables ASLR bypass for escape chain."""
     import json
     import sys
     from datetime import datetime, timezone
@@ -28,8 +28,8 @@ def run(args: Any) -> int:
     findings: list[dict] = []
 
     # --- Module logic placeholder ---
-    # TODO: implement provider-specific logic
-    print("[!] Module stub  -  implement provider-specific logic")
+    # TODO(wave12): implement provider-specific logic
+    print("[!] Module stub — implement provider-specific logic")
 
     ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     out_dir = Path(getattr(args, "output", "."))

@@ -1,4 +1,4 @@
-"""CloudXPL-Forge module: CVE-2022-31705  -  ESXi/Workstation/Fusion EHCI USB OOB write VM escape (GeekPwn 2022)"""
+"""CloudXPL-Forge module: CVE-2022-31705 — ESXi/Workstation/Fusion EHCI USB OOB write VM escape (GeekPwn 2022)"""
 
 
 from typing import Any
@@ -16,7 +16,7 @@ MANIFEST = {
 
 
 def run(args: Any) -> int:
-    """Detect/exploit CVE-2022-31705  -  ESXi EHCI USB controller OOB write. VM escape demonstrated at GeekPwn 2022, Pwnie Award 2023."""
+    """Detect/exploit CVE-2022-31705 — ESXi EHCI USB controller OOB write. VM escape demonstrated at GeekPwn 2022, Pwnie Award 2023."""
     import json
     import sys
     from datetime import datetime, timezone
@@ -28,8 +28,8 @@ def run(args: Any) -> int:
     findings: list[dict] = []
 
     # --- Module logic placeholder ---
-    # TODO: implement provider-specific logic
-    print("[!] Module stub  -  implement provider-specific logic")
+    # TODO(wave12): implement provider-specific logic
+    print("[!] Module stub — implement provider-specific logic")
 
     ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     out_dir = Path(getattr(args, "output", "."))

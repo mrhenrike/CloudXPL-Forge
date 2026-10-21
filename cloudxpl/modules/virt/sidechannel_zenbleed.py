@@ -1,8 +1,8 @@
-"""CloudXPL-Forge  -  Zenbleed  -  AMD Zen 2 vzeroupper (CVE-2023-20593)."""
+"""CloudXPL-Forge — Zenbleed — AMD Zen 2 vzeroupper (CVE-2023-20593)."""
 
 
 MANIFEST: dict = {
-    "name": "Zenbleed  -  AMD Zen 2 vzeroupper (CVE-2023-20593)",
+    "name": "Zenbleed — AMD Zen 2 vzeroupper (CVE-2023-20593)",
     "cve": "CVE-2023-20593",
     "mitre": ["T1003"],
     "description": "Exploits AMD Zen 2 vzeroupper speculation bug for leaking register contents across privilege boundaries.",
@@ -24,6 +24,6 @@ def run(args):
         return 1
 
     print(f"[*] Target: {target}")
-    # TODO: implement exploit/scanner logic
-    print("[!] Module stub  -  implement exploit logic")
+    # TODO(wave12): implement exploit/scanner logic
+    print("[!] Module stub — implement exploit logic")
     return 0

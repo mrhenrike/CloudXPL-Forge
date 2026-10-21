@@ -1,4 +1,4 @@
-"""CloudXPL-Forge module: CVE-2024-21407  -  Hyper-V RCE guest-to-host (CVSS 8.1, March 2024)"""
+"""CloudXPL-Forge module: CVE-2024-21407 — Hyper-V RCE guest-to-host (CVSS 8.1, March 2024)"""
 
 
 from typing import Any
@@ -16,7 +16,7 @@ MANIFEST = {
 
 
 def run(args: Any) -> int:
-    """Detect CVE-2024-21407  -  Hyper-V guest-to-host RCE. High attack complexity. March 2024 Patch Tuesday."""
+    """Detect CVE-2024-21407 — Hyper-V guest-to-host RCE. High attack complexity. March 2024 Patch Tuesday."""
     import json
     import sys
     from datetime import datetime, timezone
@@ -28,8 +28,8 @@ def run(args: Any) -> int:
     findings: list[dict] = []
 
     # --- Module logic placeholder ---
-    # TODO: implement provider-specific logic
-    print("[!] Module stub  -  implement provider-specific logic")
+    # TODO(wave12): implement provider-specific logic
+    print("[!] Module stub — implement provider-specific logic")
 
     ts = datetime.now(UTC).strftime("%Y%m%d_%H%M%S")
     out_dir = Path(getattr(args, "output", "."))

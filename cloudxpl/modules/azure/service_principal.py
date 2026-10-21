@@ -32,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute service_principal module."""
     provider = getattr(args, "command", "azure")
-    print(f"[*] {MANIFEST['capability_id']} — Azure Service Principal enumeration and secret extraction")
+    print(f"[*] {MANIFEST['capability_id']}  -  Azure Service Principal enumeration and secret extraction")
     print(f"[*] Provider: {provider} | Service: GraphServiceClient")
     print(f"[*] Target: service principals, secrets")
 
@@ -72,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "expired or over-permissioned SPs",
         }
-        print(f"[+] Analysis complete — key finding indicator: expired or over-permissioned SPs")
+        print(f"[+] Analysis complete  -  key finding indicator: expired or over-permissioned SPs")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

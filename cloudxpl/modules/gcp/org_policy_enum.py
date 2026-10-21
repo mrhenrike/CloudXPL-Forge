@@ -32,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute org_policy_enum module."""
     provider = getattr(args, "command", "gcp")
-    print(f"[*] {MANIFEST['capability_id']} — GCP Organization Policy enumeration")
+    print(f"[*] {MANIFEST['capability_id']}  -  GCP Organization Policy enumeration")
     print(f"[*] Provider: {provider} | Service: OrgPolicyClient")
     print(f"[*] Target: org policies, constraints")
 
@@ -72,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "permissive org policies",
         }
-        print(f"[+] Analysis complete — key finding indicator: permissive org policies")
+        print(f"[+] Analysis complete  -  key finding indicator: permissive org policies")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

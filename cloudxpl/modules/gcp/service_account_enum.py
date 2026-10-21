@@ -1,4 +1,4 @@
-"""GCP Service Account enumeration — list SAs, keys, permissions."""
+"""GCP Service Account enumeration  -  list SAs, keys, permissions."""
 
 
 import json

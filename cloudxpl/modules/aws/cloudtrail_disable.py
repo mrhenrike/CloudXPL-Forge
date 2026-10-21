@@ -1,4 +1,4 @@
-"""AWS CloudTrail evasion analysis — identifies trails, logging gaps, tampering vectors."""
+"""AWS CloudTrail evasion analysis  -  identifies trails, logging gaps, tampering vectors."""
 
 
 import json

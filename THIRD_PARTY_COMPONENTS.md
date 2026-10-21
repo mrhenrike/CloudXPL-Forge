@@ -1,8 +1,8 @@
-# Third-Party Components — CloudXPL-Forge
+# Third-Party Components  -  CloudXPL-Forge
 
 | Component | License | Usage |
 |-----------|---------|-------|
-| boto3 | Apache 2.0 | AWS SDK — IAM, S3, EC2, Lambda API calls |
+| boto3 | Apache 2.0 | AWS SDK  -  IAM, S3, EC2, Lambda API calls |
 | azure-identity | MIT | Azure credential management |
 | azure-mgmt-resource | MIT | Azure Resource Manager API |
 | azure-mgmt-storage | MIT | Azure Storage management API |

@@ -32,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute vm_imds module."""
     provider = getattr(args, "command", "azure")
-    print(f"[*] {MANIFEST['capability_id']} — Azure IMDS token theft from 169")
+    print(f"[*] {MANIFEST['capability_id']}  -  Azure IMDS token theft from 169")
     print(f"[*] Provider: {provider} | Service: IMDS endpoint")
     print(f"[*] Target: managed identity tokens")
 
@@ -72,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "IMDS token accessible without IMDSv2",
         }
-        print(f"[+] Analysis complete — key finding indicator: IMDS token accessible without IMDSv2")
+        print(f"[+] Analysis complete  -  key finding indicator: IMDS token accessible without IMDSv2")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

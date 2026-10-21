@@ -35,5 +35,5 @@ def run(args: Any) -> int:
     print("[*] Vulnerability: Authorization bypass in AWS RES API endpoints")
     results = {"cve": "CVE-2026-5709", "type": "access_control_bypass", "target": "AWS RES API", "check": "stack_detection"}
     _save(args, "aws_cve_2026_5709", results)
-    print("[+] Check complete — review output for RES deployment indicators")
+    print("[+] Check complete  -  review output for RES deployment indicators")
     return 0

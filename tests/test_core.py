@@ -1,4 +1,4 @@
-"""CloudXPL-Forge core tests — version, credentials, dispatcher, CLI, manifests."""
+"""CloudXPL-Forge core tests  -  version, credentials, dispatcher, CLI, manifests."""
 
 
 import ast

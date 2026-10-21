@@ -1,10 +1,10 @@
-"""CloudXPL-Forge — Awesome Hyper-V Exploitation (Bridge)."""
+"""CloudXPL-Forge  -  Awesome Hyper-V Exploitation (Bridge)."""
 
 
 MANIFEST: dict = {
     "name": "Awesome Hyper-V Exploitation (Bridge)",
     "mitre": ["T1611"],
-    "description": "Bridge to shogunlab/awesome-hyper-v-exploitation — Hyper-V exploitation resources and PoCs.",
+    "description": "Bridge to shogunlab/awesome-hyper-v-exploitation  -  Hyper-V exploitation resources and PoCs.",
     "references": ["https://github.com/shogunlab/awesome-hyper-v-exploitation"],
 }
 

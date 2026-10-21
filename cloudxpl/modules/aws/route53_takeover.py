@@ -1,4 +1,4 @@
-"""AWS Route53 subdomain takeover — dangling CNAME, alias records, NS delegation."""
+"""AWS Route53 subdomain takeover  -  dangling CNAME, alias records, NS delegation."""
 
 
 import json

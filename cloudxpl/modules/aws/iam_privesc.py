@@ -1,4 +1,4 @@
-"""AWS IAM privilege escalation path analysis — identifies 20+ escalation vectors."""
+"""AWS IAM privilege escalation path analysis  -  identifies 20+ escalation vectors."""
 
 
 import json

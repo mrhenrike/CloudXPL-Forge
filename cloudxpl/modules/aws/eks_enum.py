@@ -1,4 +1,4 @@
-"""AWS EKS cluster enumeration — clusters, node groups, RBAC, IRSA."""
+"""AWS EKS cluster enumeration  -  clusters, node groups, RBAC, IRSA."""
 
 
 import json

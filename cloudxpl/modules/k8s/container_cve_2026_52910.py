@@ -1,4 +1,4 @@
-"""CloudXPL-Forge — Linux Kernel Container Breakout (CVE-2026-52910)."""
+"""CloudXPL-Forge  -  Linux Kernel Container Breakout (CVE-2026-52910)."""
 
 
 MANIFEST: dict = {

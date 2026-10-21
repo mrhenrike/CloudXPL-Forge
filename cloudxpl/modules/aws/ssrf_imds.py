@@ -1,4 +1,4 @@
-"""SSRF to IMDS — exploit SSRF to reach EC2 Instance Metadata Service."""
+"""SSRF to IMDS  -  exploit SSRF to reach EC2 Instance Metadata Service."""
 
 
 import json

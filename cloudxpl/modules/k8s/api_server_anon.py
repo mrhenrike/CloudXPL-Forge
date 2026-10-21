@@ -32,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute api_server_anon module."""
     provider = getattr(args, "command", "k8s")
-    print(f"[*] {MANIFEST['capability_id']} — Anonymous API server access exploitation")
+    print(f"[*] {MANIFEST['capability_id']}  -  Anonymous API server access exploitation")
     print(f"[*] Provider: {provider} | Service: K8s API")
     print(f"[*] Target: cluster resources")
 
@@ -72,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "security misconfiguration",
         }
-        print(f"[+] Analysis complete — key finding indicator: security misconfiguration")
+        print(f"[+] Analysis complete  -  key finding indicator: security misconfiguration")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

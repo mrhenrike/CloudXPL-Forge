@@ -32,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute trigger_hijack module."""
     provider = getattr(args, "command", "serverless")
-    print(f"[*] {MANIFEST['capability_id']} — Event trigger hijacking across providers")
+    print(f"[*] {MANIFEST['capability_id']}  -  Event trigger hijacking across providers")
     print(f"[*] Provider: {provider} | Service: Serverless")
     print(f"[*] Target: functions and triggers")
 
@@ -72,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "injectable function",
         }
-        print(f"[+] Analysis complete — key finding indicator: injectable function")
+        print(f"[+] Analysis complete  -  key finding indicator: injectable function")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

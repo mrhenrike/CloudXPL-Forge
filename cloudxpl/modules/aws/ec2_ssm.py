@@ -1,4 +1,4 @@
-"""AWS Systems Manager exploitation — RunCommand, session manager, parameter store."""
+"""AWS Systems Manager exploitation  -  RunCommand, session manager, parameter store."""
 
 
 import json

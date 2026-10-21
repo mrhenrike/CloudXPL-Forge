@@ -1,4 +1,4 @@
-"""AWS Lambda enumeration — list functions, runtimes, env vars, layers."""
+"""AWS Lambda enumeration  -  list functions, runtimes, env vars, layers."""
 
 
 import json

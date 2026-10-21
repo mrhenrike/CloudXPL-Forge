@@ -1,4 +1,4 @@
-"""CloudXPL-Forge — vCenter vmdir Auth Bypass (Metasploit Bridge)."""
+"""CloudXPL-Forge  -  vCenter vmdir Auth Bypass (Metasploit Bridge)."""
 
 
 MANIFEST: dict = {
@@ -18,7 +18,7 @@ import sys
 def run(args):
     msfconsole = shutil.which("msfconsole")
     if not msfconsole:
-        print("[!] msfconsole not found — install Metasploit Framework", file=sys.stderr)
+        print("[!] msfconsole not found  -  install Metasploit Framework", file=sys.stderr)
         return 1
 
     target = getattr(args, "target", None) or getattr(args, "vcenter_host", "") or ""

@@ -32,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute vpc_enum module."""
     provider = getattr(args, "command", "net")
-    print(f"[*] {MANIFEST['capability_id']} — VPC/VNet/Network enumeration")
+    print(f"[*] {MANIFEST['capability_id']}  -  VPC/VNet/Network enumeration")
     print(f"[*] Provider: {provider} | Service: Network")
     print(f"[*] Target: cloud networking")
 
@@ -72,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "exposed service",
         }
-        print(f"[+] Analysis complete — key finding indicator: exposed service")
+        print(f"[+] Analysis complete  -  key finding indicator: exposed service")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

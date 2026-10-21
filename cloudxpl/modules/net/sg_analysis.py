@@ -32,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute sg_analysis module."""
     provider = getattr(args, "command", "net")
-    print(f"[*] {MANIFEST['capability_id']} — Security Group/NSG/Firewall Rule analysis")
+    print(f"[*] {MANIFEST['capability_id']}  -  Security Group/NSG/Firewall Rule analysis")
     print(f"[*] Provider: {provider} | Service: Network")
     print(f"[*] Target: cloud networking")
 
@@ -72,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "exposed service",
         }
-        print(f"[+] Analysis complete — key finding indicator: exposed service")
+        print(f"[+] Analysis complete  -  key finding indicator: exposed service")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

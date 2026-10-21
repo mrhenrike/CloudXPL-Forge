@@ -1,4 +1,4 @@
-"""AWS EBS snapshot enumeration — public snapshots, cross-account sharing."""
+"""AWS EBS snapshot enumeration  -  public snapshots, cross-account sharing."""
 
 
 import json

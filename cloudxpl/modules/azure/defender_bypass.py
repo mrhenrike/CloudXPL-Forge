@@ -32,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute defender_bypass module."""
     provider = getattr(args, "command", "azure")
-    print(f"[*] {MANIFEST['capability_id']} — Microsoft Defender for Cloud evasion analysis")
+    print(f"[*] {MANIFEST['capability_id']}  -  Microsoft Defender for Cloud evasion analysis")
     print(f"[*] Provider: {provider} | Service: SecurityCenter")
     print(f"[*] Target: Defender settings, alerts")
 
@@ -72,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "disabled Defender features",
         }
-        print(f"[+] Analysis complete — key finding indicator: disabled Defender features")
+        print(f"[+] Analysis complete  -  key finding indicator: disabled Defender features")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

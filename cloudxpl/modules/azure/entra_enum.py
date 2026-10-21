@@ -32,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute entra_enum module."""
     provider = getattr(args, "command", "azure")
-    print(f"[*] {MANIFEST['capability_id']} — Entra ID (Azure AD) user, group, application enumeration")
+    print(f"[*] {MANIFEST['capability_id']}  -  Entra ID (Azure AD) user, group, application enumeration")
     print(f"[*] Provider: {provider} | Service: GraphServiceClient")
     print(f"[*] Target: users, groups, applications, service principals")
 
@@ -72,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "over-privileged app registrations",
         }
-        print(f"[+] Analysis complete — key finding indicator: over-privileged app registrations")
+        print(f"[+] Analysis complete  -  key finding indicator: over-privileged app registrations")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

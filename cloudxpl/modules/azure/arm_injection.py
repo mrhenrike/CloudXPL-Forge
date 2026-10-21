@@ -1,4 +1,4 @@
-"""Azure ARM template injection — detect dangerous template patterns."""
+"""Azure ARM template injection  -  detect dangerous template patterns."""
 
 
 import json

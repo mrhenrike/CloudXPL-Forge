@@ -1,4 +1,4 @@
-"""AWS RDS enumeration — instances, clusters, public snapshots."""
+"""AWS RDS enumeration  -  instances, clusters, public snapshots."""
 
 
 import json

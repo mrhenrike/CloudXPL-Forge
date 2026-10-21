@@ -1,4 +1,4 @@
-"""AWS CloudTrail tampering assessment — trail deletion, S3 bucket manipulation."""
+"""AWS CloudTrail tampering assessment  -  trail deletion, S3 bucket manipulation."""
 
 
 import json
@@ -51,7 +51,7 @@ def run(args: Any) -> int:
                 caps["actions"].append("describe")
             except Exception: pass
             results["tamper_capabilities"].append(caps)
-            print(f"  [*] Trail: {trail['Name']} — {trail.get('S3BucketName', 'N/A')}")
+            print(f"  [*] Trail: {trail['Name']}  -  {trail.get('S3BucketName', 'N/A')}")
     except Exception as exc:
         print(f"[-] Trail enumeration failed: {exc}"); return 1
     _save(args, "aws_cloudtrail_tamper", results)

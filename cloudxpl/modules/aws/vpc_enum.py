@@ -1,4 +1,4 @@
-"""AWS VPC enumeration — VPCs, subnets, security groups, NACLs."""
+"""AWS VPC enumeration  -  VPCs, subnets, security groups, NACLs."""
 
 
 import json

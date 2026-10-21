@@ -1,4 +1,4 @@
-"""Azure subscription enumeration — list subscriptions, resource groups, RBAC."""
+"""Azure subscription enumeration  -  list subscriptions, resource groups, RBAC."""
 
 
 import json

@@ -1,4 +1,4 @@
-"""Cloud credential management — provider-agnostic credential handling."""
+"""Cloud credential management  -  provider-agnostic credential handling."""
 
 
 from dataclasses import dataclass, field

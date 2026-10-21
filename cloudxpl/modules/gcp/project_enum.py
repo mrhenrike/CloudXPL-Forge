@@ -1,4 +1,4 @@
-"""GCP Project enumeration — list projects, APIs, compute instances."""
+"""GCP Project enumeration  -  list projects, APIs, compute instances."""
 
 
 import json

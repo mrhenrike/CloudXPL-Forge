@@ -1,4 +1,4 @@
-"""AWS IAM enumeration — users, roles, policies, access keys."""
+"""AWS IAM enumeration  -  users, roles, policies, access keys."""
 
 
 import json

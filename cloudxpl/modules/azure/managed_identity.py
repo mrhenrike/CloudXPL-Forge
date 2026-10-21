@@ -1,4 +1,4 @@
-"""Azure Managed Identity abuse — token theft from IMDS and env vars."""
+"""Azure Managed Identity abuse  -  token theft from IMDS and env vars."""
 
 
 import json

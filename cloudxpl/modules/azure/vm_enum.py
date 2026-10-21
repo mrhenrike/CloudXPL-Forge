@@ -1,4 +1,4 @@
-"""Azure VM enumeration — instances, extensions, custom scripts."""
+"""Azure VM enumeration  -  instances, extensions, custom scripts."""
 
 
 import json
@@ -32,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute vm_enum module."""
     provider = getattr(args, "command", "azure")
-    print(f"[*] {MANIFEST['capability_id']} — Azure VM enumeration — instances, extensions, custom scripts")
+    print(f"[*] {MANIFEST['capability_id']}  -  Azure VM enumeration  -  instances, extensions, custom scripts")
     print(f"[*] Provider: {provider} | Service: ComputeManagementClient")
     print(f"[*] Target: VMs, extensions, disks")
 
@@ -72,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "exposed VMs with dangerous extensions",
         }
-        print(f"[+] Analysis complete — key finding indicator: exposed VMs with dangerous extensions")
+        print(f"[+] Analysis complete  -  key finding indicator: exposed VMs with dangerous extensions")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

@@ -1,4 +1,4 @@
-"""AWS SSM Parameter Store enumeration — strings, SecureString, credential extraction."""
+"""AWS SSM Parameter Store enumeration  -  strings, SecureString, credential extraction."""
 
 
 import json

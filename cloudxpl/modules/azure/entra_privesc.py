@@ -32,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute entra_privesc module."""
     provider = getattr(args, "command", "azure")
-    print(f"[*] {MANIFEST['capability_id']} — Entra ID role escalation path analysis")
+    print(f"[*] {MANIFEST['capability_id']}  -  Entra ID role escalation path analysis")
     print(f"[*] Provider: {provider} | Service: AuthorizationManagementClient")
     print(f"[*] Target: role assignments, custom roles")
 
@@ -72,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "privilege escalation paths",
         }
-        print(f"[+] Analysis complete — key finding indicator: privilege escalation paths")
+        print(f"[+] Analysis complete  -  key finding indicator: privilege escalation paths")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

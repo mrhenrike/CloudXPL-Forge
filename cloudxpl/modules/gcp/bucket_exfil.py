@@ -1,4 +1,4 @@
-"""GCS data exfiltration — object listing, download, cross-project copy."""
+"""GCS data exfiltration  -  object listing, download, cross-project copy."""
 
 
 import json
@@ -32,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute bucket_exfil module."""
     provider = getattr(args, "command", "gcp")
-    print(f"[*] {MANIFEST['capability_id']} — GCS data exfiltration — object listing, download, cross-project copy")
+    print(f"[*] {MANIFEST['capability_id']}  -  GCS data exfiltration  -  object listing, download, cross-project copy")
     print(f"[*] Provider: {provider} | Service: StorageClient")
     print(f"[*] Target: bucket objects, data")
 
@@ -72,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "accessible data volumes",
         }
-        print(f"[+] Analysis complete — key finding indicator: accessible data volumes")
+        print(f"[+] Analysis complete  -  key finding indicator: accessible data volumes")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

@@ -1,4 +1,4 @@
-"""AWS S3 bucket enumeration — list buckets, check ACLs, detect public access."""
+"""AWS S3 bucket enumeration  -  list buckets, check ACLs, detect public access."""
 
 
 import json
@@ -53,7 +53,7 @@ def run(args: Any) -> int:
             entry["public_acl"] = bool(public_grants)
             if public_grants:
                 entry["public_grants"] = [g["Permission"] for g in public_grants]
-                print(f"  [!] {name}: PUBLIC ACL — {', '.join(entry['public_grants'])}")
+                print(f"  [!] {name}: PUBLIC ACL  -  {', '.join(entry['public_grants'])}")
         except Exception:
             entry["acl_error"] = "AccessDenied"
 

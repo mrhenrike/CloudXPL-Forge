@@ -32,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute cve_2025_52565 module."""
     provider = getattr(args, "command", "k8s")
-    print(f"[*] {MANIFEST['capability_id']} — CVE-2025-52565 runc console race container escape")
+    print(f"[*] {MANIFEST['capability_id']}  -  CVE-2025-52565 runc console race container escape")
     print(f"[*] Provider: {provider} | Service: K8s API")
     print(f"[*] Target: cluster resources")
 
@@ -72,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "security misconfiguration",
         }
-        print(f"[+] Analysis complete — key finding indicator: security misconfiguration")
+        print(f"[+] Analysis complete  -  key finding indicator: security misconfiguration")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

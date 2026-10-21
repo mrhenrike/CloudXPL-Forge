@@ -32,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute cve_2026_81867 module."""
     provider = getattr(args, "command", "gcp")
-    print(f"[*] {MANIFEST['capability_id']} — CVE-2026-81867 GCP Org Policy bypass CVSS 9")
+    print(f"[*] {MANIFEST['capability_id']}  -  CVE-2026-81867 GCP Org Policy bypass CVSS 9")
     print(f"[*] Provider: {provider} | Service: GCP API")
     print(f"[*] Target: deployment indicators")
 
@@ -72,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "vulnerable configuration detected",
         }
-        print(f"[+] Analysis complete — key finding indicator: vulnerable configuration detected")
+        print(f"[+] Analysis complete  -  key finding indicator: vulnerable configuration detected")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

@@ -32,7 +32,7 @@ def _save(args: Any, prefix: str, data: Any) -> str:
 def run(args: Any) -> int:
     """Execute rbac_enum module."""
     provider = getattr(args, "command", "azure")
-    print(f"[*] {MANIFEST['capability_id']} — Azure RBAC role assignment enumeration and analysis")
+    print(f"[*] {MANIFEST['capability_id']}  -  Azure RBAC role assignment enumeration and analysis")
     print(f"[*] Provider: {provider} | Service: AuthorizationManagementClient")
     print(f"[*] Target: role assignments, custom roles")
 
@@ -72,7 +72,7 @@ def run(args: Any) -> int:
             "findings_count": 0,
             "key_finding": "overly permissive custom roles",
         }
-        print(f"[+] Analysis complete — key finding indicator: overly permissive custom roles")
+        print(f"[+] Analysis complete  -  key finding indicator: overly permissive custom roles")
     except Exception as exc:
         print(f"[-] Module execution failed: {exc}", file=sys.stderr)
         results["status"] = "error"

@@ -1,4 +1,4 @@
-"""AWS Lambda persistence — layer poisoning analysis, trigger backdoor assessment."""
+"""AWS Lambda persistence  -  layer poisoning analysis, trigger backdoor assessment."""
 
 
 import json

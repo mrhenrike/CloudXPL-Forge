@@ -1,4 +1,4 @@
-"""Azure Storage enumeration — storage accounts, containers, public access."""
+"""Azure Storage enumeration  -  storage accounts, containers, public access."""
 
 
 import json

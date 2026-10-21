@@ -538,7 +538,6 @@ MODULE_MAP = {
         "vcenterkit-bridge": "cloudxpl.modules.virt.vcenterkit_bridge",
         "vdi-breakout": "cloudxpl.modules.virt.vdi_breakout",
         "virt-cross-domain": "cloudxpl.modules.virt.virt_cross_domain",
-        "virt-maestro-detect": "cloudxpl.modules.virt.virt_maestro_detect",
         "virt-side-channel": "cloudxpl.modules.virt.virt_side_channel",
         "virt-snapshot-theft": "cloudxpl.modules.virt.virt_snapshot_theft",
         "virt-vtpm-extract": "cloudxpl.modules.virt.virt_vtpm_extract",

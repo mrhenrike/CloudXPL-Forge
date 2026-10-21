@@ -1,0 +1,221 @@
+{
+  "version": "12.0",
+  "generated": "2026-10-21",
+  "description": "Wave 12 integration catalog for CloudXPL",
+  "clusters": {
+    "multi_cloud_offensive": {
+      "description": "Multi-cloud offensive and enumeration frameworks",
+      "entries": [
+        {
+          "src_id": "SRC-676",
+          "name": "CloudSec",
+          "url": "https://github.com/eshlomo1/CloudSec",
+          "priority": "Alta",
+          "action": "A",
+          "module": "multi/cloudsec_offensive.py",
+          "notes": "Offensive cloud security: Azure/Entra ID/AWS/M365 red team"
+        },
+        {
+          "src_id": "SRC-1024",
+          "name": "CloudToolKit",
+          "url": "https://github.com/404tk/cloudtoolkit",
+          "priority": "Alta",
+          "action": "A",
+          "module": "multi/cloudtoolkit_wrapper.py",
+          "notes": "Multi-cloud framework: OCI/AWS/Alibaba ECS/OSS/RAM/RDS/DNS"
+        },
+        {
+          "src_id": "SRC-1025",
+          "name": "CloudBrute",
+          "url": "https://github.com/0xsha/CloudBrute",
+          "priority": "Alta",
+          "action": "A",
+          "module": "multi/cloudbrute_discovery.py",
+          "notes": "Multi-cloud infrastructure discovery for recon"
+        },
+        {
+          "src_id": "SRC-1031",
+          "name": "CloudFox",
+          "url": "https://github.com/BishopFox/cloudfox",
+          "priority": "Alta",
+          "action": "A",
+          "module": "multi/cloudfox_wrapper.py",
+          "notes": "Bishop Fox offensive cloud enum AWS/Azure/GCP"
+        },
+        {
+          "src_id": "SRC-1033",
+          "name": "Stratus Red Team",
+          "url": "https://github.com/DataDog/stratus-red-team",
+          "priority": "Alta",
+          "action": "A",
+          "module": "multi/stratus_redteam.py",
+          "notes": "DataDog adversary emulation for cloud, MITRE ATT&CK mapped"
+        },
+        {
+          "src_id": "SRC-1019",
+          "name": "security-audit-skill",
+          "url": "https://github.com/cloudflare/security-audit-skill",
+          "priority": "Alta",
+          "action": "A",
+          "module": "multi/security_audit_orchestrator.py",
+          "notes": "Cloudflare 6-phase audit workflow adapted for cloud"
+        }
+      ]
+    },
+    "multi_cloud_audit": {
+      "description": "Multi-cloud compliance and audit references",
+      "entries": [
+        {
+          "src_id": "SRC-1029",
+          "name": "Prowler",
+          "url": "https://github.com/prowler-cloud/prowler",
+          "priority": "Alta",
+          "action": "Q",
+          "notes": "Multi-cloud auditor AWS/Azure/GCP/K8s; CIS/NIST/PCI-DSS"
+        },
+        {
+          "src_id": "SRC-1030",
+          "name": "ScoutSuite",
+          "url": "https://github.com/nccgroup/ScoutSuite",
+          "priority": "Alta",
+          "action": "Q",
+          "notes": "NCC Group multi-cloud auditor with HTML reports"
+        }
+      ]
+    },
+    "aws_exploitation": {
+      "description": "AWS-specific exploitation tools",
+      "entries": [
+        {
+          "src_id": "SRC-1032",
+          "name": "Pacu",
+          "url": "https://github.com/RhinoSecurityLabs/pacu",
+          "priority": "Alta",
+          "action": "A",
+          "module": "aws/pacu_wrapper.py",
+          "notes": "Rhino Security Labs AWS exploitation framework"
+        }
+      ]
+    },
+    "oci_pentest": {
+      "description": "Oracle Cloud Infrastructure pentesting tools",
+      "entries": [
+        {
+          "src_id": "SRC-1026",
+          "name": "OCInferno",
+          "url": "CloudSec 2026",
+          "priority": "Alta",
+          "action": "A",
+          "module": "oci/ocinferno_toolkit.py",
+          "notes": "OCI pentest toolkit: IAM ANTLR, Burp ext, recon, privesc"
+        },
+        {
+          "src_id": "SRC-1027",
+          "name": "pOliCI",
+          "url": "XM Cyber / DEF CON 34",
+          "priority": "Alta",
+          "action": "A",
+          "module": "oci/polici_iam_parser.py",
+          "notes": "OCI IAM policy parser for privilege escalation detection"
+        }
+      ]
+    },
+    "container_escape": {
+      "description": "Container and Kubernetes escape exploits",
+      "entries": [
+        {
+          "src_id": "SRC-674",
+          "name": "CVE-2026-31431 Copy-Fail",
+          "url": "https://github.com/Percivalll/Copy-Fail-CVE-2026-31431-Kubernetes-PoC",
+          "priority": "Alta",
+          "action": "A",
+          "module": "k8s/cve_2026_31431_copyfail.py",
+          "notes": "K8s unprivileged container escape via Copy-Fail"
+        }
+      ]
+    },
+    "paas_offensive": {
+      "description": "PaaS and service-specific offensive tools",
+      "entries": [
+        {
+          "src_id": "SRC-1028",
+          "name": "RAVEN",
+          "url": "SpiderLabs/LevelBlue",
+          "priority": "Alta",
+          "action": "A",
+          "module": "paas/raven_elasticsearch.py",
+          "notes": "Elasticsearch offensive tool: 19 modules, 8 CVEs"
+        }
+      ]
+    },
+    "cloud_metadata_reference": {
+      "description": "Cloud metadata and IMDS security references",
+      "entries": [
+        {
+          "src_id": "SRC-054",
+          "name": "AWS IMDS SSRF Defense",
+          "url": "https://aws.amazon.com/pt/blogs/security/defense-in-depth-open-firewalls-reverse-proxies-ssrf-vulnerabilities-ec2-instance-metadata-service/",
+          "priority": "Alta",
+          "action": "P",
+          "notes": "AWS IMDS defense in depth for SSRF validation"
+        },
+        {
+          "src_id": "SRC-055",
+          "name": "AWS IMDSv2",
+          "url": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-instance-metadata-service.html",
+          "priority": "Alta",
+          "action": "P",
+          "notes": "IMDSv2 controls, token and hop-limit configuration"
+        },
+        {
+          "src_id": "SRC-056",
+          "name": "Azure IMDS",
+          "url": "https://learn.microsoft.com/en-us/azure/virtual-machines/instance-metadata-service",
+          "priority": "Alta",
+          "action": "P",
+          "notes": "Azure IMDS Metadata header requirement and exposure surfaces"
+        },
+        {
+          "src_id": "SRC-057",
+          "name": "GCP Metadata",
+          "url": "https://docs.cloud.google.com/compute/docs/metadata/querying-metadata",
+          "priority": "Alta",
+          "action": "P",
+          "notes": "GCP metadata headers, authorization and egress mapping"
+        }
+      ]
+    },
+    "cloud_labs": {
+      "description": "Cloud security labs and training references",
+      "entries": [
+        {
+          "src_id": "SRC-677",
+          "name": "Awesome CloudSec Labs",
+          "url": "https://github.com/iknowjason/Awesome-CloudSec-Labs",
+          "priority": "Alta",
+          "action": "Q",
+          "notes": "Free cloud native security labs, CTF, workshops"
+        }
+      ]
+    },
+    "hetzner_audit": {
+      "description": "Hetzner-specific audit tooling",
+      "entries": [
+        {
+          "src_id": "SRC-1034",
+          "name": "hetzner-cloud-audit",
+          "url": "https://github.com/jpolec/hetzner-cloud-audit-skills",
+          "priority": "Media",
+          "action": "Q",
+          "notes": "Multi-layer Hetzner audit: cloud, networking, Docker, IaC"
+        }
+      ]
+    }
+  },
+  "stats": {
+    "total_entries": 24,
+    "stubs_created": 11,
+    "references_cataloged": 13,
+    "clusters": 9
+  }
+}
